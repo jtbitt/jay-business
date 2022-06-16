@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import Button from "../components/button";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
@@ -9,13 +10,13 @@ const IndexPage = () => {
         <h1 className="w-1/2 text-4xl font-montserrat mb-20">
           Hi, I'm Jay <br /> Front End Developer
         </h1>
-        <button>ABOUT ME</button>
+        <Button name="ABOUT ME"></Button>
       </section>
       <section className="flex flex-col justify-between content-start h-screen p-10">
         <h1 className="text-4xl font-montserrat">
           And I like to build cool things
         </h1>
-        <button>CONTACT ME</button>
+        <Button name="CONTACT ME"></Button>
       </section>
       <section className="flex flex-col justify-between content-start h-screen p-10">
         <h1 className="text-4xl font-montserrat">About me</h1>
@@ -33,23 +34,23 @@ const IndexPage = () => {
           Would love to work on exciting React-based projects and/or with
           experienced developers.
         </p>
-        <button>MY RESUME</button>
+        <Button name="MY RESUME"></Button>
       </section>
       <section className="flex flex-col justify-between content-start h-screen p-10">
         <h1 className="text-4xl font-montserrat">Skills</h1>
       </section>
       <section className="flex flex-col justify-between content-start h-screen p-10">
         <h1 className="text-4xl font-montserrat">Nomad Life</h1>
-        <button>GET IN TOUCH</button>
+        <Button name="GET IN TOUCH"></Button>
       </section>
       <section className="flex flex-col justify-between content-start h-screen p-10">
         <h1 className="text-4xl font-montserrat">Cool Things I've Built</h1>
-        <button>GET IN TOUCH</button>
+        <Button name="GET IN TOUCH"></Button>
       </section>
       <section className="flex flex-col justify-between content-start h-screen p-10">
         <h1 className="text-4xl font-montserrat">Project Name</h1>
-        <button>CHECK PROJECT</button>
-        <button>CHECK CODE</button>
+        <Button name="CHECK PROJECT"></Button>
+        <Button name="CHECK CODE"></Button>
       </section>
       <section className="flex flex-col justify-between content-start h-screen p-10">
         <h1 className="text-4xl font-montserrat">Services</h1>
@@ -62,23 +63,23 @@ const IndexPage = () => {
           Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem
           ipsum dolor sit amet consectetur adipiscing.
         </p>
-        <button>HIRE ME</button>
+        <Button name="HIRE ME"></Button>
         <h1 className="text-4xl font-montserrat">Mentoring</h1>
         <p>
           Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem
           ipsum dolor sit amet consectetur adipiscing.
         </p>
-        <button>CONTACT ME</button>
+        <Button name="CONTACT ME"></Button>
         <h1 className="text-4xl font-montserrat">Web page for 1k$</h1>
         <p>
           Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem
           ipsum dolor sit amet consectetur adipiscing.
         </p>
-        <button>GET IT</button>
+        <Button name="GET IT"></Button>
       </section>
       <section className="flex flex-col justify-between content-start h-screen p-10">
         <h1 className="text-4xl font-montserrat">Let's Connect</h1>
-        <button>GET IN TOUCH</button>
+        <Button name="GET IN TOUCH"></Button>
       </section>
     </Layout>
   );
