@@ -12,7 +12,8 @@ body,
 
 body {
   font-family: "Roboto";
-  background-color: black;
+  background-image: url("../images/background.webp");
+  background-size: cover;
   color: white;
 }
 

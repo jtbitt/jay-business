@@ -18,8 +18,13 @@ const IndexPage = () => {
         </h1>
         <Button name="CONTACT ME"></Button>
       </section>
-      <section className="flex flex-col justify-between content-start h-screen p-10">
+      <section className="flex flex-col justify-between content-start p-10 gap-8">
         <h1 className="text-4xl font-montserrat">About me</h1>
+        <StaticImage
+          src="../images/about.webp"
+          alt="A photo of Jay"
+          layout="fullWidth"
+        />
         <p>
           Travel enthusiast who loves to spend my time in Latin America,
           currently planning a trip to the jungle. Life has been a great

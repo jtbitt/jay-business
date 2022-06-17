@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import { MenuIcon } from "@heroicons/react/solid";
 
 const Layout = ({ pageTitle, children }) => {
