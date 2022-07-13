@@ -12,11 +12,20 @@ const IndexPage = () => {
         </h1>
         <Button name="ABOUT ME"></Button>
       </section>
-      <section className="flex flex-col justify-between content-start h-screen p-10">
-        <h1 className="text-4xl font-montserrat">
-          And I like to build cool things
-        </h1>
-        <Button name="CONTACT ME"></Button>
+      <section className="grid grid-cols-1 md:grid-cols-3 p-10 h-screen">
+        <StaticImage
+          className="row-start-1 sm:row-start-1 col-start-1 sm:col-start-3 row-end-auto col-end-auto"
+          layout="fullWidth"
+          alt=""
+          src={"../images/intro.jpg"}
+          formats={["auto", "webp"]}
+        />
+        <div className="grid row-start-1 col-start-1 row-end-auto col-end-auto place-items-center relative">
+          <h1 className="text-4xl font-montserrat">
+            And I like to build cool things
+          </h1>
+          <Button name="CONTACT ME"></Button>
+        </div>
       </section>
       <section className="flex flex-col p-10 gap-8">
         <h1 className="text-4xl font-montserrat">About me</h1>
