@@ -6,13 +6,13 @@ import { StaticImage } from "gatsby-plugin-image";
 const IndexPage = () => {
   return (
     <Layout pageTitle="About Me">
-      <section className="flex flex-col justify-center content-start h-screen pl-10 md:pl-20 gap-20">
+      <section className="flex flex-col justify-center content-start h-screen gap-20">
         <h1 className="w-1/2 sm:w-3/4 text-4xl sm:text-5xl font-montserrat">
           Hi, I'm Jay <br /> Front End Developer
         </h1>
         <Button name="ABOUT ME"></Button>
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-3 p-10 h-screen">
+      <section className="grid grid-cols-1 sm:grid-cols-3 h-screen">
         <StaticImage
           className="row-start-1 sm:row-start-1 col-start-1 sm:col-start-3 row-end-auto col-end-auto"
           layout="fullWidth"
@@ -27,7 +27,7 @@ const IndexPage = () => {
           <Button name="CONTACT ME"></Button>
         </div>
       </section>
-      <section className="flex flex-col p-10 gap-8">
+      <section className="flex flex-col gap-8">
         <h1 className="text-4xl font-montserrat">About me</h1>
         <div className="flex flex-col sm:flex-row justify-between content-start gap-8">
           <StaticImage
@@ -55,23 +55,23 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-between content-start h-screen p-10">
+      <section className="flex flex-col justify-between content-start h-screen">
         <h1 className="text-4xl font-montserrat">Skills</h1>
       </section>
-      <section className="flex flex-col justify-between content-start h-screen p-10">
+      <section className="flex flex-col justify-between content-start h-screen">
         <h1 className="text-4xl font-montserrat">Nomad Life</h1>
         <Button name="GET IN TOUCH"></Button>
       </section>
-      <section className="flex flex-col justify-between content-start h-screen p-10">
+      <section className="flex flex-col justify-between content-start h-screen">
         <h1 className="text-4xl font-montserrat">Cool Things I've Built</h1>
         <Button name="GET IN TOUCH"></Button>
       </section>
-      <section className="flex flex-col justify-between content-start h-screen p-10">
+      <section className="flex flex-col justify-between content-start h-screen">
         <h1 className="text-4xl font-montserrat">Project Name</h1>
         <Button name="CHECK PROJECT"></Button>
         <Button name="CHECK CODE"></Button>
       </section>
-      <section className="flex flex-col p-10 gap-8">
+      <section className="flex flex-col gap-8">
         <h1 className="text-4xl font-montserrat">Services</h1>
         <p>
           I'm always interested in collaborating on ambitious projects, helping
@@ -126,7 +126,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col h-screen p-10 gap-8">
+      <section className="flex flex-col h-screen gap-8">
         <h1 className="text-4xl font-montserrat">Let's Connect</h1>
         <div className="flex flex-col sm:flex-row justify-between content-start gap-8">
           <div className="basis-1/2 flex flex-col gap-8">

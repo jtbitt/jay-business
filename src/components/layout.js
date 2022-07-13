@@ -19,10 +19,10 @@ const Layout = ({ pageTitle, children }) => {
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
-      <nav className="fixed top-6 left-6">
-        <MenuIcon className="h-16 w-16" />
+      <nav className="fixed p-2 md:p-10 w-full z-10 top-0 left-0 right-0">
+        <MenuIcon className="h-10 w-10 md:h-16 md:w-16" />
       </nav>
-      <main>{children}</main>
+      <main className="px-14 md:px-40">{children}</main>
     </div>
   );
 };
