@@ -7,7 +7,7 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="About Me">
       <section className="flex flex-col justify-center content-start h-screen gap-20">
-        <h1 className="w-1/2 sm:w-3/4 text-4xl sm:text-5xl font-montserrat">
+        <h1 className="sm:w-3/4 text-4xl sm:text-5xl font-montserrat">
           Hi, I'm Jay <br /> Front End Developer
         </h1>
         <Button name="ABOUT ME"></Button>

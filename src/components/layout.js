@@ -15,14 +15,14 @@ const Layout = ({ pageTitle, children }) => {
   `);
 
   return (
-    <div>
+    <div className="px-9 lg:px-20">
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
-      <nav className="fixed p-2 md:p-10 w-full z-10 top-0 left-0 right-0">
-        <MenuIcon className="h-10 w-10 md:h-16 md:w-16" />
+      <nav className="fixed z-20 w-full top-0 left-0 right-0 p-7 lg:p-[4.5rem] pb-0 lg:pb-0 bg-[url('../images/background.webp')]">
+        <MenuIcon className="h-12 w-12 md:h-16 md:w-16" />
       </nav>
-      <main className="px-14 md:px-40">{children}</main>
+      <main>{children}</main>
     </div>
   );
 };
