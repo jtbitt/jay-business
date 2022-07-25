@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { StaticImage } from "gatsby-plugin-image";
 
-const Navbar = () => {
+const Navbar = ({ onNavToggle }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const links = [
     { name: "About me", url: "/" },
@@ -22,25 +22,23 @@ const Navbar = () => {
     },
   ];
 
-  const onNavToggle = () => {
+  const navToggle = () => {
     setMenuOpen(!menuOpen);
+    onNavToggle();
   };
 
   return (
     <>
       {!menuOpen && (
-        <nav className="fixed z-20 w-full top-0 left-0 right-0 p-7 lg:p-[4.5rem] pb-0 lg:pb-0 bg-[url('../images/background.webp')]">
-          <MenuIcon
-            className="h-12 w-12 md:h-16 md:w-16"
-            onClick={() => onNavToggle()}
-          />
+        <nav className="fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] py-7 bg-right bg-[url('../images/Artboard.png')]">
+          <MenuIcon className="h-12 w-12 md:h-16 md:w-16" onClick={navToggle} />
         </nav>
       )}
       {menuOpen && (
-        <div className="fixed flex flex-col justify-between items-center py-8 z-20 h-full w-full bg-[url('../images/background.webp')]">
+        <div className="fixed flex flex-col justify-between items-center py-8 z-20 h-full w-full">
           <XIcon
             className="absolute right-8 lg:right-20 z-30 h-12 w-12 md:h-12 md:w-12"
-            onClick={() => onNavToggle()}
+            onClick={navToggle}
           />
           <div className="flex flex-col items-center">
             <StaticImage
