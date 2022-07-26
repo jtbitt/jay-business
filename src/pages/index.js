@@ -1,6 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Button from "../components/button";
+import Skill from "../components/skill";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
@@ -90,6 +91,12 @@ const IndexPage = () => {
               Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem
               ipsum dolor sit amet consectetur adipiscing.
             </p>
+            <div className="grid grid-cols-2 gap-5 place-content-center">
+              <Skill name={"Front End"} />
+              <Skill name={"Productivity Improvement"} />
+              <Skill name={"Automated Integration"} />
+              <Skill name={"Performance Testing Tools"} />
+            </div>
             <Button name="HIRE ME"></Button>
           </div>
         </div>
