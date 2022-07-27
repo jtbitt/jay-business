@@ -2,6 +2,7 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Button from "../button";
+import Skill from "../skill";
 
 const About = () => {
   return (
@@ -34,10 +35,38 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-between content-start h-screen">
+      <div className="flex flex-col gap-6">
         <h1 className="text-4xl font-montserrat">Skills</h1>
+        <div className="flex flex-col xl:flex-row gap-16">
+          <div className="flex flex-col basis-full xl:basis-3/5 gap-6">
+            <div className="text-base font-montserrat">Technical Skills</div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 gap-6">
+              <Skill name={"HTML5, CSS3"} />
+              <Skill name={"Javascript Typescript"} />
+              <Skill name={"Angular"} />
+              <Skill name={"State Management"} />
+              <Skill name={"React"} />
+              <Skill name={"Components"} />
+              <Skill name={"Testing"} />
+              <Skill name={"Optimize Performance"} />
+              <Skill name={"APIs (GraphQL, Rest)"} />
+              <Skill name={"Git, VSCode"} />
+              <Skill name={"Agile (JIRA, Scrum, Kanban)"} />
+            </div>
+          </div>
+          <div className="flex flex-col basis-full xl:basis-2/5 gap-6">
+            <div className="text-base font-montserrat">Soft Skills</div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-2 place-content-start gap-6">
+              <Skill name={"Proactive"} />
+              <Skill name={"Communication"} />
+              <Skill name={"Problem Solving"} />
+              <Skill name={"Time Management"} />
+              <Skill name={"Adaptable"} />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col justify-between content-start h-screen">
+      <div className="flex flex-col justify-between content-start">
         <h1 className="text-4xl font-montserrat">Nomad Life</h1>
         <Button name="GET IN TOUCH"></Button>
       </div>

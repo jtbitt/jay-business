@@ -47,6 +47,12 @@ const Services = () => {
             Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem
             ipsum dolor sit amet consectetur adipiscing.
           </p>
+          <div className="grid grid-cols-2 gap-5 place-content-center">
+            <Skill name={"Career Advice"} />
+            <Skill name={"How to improve"} />
+            <Skill name={"Effective Build"} />
+            <Skill name={"Avoid common mistakes"} />
+          </div>
           <Button name="CONTACT ME"></Button>
         </div>
       </div>
@@ -63,6 +69,12 @@ const Services = () => {
             Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem
             ipsum dolor sit amet consectetur adipiscing.
           </p>
+          <div className="grid grid-cols-2 gap-5 place-content-center">
+            <Skill name={"Mobile First"} />
+            <Skill name={"Advanced Functionality"} />
+            <Skill name={"Professional Functions"} />
+            <Skill name={"Design Elements"} />
+          </div>
           <Button name="GET IT"></Button>
         </div>
       </div>
