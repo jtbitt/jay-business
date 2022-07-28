@@ -21,7 +21,7 @@ const Start = () => {
           className="row-start-1 sm:row-start-1 col-start-1 sm:col-start-3 row-end-auto col-end-auto"
           layout="fullWidth"
           alt=""
-          src={"../images/intro.jpg"}
+          src={"../../images/intro.jpg"}
           formats={["auto", "webp"]}
         />
         <div className="grid row-start-1 col-start-1 row-end-auto col-end-auto place-content-around md:place-content-center md:gap-14 relative">

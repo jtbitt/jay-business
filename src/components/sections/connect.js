@@ -12,7 +12,7 @@ const Connect = () => {
           <Button name="GET IN TOUCH"></Button>
         </div>
         <StaticImage
-          src="../images/connect.jpg"
+          src="../../images/connect.jpg"
           alt="A photo of Jay"
           layout="fullWidth"
           className="basis-1/2"

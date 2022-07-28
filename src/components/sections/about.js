@@ -6,12 +6,12 @@ import Skill from "../skill";
 
 const About = () => {
   return (
-    <section>
+    <section className="space-y-10">
       <div className="flex flex-col gap-8">
         <h1 className="text-4xl font-montserrat">About me</h1>
         <div className="flex flex-col sm:flex-row justify-between content-start gap-8">
           <StaticImage
-            src="../images/about.jpg"
+            src="../../images/about.jpg"
             alt="A photo of Jay"
             layout="fullWidth"
             className="basis-1/2"
@@ -66,8 +66,38 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-between content-start">
+      <div className="flex flex-col justify-between content-start gap-8">
         <h1 className="text-4xl font-montserrat">Nomad Life</h1>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
+          ipsum dolor sit amet con.
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+          <StaticImage
+            src="../../images/nomad1.png"
+            alt="A photo of Jay"
+            layout="fullWidth"
+            className="rounded"
+          />
+          <StaticImage
+            src="../../images/nomad2.png"
+            alt="A photo of Jay"
+            layout="fullWidth"
+            className="rounded"
+          />
+          <StaticImage
+            src="../../images/nomad3.png"
+            alt="A photo of Jay"
+            layout="fullWidth"
+            className="rounded"
+          />
+          <StaticImage
+            src="../../images/nomad4.png"
+            alt="A photo of Jay"
+            layout="fullWidth"
+            className="rounded"
+          />
+        </div>
         <Button name="GET IN TOUCH"></Button>
       </div>
     </section>

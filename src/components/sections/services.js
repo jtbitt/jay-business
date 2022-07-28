@@ -15,7 +15,7 @@ const Services = () => {
       <h1 className="text-4xl font-montserrat">Coding</h1>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8">
         <StaticImage
-          src="../images/coding.png"
+          src="../../images/coding.png"
           alt="A photo of Jay"
           layout="fullWidth"
           className="basis-1/2"
@@ -37,7 +37,7 @@ const Services = () => {
       <h1 className="text-4xl font-montserrat">Mentoring</h1>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8">
         <StaticImage
-          src="../images/mentoring.jpg"
+          src="../../images/mentoring.jpg"
           alt="A photo of Jay"
           layout="fullWidth"
           className="basis-1/2"
@@ -59,7 +59,7 @@ const Services = () => {
       <h1 className="text-4xl font-montserrat">Web page for 1k$</h1>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8">
         <StaticImage
-          src="../images/1kwebpage.jpg"
+          src="../../images/1kwebpage.jpg"
           alt="A photo of Jay"
           layout="fullWidth"
           className="basis-1/2"
