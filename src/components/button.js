@@ -2,8 +2,8 @@ import * as React from "react";
 
 const Button = ({ name }) => {
   return (
-    <button className="box-border border-2 border-white rounded h-8 w-28 bg-gray-600">
-      <span className="text-white text-sm font-medium tracking-wide">
+    <button className="rounded h-9 w-36 md:h-12 md:w-40 bg-white ml-1">
+      <span className="h-full flex justify-center items-center border-2 rounded border-white -translate-x-1 -translate-y-1 text-white text-sm md:text-base font-medium tracking-widest bg-gray-500">
         {name}
       </span>
     </button>
