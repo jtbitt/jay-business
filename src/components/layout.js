@@ -24,7 +24,7 @@ const Layout = ({ pageTitle, children }) => {
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
       <Navbar onNavToggle={handleNavToggle} />
-      {!contentHidden && <main className="px-9 lg:px-20">{children}</main>}
+      <main className="px-9 pb-9 lg:px-20 space-y-20">{children}</main>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Button from "../button";
 
 const Connect = () => {
   return (
-    <section className="flex flex-col h-screen gap-8">
+    <section className="flex flex-col gap-8">
       <h1 className="text-4xl font-montserrat">Let's Connect</h1>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8">
         <div className="basis-1/2 flex flex-col gap-8">
