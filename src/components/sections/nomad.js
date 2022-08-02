@@ -6,7 +6,7 @@ import Button from "../button";
 const Nomad = () => {
   return (
     <section className="space-y-8 md:space-y-10">
-      <h1 className="text-4xl md:text-5xl font-montserrat">Nomad Life</h1>
+      <h1 className="text-4xl md:text-5xl">Nomad Life</h1>
       <div>
         Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
         ipsum dolor sit amet con.

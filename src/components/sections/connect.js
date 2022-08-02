@@ -5,17 +5,17 @@ import Button from "../button";
 
 const Connect = () => {
   return (
-    <section className="flex flex-col gap-8">
-      <h1 className="text-4xl font-montserrat">Let's Connect</h1>
-      <div className="flex flex-col sm:flex-row justify-between content-start gap-8">
-        <div className="basis-1/2 flex flex-col gap-8">
+    <section className="space-y-12">
+      <h1 className="text-4xl md:text-5xl">Let's Connect</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="order-1 md:-order-1 text-center md:text-left space-y-12">
+          <p className="text-xl">If you would like to work together</p>
           <Button name="GET IN TOUCH"></Button>
         </div>
         <StaticImage
           src="../../images/connect.jpg"
           alt="A photo of Jay"
           layout="fullWidth"
-          className="basis-1/2"
         />
       </div>
     </section>

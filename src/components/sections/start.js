@@ -8,7 +8,7 @@ const Start = () => {
   return (
     <section>
       <div className="flex flex-col justify-center content-start gap-16 h-screen">
-        <h1 className="text-4xl md:text-5xl font-montserrat md:w-3/4 ">
+        <h1 className="text-4xl md:text-5xl md:w-3/4 ">
           Hi, I'm Jay <br /> Front End Developer
         </h1>
         <Button name="ABOUT ME"></Button>
@@ -22,7 +22,7 @@ const Start = () => {
           formats={["auto", "webp"]}
         />
         <div className="grid row-start-1 col-start-1 row-end-auto col-end-auto place-content-around md:place-content-center md:gap-16 relative">
-          <h1 className="text-4xl md:text-5xl font-montserrat">
+          <h1 className="text-4xl md:text-5xl">
             And I like to build cool things
           </h1>
           <div className="space-y-10 md:space-y-16">

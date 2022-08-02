@@ -14,7 +14,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fontsource/montserrat": "^4.5.11",
     "@fontsource/roboto": "^4.5.7",
     "@heroicons/react": "^1.0.6",
     "@mdx-js/mdx": "^1.6.22",

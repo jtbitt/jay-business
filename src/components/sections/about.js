@@ -6,7 +6,7 @@ import Button from "../button";
 const About = () => {
   return (
     <section className="space-y-8 md:space-y-10">
-      <h1 className="text-4xl md:text-5xl font-montserrat">About me</h1>
+      <h1 className="text-4xl md:text-5xl">About me</h1>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
         <StaticImage
           src="../../images/about.jpg"
