@@ -20,7 +20,7 @@ const Projects = () => {
             <Heading type="h5" basicFont="true">
               Subtitle
             </Heading>
-            <p>
+            <p className="text-sm md:text-base font-light tracking-widest">
               Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.
             </p>
           </div>
@@ -28,7 +28,9 @@ const Projects = () => {
             <Heading type="h5" basicFont="true">
               Development Tools
             </Heading>
-            <p>Lorem ipsum, lorem ipsum, lorem.</p>
+            <p className="text-sm md:text-base font-light tracking-widest">
+              Lorem ipsum, lorem ipsum, lorem.
+            </p>
           </div>
           <div className="text-center md:text-left">
             <Button name="VIEW PROJECT"></Button>

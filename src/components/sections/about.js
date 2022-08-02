@@ -16,7 +16,7 @@ const About = () => {
           className="basis-1/2"
         />
         <div className="basis-1/2 space-y-8">
-          <p>
+          <p className="text-base md:text-lg font-light tracking-wider leading-6 md:leading-6">
             Travel enthusiast who loves to spend my time in Latin America,
             currently planning a trip to the jungle. Life has been a great
             adventure since I learned to code. When it comes to work, I love
@@ -26,7 +26,7 @@ const About = () => {
             and optimized what I can do in my previous roles and I'm ready to
             dig deeper and gain some new experiences.
           </p>
-          <p>
+          <p className="text-base md:text-lg font-light tracking-wider leading-6 md:leading-6">
             Would love to work on exciting React-based projects and/or with
             experienced developers.
           </p>

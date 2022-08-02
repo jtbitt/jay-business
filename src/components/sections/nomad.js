@@ -8,10 +8,10 @@ const Nomad = () => {
   return (
     <section className="space-y-8 md:space-y-10">
       <Heading type="h1">Nomad Life</Heading>
-      <div>
+      <p className="text-sm md:text-base font-light tracking-widest">
         Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
         ipsum dolor sit amet con.
-      </div>
+      </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         <StaticImage
           src="../../images/nomad1.png"

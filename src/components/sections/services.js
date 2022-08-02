@@ -54,7 +54,7 @@ const Services = () => {
   return (
     <section className="space-y-8 md:space-y-10">
       <Heading type="h1">Services</Heading>
-      <p>
+      <p className="text-sm md:text-base font-light tracking-widest">
         I'm always interested in collaborating on ambitious projects, helping
         other developers, and consulting with tech companies and startups.
       </p>
@@ -74,7 +74,9 @@ const Services = () => {
                 layout="fullWidth"
               />
               <div className="space-y-8">
-                <p>{service.description}</p>
+                <p className="text-sm md:text-base font-light tracking-widest">
+                  {service.description}
+                </p>
                 <div className="grid grid-cols-2 gap-6">
                   {service.skills.map((skill, key) => (
                     <Skill name={skill} key={key} />
