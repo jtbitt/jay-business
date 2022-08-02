@@ -1104,10 +1104,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/montserrat@^4.5.11":
-  version "4.5.11"
-  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.11.tgz#9dff8e7bdcd0680789353e2632683e8ae82bd002"
-  integrity sha512-XAYZmprnZDVSLIeEiB3evVG2JD+yoR9aT+I6LCOcwZFQ6ro9UPpopDncqoqwv+j5M0/UjyAP6ov70+L/fmP8Gg==
+"@fontsource/pt-sans@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/pt-sans/-/pt-sans-4.5.9.tgz#738b86989ee7bea36b59481d3cb4560a961c2119"
+  integrity sha512-M6wXCwYRY2fBtn2ANOOjs5yZmx7GD0KTqvJb4fwltguEDrgrEGoJ7v+fSsGOkLu7e5WZ/hsgrjGkaAjnLwuoTQ==
 
 "@fontsource/roboto@^4.5.7":
   version "4.5.7"

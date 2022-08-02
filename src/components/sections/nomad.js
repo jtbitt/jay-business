@@ -1,12 +1,13 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
+import Heading from "../heading";
 import Button from "../button";
 
 const Nomad = () => {
   return (
     <section className="space-y-8 md:space-y-10">
-      <h1 className="text-4xl md:text-5xl">Nomad Life</h1>
+      <Heading type="h1">Nomad Life</Heading>
       <div>
         Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
         ipsum dolor sit amet con.

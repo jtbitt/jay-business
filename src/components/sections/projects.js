@@ -1,12 +1,13 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
+import Heading from "../heading";
 import Button from "../button";
 
 const Projects = () => {
   return (
     <section className="space-y-8 md:space-y-10">
-      <h1 className="text-4xl md:text-5xl">Cool Things I've Built</h1>
+      <Heading type="h1">Cool Things I've Built</Heading>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <StaticImage
           src="../../images/project.png"
@@ -14,17 +15,19 @@ const Projects = () => {
           layout="fullWidth"
         />
         <div className="space-y-6 md:space-y-8">
-          <h1 className="text-4xl">Project Name</h1>
+          <Heading type="h2">Project Name</Heading>
           <div className="space-y-2">
-            <h3 className="text-base md:text-xl font-bold">Subtitle</h3>
+            <Heading type="h5" basicFont="true">
+              Subtitle
+            </Heading>
             <p>
               Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.
             </p>
           </div>
           <div className="space-y-2">
-            <h3 className="text-base md:text-xl font-bold">
+            <Heading type="h5" basicFont="true">
               Development Tools
-            </h3>
+            </Heading>
             <p>Lorem ipsum, lorem ipsum, lorem.</p>
           </div>
           <div className="text-center md:text-left">

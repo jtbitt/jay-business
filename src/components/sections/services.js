@@ -1,6 +1,7 @@
 import * as React from "react";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 
+import Heading from "../heading";
 import Button from "../button";
 import Skill from "../skill";
 
@@ -52,7 +53,7 @@ const Services = () => {
 
   return (
     <section className="space-y-8 md:space-y-10">
-      <h1 className="text-4xl md:text-5xl">Services</h1>
+      <Heading type="h1">Services</Heading>
       <p>
         I'm always interested in collaborating on ambitious projects, helping
         other developers, and consulting with tech companies and startups.
@@ -60,7 +61,7 @@ const Services = () => {
       <div className="space-y-20">
         {services.map((service, key) => (
           <div className="space-y-8 md:space-y-10">
-            <h1 className="text-4xl md:text-5xl">{service.name}</h1>
+            <Heading type="h1">{service.name}</Heading>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
               {/* <GatsbyImage
               image={service.image}
