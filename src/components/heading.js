@@ -10,7 +10,7 @@ const elements = {
 };
 
 const Heading = ({ type, basicFont, className, children }) => {
-  const Header = `h${elements[type].name}`;
+  const Header = `${elements[type].name}`;
   const size = elements[type].size;
   const font = basicFont ? "font-sans" : "font-pt-sans";
 

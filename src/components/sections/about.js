@@ -11,7 +11,7 @@ const About = () => {
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
         <StaticImage
           src="../../images/about.jpg"
-          alt="A photo of Jay"
+          alt="a photo of Jay"
           layout="fullWidth"
           className="basis-1/2"
         />

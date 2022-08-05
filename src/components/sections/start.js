@@ -19,6 +19,7 @@ const Start = () => {
         <StaticImage
           className="row-start-1 md:row-start-1 col-start-1 md:col-start-3 row-end-auto col-end-auto"
           layout="fullWidth"
+          alt=""
           src={"../../images/intro.jpg"}
           formats={["auto", "webp"]}
         />

@@ -17,7 +17,7 @@ const Connect = () => {
         </div>
         <StaticImage
           src="../../images/connect.jpg"
-          alt="A photo of Jay"
+          alt="picture of contact me on laptop screen"
           layout="fullWidth"
         />
       </div>

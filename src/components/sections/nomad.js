@@ -15,25 +15,25 @@ const Nomad = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         <StaticImage
           src="../../images/nomad1.png"
-          alt="A photo of Jay"
+          alt="jay traveling"
           layout="fullWidth"
           className="rounded"
         />
         <StaticImage
           src="../../images/nomad2.png"
-          alt="A photo of Jay"
+          alt="jay traveling"
           layout="fullWidth"
           className="rounded"
         />
         <StaticImage
           src="../../images/nomad3.png"
-          alt="A photo of Jay"
+          alt="jay traveling"
           layout="fullWidth"
           className="rounded"
         />
         <StaticImage
           src="../../images/nomad4.png"
-          alt="A photo of Jay"
+          alt="jay traveling"
           layout="fullWidth"
           className="rounded"
         />

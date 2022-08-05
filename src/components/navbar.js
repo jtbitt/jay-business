@@ -30,7 +30,7 @@ const Navbar = ({ onNavToggle }) => {
   return (
     <>
       {!menuOpen && (
-        <nav className="fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] py-7 bg-right bg-[url('../images/Artboard.png')]">
+        <nav className="fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] py-7 bg-right">
           <MenuIcon className="h-12 w-12 md:h-16 md:w-16" onClick={navToggle} />
         </nav>
       )}

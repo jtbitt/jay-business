@@ -60,7 +60,7 @@ const Services = () => {
       </p>
       <div className="space-y-20">
         {services.map((service, key) => (
-          <div className="space-y-8 md:space-y-10">
+          <div className="space-y-8 md:space-y-10" key={key}>
             <Heading type="h1">{service.name}</Heading>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
               {/* <GatsbyImage
@@ -70,7 +70,7 @@ const Services = () => {
             /> */}
               <StaticImage
                 src="../../images/coding.png"
-                alt="A photo of Jay"
+                alt="Picture of several lines of code"
                 layout="fullWidth"
               />
               <div className="space-y-8">
