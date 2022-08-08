@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import Heading from "../heading";
-import Skill from "../skill";
+import Heading from "@components/heading";
+import Skill from "@components/skill";
 
 const Skills = () => {
   return (

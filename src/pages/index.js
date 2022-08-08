@@ -1,12 +1,12 @@
 import * as React from "react";
-import Layout from "../components/layout";
-import Start from "../components/sections/start";
-import About from "../components/sections/about";
-import Skills from "../components/sections/skills";
-import Nomad from "../components/sections/nomad";
-import Projects from "../components/sections/projects";
-import Services from "../components/sections/services";
-import Connect from "../components/sections/connect";
+import Layout from "@components/layout";
+import Start from "./home/components/start";
+import About from "./home/components/about";
+import Skills from "./home/components/skills";
+import Nomad from "./home/components/nomad";
+import Projects from "./home/components/projects";
+import Services from "./home/components/services";
+import Connect from "./home/components/connect";
 
 const IndexPage = () => {
   return (

@@ -2,8 +2,8 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { ArrowDownIcon } from "@heroicons/react/solid";
 
-import Heading from "../heading";
-import Button from "../button";
+import Heading from "@components/heading";
+import Button from "@components/button";
 
 const Start = () => {
   return (
@@ -20,7 +20,7 @@ const Start = () => {
           className="row-start-1 md:row-start-1 col-start-1 md:col-start-3 row-end-auto col-end-auto"
           layout="fullWidth"
           alt=""
-          src={"../../images/intro.jpg"}
+          src="../../../images/intro.jpg"
           formats={["auto", "webp"]}
         />
         <div className="grid row-start-1 col-start-1 row-end-auto col-end-auto place-content-around md:place-content-center md:gap-16 relative">

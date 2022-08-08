@@ -1,8 +1,8 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Heading from "../heading";
-import Button from "../button";
+import Heading from "@components/heading";
+import Button from "@components/button";
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       <Heading type="h1">About me</Heading>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
         <StaticImage
-          src="../../images/about.jpg"
+          src="../../../images/about.jpg"
           alt="a photo of Jay"
           layout="fullWidth"
           className="basis-1/2"

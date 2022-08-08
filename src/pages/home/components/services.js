@@ -1,15 +1,15 @@
 import * as React from "react";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Heading from "../heading";
-import Button from "../button";
-import Skill from "../skill";
+import Heading from "@components/heading";
+import Button from "@components/button";
+import Skill from "@components/skill";
 
 const Services = () => {
   const services = [
     {
       name: "Coding",
-      image: "../../images/coding.png",
+      image: "../../../images/coding.png",
       alt: "several lines of code",
       description:
         "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
@@ -23,7 +23,7 @@ const Services = () => {
     },
     {
       name: "Mentoring",
-      image: "../../images/mentoring.jpg",
+      image: "../../../images/mentoring.jpg",
       alt: "person talking with mentor on a video call",
       description:
         "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
@@ -37,7 +37,7 @@ const Services = () => {
     },
     {
       name: "Website for $1k",
-      image: "../../images/1kwebpage.jpg",
+      image: "../../../images/1kwebpage.jpg",
       alt: "monitor showing a brand new site on the home page",
       description:
         "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
@@ -69,7 +69,7 @@ const Services = () => {
               layout="fullWidth"
             /> */}
               <StaticImage
-                src="../../images/coding.png"
+                src="../../../images/coding.png"
                 alt="Picture of several lines of code"
                 layout="fullWidth"
               />

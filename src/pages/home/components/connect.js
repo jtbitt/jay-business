@@ -1,8 +1,8 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Heading from "../heading";
-import Button from "../button";
+import Heading from "@components/heading";
+import Button from "@components/button";
 
 const Connect = () => {
   return (
@@ -16,7 +16,7 @@ const Connect = () => {
           <Button name="GET IN TOUCH"></Button>
         </div>
         <StaticImage
-          src="../../images/connect.jpg"
+          src="../../../images/connect.jpg"
           alt="picture of contact me on laptop screen"
           layout="fullWidth"
         />

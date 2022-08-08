@@ -1,8 +1,8 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Heading from "../heading";
-import Button from "../button";
+import Heading from "@components/heading";
+import Button from "@components/button";
 
 const Nomad = () => {
   return (
@@ -14,25 +14,25 @@ const Nomad = () => {
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         <StaticImage
-          src="../../images/nomad1.png"
+          src="../../../images/nomad1.png"
           alt="jay traveling"
           layout="fullWidth"
           className="rounded"
         />
         <StaticImage
-          src="../../images/nomad2.png"
+          src="../../../images/nomad2.png"
           alt="jay traveling"
           layout="fullWidth"
           className="rounded"
         />
         <StaticImage
-          src="../../images/nomad3.png"
+          src="../../../images/nomad3.png"
           alt="jay traveling"
           layout="fullWidth"
           className="rounded"
         />
         <StaticImage
-          src="../../images/nomad4.png"
+          src="../../../images/nomad4.png"
           alt="jay traveling"
           layout="fullWidth"
           className="rounded"
