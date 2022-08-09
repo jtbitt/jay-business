@@ -3,28 +3,18 @@ import { Link } from "gatsby";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { StaticImage } from "gatsby-plugin-image";
 
+import links from "@content/links.json";
+import socials from "@content/socials.json";
+import github from "@images/social-icons/github.svg";
+
 const Navbar = ({ onNavToggle, scrollPosition }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const ref = useRef(null);
-  const links = [
-    { name: "About me", url: "/" },
-    { name: "Cool things I've built", url: "/" },
-    { name: "Services", url: "/" },
-    { name: "Let's connect", url: "/" },
-    { name: "Blog", url: "/" },
-  ];
-  const socials = [
-    { name: "google", icon: require("../images/google.svg").default, url: "" },
-    { name: "github", icon: require("../images/github.svg").default, url: "" },
-    {
-      name: "linkedin",
-      icon: require("../images/linkedin.svg").default,
-      url: "",
-    },
-  ];
 
   useEffect(() => {
-    ref.current.style.backgroundPositionY = "-" + scrollPosition + "px";
+    if (ref.current) {
+      ref.current.style.backgroundPositionY = "-" + scrollPosition + "px";
+    }
   }, [scrollPosition]);
 
   const navToggle = () => {
@@ -77,7 +67,7 @@ const Navbar = ({ onNavToggle, scrollPosition }) => {
               <img
                 key={key}
                 className="h-8 w-8"
-                src={social.icon}
+                src={github}
                 alt={social.name}
               />
             ))}

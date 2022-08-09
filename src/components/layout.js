@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Navbar from "../components/navbar";
+import Navbar from "./navbar";
 
 const Layout = ({ pageTitle, children }) => {
   const [showContent, setShowContent] = useState(true);

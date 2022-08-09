@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `jay-business`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.jaybittner.com`,
   },
   plugins: [
     "gatsby-plugin-image",
@@ -11,6 +11,13 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     "gatsby-plugin-mdx",

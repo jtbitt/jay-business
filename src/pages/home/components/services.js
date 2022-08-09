@@ -4,53 +4,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import Heading from "@components/heading";
 import Button from "@components/button";
 import Skill from "@components/skill";
+import services from "@content/services.json";
 
 const Services = () => {
-  const services = [
-    {
-      name: "Coding",
-      image: "../../../images/coding.png",
-      alt: "several lines of code",
-      description:
-        "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
-      skills: [
-        "Front End",
-        "Productivity Improvement",
-        "Automated Integration",
-        "Performance Testing Tools",
-      ],
-      callToAction: { name: "HIRE ME", link: "" },
-    },
-    {
-      name: "Mentoring",
-      image: "../../../images/mentoring.jpg",
-      alt: "person talking with mentor on a video call",
-      description:
-        "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
-      skills: [
-        "Career Advice",
-        "How to improve",
-        "Best Practices",
-        "Avoid common mistakes",
-      ],
-      callToAction: { name: "CONTACT ME", link: "" },
-    },
-    {
-      name: "Website for $1k",
-      image: "../../../images/1kwebpage.jpg",
-      alt: "monitor showing a brand new site on the home page",
-      description:
-        "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
-      skills: [
-        "Mobile First",
-        "Advanced Functionality",
-        "Professional Functions",
-        "Design Elements",
-      ],
-      callToAction: { name: "GET IT", link: "" },
-    },
-  ];
-
   return (
     <section className="space-y-8 md:space-y-10">
       <Heading type="h1">Services</Heading>
