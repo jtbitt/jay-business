@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { StaticImage } from "gatsby-plugin-image";
 
+import { useScroll } from "@hooks/useScroll";
+
 import links from "@content/links.json";
 import socials from "@content/socials.json";
 import google from "@images/social-icons/google.svg";
@@ -15,15 +17,16 @@ const icons = {
   linkedin: linkedin,
 };
 
-const Navbar = ({ onNavToggle, scrollPosition }) => {
+const Navbar = ({ onNavToggle }) => {
+  const { scrollTop } = useScroll();
   const [menuOpen, setMenuOpen] = useState(false);
   const ref = useRef(null);
 
   useEffect(() => {
     if (ref.current) {
-      ref.current.style.backgroundPositionY = "-" + scrollPosition + "px";
+      ref.current.style.backgroundPositionY = "-" + scrollTop + "px";
     }
-  }, [scrollPosition]);
+  }, [scrollTop]);
 
   const navToggle = () => {
     setMenuOpen(!menuOpen);
@@ -35,7 +38,6 @@ const Navbar = ({ onNavToggle, scrollPosition }) => {
       {!menuOpen && (
         <nav
           ref={ref}
-          id="closedNav"
           className={`fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] py-7 bg-[url('../images/background.webp')] bg-cover`}
         >
           <MenuIcon className="h-12 w-12 md:h-16 md:w-16" onClick={navToggle} />
