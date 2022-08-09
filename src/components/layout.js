@@ -28,7 +28,7 @@ const Layout = ({ pageTitle, children }) => {
       <Navbar onNavToggle={handleNavToggle} />
       <main
         className={`px-9 lg:px-20 pb-9 space-y-20 h-96 ${
-          showContent ? "visible" : "invisible"
+          showContent ? "visible" : "invisible overflow-hidden"
         }`}
       >
         {children}
