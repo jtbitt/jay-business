@@ -5,7 +5,15 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import links from "@content/links.json";
 import socials from "@content/socials.json";
+import google from "@images/social-icons/google.svg";
 import github from "@images/social-icons/github.svg";
+import linkedin from "@images/social-icons/linkedin.svg";
+
+const icons = {
+  google: google,
+  github: github,
+  linkedin: linkedin,
+};
 
 const Navbar = ({ onNavToggle, scrollPosition }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -67,7 +75,7 @@ const Navbar = ({ onNavToggle, scrollPosition }) => {
               <img
                 key={key}
                 className="h-8 w-8"
-                src={github}
+                src={icons[social.name]}
                 alt={social.name}
               />
             ))}
