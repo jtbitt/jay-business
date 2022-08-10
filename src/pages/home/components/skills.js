@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import skills from "@content/skills.json";
 import Heading from "@components/heading";
 import Skill from "@components/skill";
 
@@ -13,17 +14,9 @@ const Skills = () => {
             Technical Skills
           </Heading>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 gap-6">
-            <Skill name={"HTML5, CSS3"} />
-            <Skill name={"Javascript Typescript"} />
-            <Skill name={"Angular"} />
-            <Skill name={"State Management"} />
-            <Skill name={"React"} />
-            <Skill name={"Components"} />
-            <Skill name={"Testing"} />
-            <Skill name={"Optimize Performance"} />
-            <Skill name={"APIs (GraphQL, Rest)"} />
-            <Skill name={"Git, VSCode"} />
-            <Skill name={"Agile (JIRA, Scrum, Kanban)"} />
+            {skills.technical.map((skill, key) => (
+              <Skill name={skill} key={key} />
+            ))}
           </div>
         </div>
         <div className="basis-full xl:basis-2/5 space-y-10 md:space-y-12">
@@ -31,11 +24,9 @@ const Skills = () => {
             Soft Skills
           </Heading>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-2 place-content-start gap-6">
-            <Skill name={"Proactive"} />
-            <Skill name={"Communication"} />
-            <Skill name={"Problem Solving"} />
-            <Skill name={"Time Management"} />
-            <Skill name={"Adaptable"} />
+            {skills.soft.map((skill, key) => (
+              <Skill name={skill} key={key} />
+            ))}
           </div>
         </div>
       </div>

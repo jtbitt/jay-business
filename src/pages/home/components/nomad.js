@@ -7,6 +7,7 @@ import Button from "@components/button";
 
 const Nomad = () => {
   const { images } = useImages();
+
   return (
     <section className="space-y-8 md:space-y-10">
       <Heading type="h1">Nomad Life</Heading>
@@ -16,7 +17,7 @@ const Nomad = () => {
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {images.map((image, key) => (
-          <GatsbyImage image={image} alt="" />
+          <GatsbyImage image={image} alt="" key={key} />
         ))}
       </div>
       <div className="text-center">
