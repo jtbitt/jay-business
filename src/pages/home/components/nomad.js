@@ -1,10 +1,12 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
+import { useImages } from "@hooks/useImages";
 import Heading from "@components/heading";
 import Button from "@components/button";
 
 const Nomad = () => {
+  const { images } = useImages();
   return (
     <section className="space-y-8 md:space-y-10">
       <Heading type="h1">Nomad Life</Heading>
@@ -13,30 +15,9 @@ const Nomad = () => {
         ipsum dolor sit amet con.
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <StaticImage
-          src="../../../images/nomad1.png"
-          alt="jay traveling"
-          layout="fullWidth"
-          className="rounded"
-        />
-        <StaticImage
-          src="../../../images/nomad2.png"
-          alt="jay traveling"
-          layout="fullWidth"
-          className="rounded"
-        />
-        <StaticImage
-          src="../../../images/nomad3.png"
-          alt="jay traveling"
-          layout="fullWidth"
-          className="rounded"
-        />
-        <StaticImage
-          src="../../../images/nomad4.png"
-          alt="jay traveling"
-          layout="fullWidth"
-          className="rounded"
-        />
+        {images.map((image, key) => (
+          <GatsbyImage image={image} alt="" />
+        ))}
       </div>
       <div className="text-center">
         <Button name="GET IN TOUCH"></Button>

@@ -28,7 +28,7 @@ const Navbar = ({ onNavToggle }) => {
     }
   }, [scrollTop]);
 
-  const navToggle = () => {
+  const toggleNav = () => {
     setMenuOpen(!menuOpen);
     onNavToggle();
   };
@@ -40,14 +40,14 @@ const Navbar = ({ onNavToggle }) => {
           ref={ref}
           className={`fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] py-7 bg-[url('../images/background.webp')] bg-cover`}
         >
-          <MenuIcon className="h-12 w-12 md:h-16 md:w-16" onClick={navToggle} />
+          <MenuIcon className="h-12 w-12 md:h-16 md:w-16" onClick={toggleNav} />
         </nav>
       )}
       {menuOpen && (
         <div className="fixed flex flex-col justify-between items-center py-8 z-20 h-full w-full">
           <XIcon
             className="absolute right-8 lg:right-20 z-30 h-12 w-12 md:h-12 md:w-12"
-            onClick={navToggle}
+            onClick={toggleNav}
           />
           <div className="flex flex-col items-center">
             <StaticImage

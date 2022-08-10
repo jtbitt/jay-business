@@ -2,36 +2,18 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
+import { useImages } from "@hooks/useImages";
 import Heading from "@components/heading";
 import Button from "@components/button";
 
 import about from "@images/about.jpg";
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query AboutQuery {
-      allFile(
-        filter: { sourceInstanceName: { eq: "images" }, name: { eq: "about" } }
-      ) {
-        edges {
-          node {
-            relativePath
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
-            }
-          }
-        }
-      }
-    }
-  `);
-  console.log(data);
-  const image = getImage(data.allFile.edges[0].node.childImageSharp);
-
   return (
     <section className="space-y-8 md:space-y-10">
       <Heading type="h1">About me</Heading>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
-        <GatsbyImage image={image} alt="a photo of Jay" className="basis-1/2" />
+        {/* <GatsbyImage image={image} alt="a photo of Jay" className="basis-1/2" /> */}
         <div className="basis-1/2 space-y-8">
           <p className="text-base md:text-lg font-light tracking-wider leading-6 md:leading-6">
             Travel enthusiast who loves to spend my time in Latin America,
