@@ -1,17 +1,22 @@
 import * as React from "react";
 
-import { useImages } from "./home/hooks/useImages";
+import { useImages } from "@hooks/useImages";
+
 import Layout from "@components/layout";
-import Start from "./home/components/start";
-import About from "./home/components/about";
-import Skills from "./home/components/skills";
-import Nomad from "./home/components/nomad";
-import Projects from "./home/components/projects";
-import Services from "./home/components/services";
-import Connect from "./home/components/connect";
+import Start from "./components/start";
+import About from "./components/about";
+import Skills from "./components/skills";
+import Nomad from "./components/nomad";
+import Projects from "./components/projects";
+import Services from "./components/services";
+import Connect from "./components/connect";
 
 const IndexPage = () => {
   const { images } = useImages();
+
+  if (!Object.keys(images).length) {
+    return <></>;
+  }
 
   return (
     <Layout pageTitle="About Me">
