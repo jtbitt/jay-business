@@ -1,10 +1,10 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Heading from "@components/heading";
 import Button from "@components/button";
 
-const Connect = () => {
+const Connect = ({ images }) => {
   return (
     <section className="space-y-12">
       <Heading type="h1">Let's Connect</Heading>
@@ -15,11 +15,7 @@ const Connect = () => {
           </p>
           <Button name="GET IN TOUCH"></Button>
         </div>
-        <StaticImage
-          src="../../../images/connect.jpg"
-          alt="picture of contact me on laptop screen"
-          layout="fullWidth"
-        />
+        <GatsbyImage image={images.connect} alt="" layout="fullWidth" />
       </div>
     </section>
   );

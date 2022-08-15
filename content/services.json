@@ -1,8 +1,8 @@
 [
   {
     "name": "Coding",
-    "image": "../../../images/coding.png",
     "alt": "several lines of code",
+    "image": "coding",
     "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
     "skills": [
       "Front End",
@@ -17,8 +17,8 @@
   },
   {
     "name": "Mentoring",
-    "image": "../../../images/mentoring.jpg",
     "alt": "person talking with mentor on a video call",
+    "image": "mentoring",
     "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
     "skills": [
       "Career Advice",
@@ -33,8 +33,8 @@
   },
   {
     "name": "Website for $1k",
-    "image": "../../../images/1kwebpage.jpg",
     "alt": "monitor showing a brand new site on the home page",
+    "image": "1kwebpage",
     "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
     "skills": [
       "Mobile First",

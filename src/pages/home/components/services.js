@@ -1,12 +1,12 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Heading from "@components/heading";
 import Button from "@components/button";
 import Skill from "@components/skill";
 import services from "@content/services.json";
 
-const Services = () => {
+const Services = ({ images }) => {
   return (
     <section className="space-y-8 md:space-y-10">
       <Heading type="h1">Services</Heading>
@@ -19,14 +19,9 @@ const Services = () => {
           <div className="space-y-8 md:space-y-10" key={key}>
             <Heading type="h1">{service.name}</Heading>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-              {/* <GatsbyImage
-              image={service.image}
-              alt={service.alt}
-              layout="fullWidth"
-            /> */}
-              <StaticImage
-                src="../../../images/coding.png"
-                alt="Picture of several lines of code"
+              <GatsbyImage
+                image={images[service.image]}
+                alt={service.alt}
                 layout="fullWidth"
               />
               <div className="space-y-8">

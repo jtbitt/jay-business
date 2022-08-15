@@ -1,14 +1,11 @@
 import * as React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { ArrowDownIcon } from "@heroicons/react/solid";
 
 import Heading from "@components/heading";
 import Button from "@components/button";
 
-const Start = () => {
-  const startImg = "../../../images/start/intro.jpg";
-
+const Start = ({ images }) => {
   return (
     <section>
       <div className="flex flex-col justify-center content-start gap-16 h-screen">
@@ -19,12 +16,10 @@ const Start = () => {
         <ArrowDownIcon className="h-8 md:h-12 w-8 md:w-12" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 h-screen">
-        <StaticImage
-          className="row-start-1 md:row-start-1 col-start-1 md:col-start-3 row-end-auto col-end-auto"
-          layout="fullWidth"
+        <GatsbyImage
+          image={images.intro}
           alt=""
-          src={startImg}
-          formats={["auto", "webp"]}
+          className="row-start-1 md:row-start-1 col-start-1 md:col-start-3 row-end-auto col-end-auto"
         />
         <div className="grid row-start-1 col-start-1 row-end-auto col-end-auto place-content-around md:place-content-center md:gap-16 relative">
           <Heading type="h1" className="leading-tight md:leading-tight">
