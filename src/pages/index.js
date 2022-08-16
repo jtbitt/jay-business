@@ -3,13 +3,13 @@ import * as React from "react";
 import { useImages } from "@hooks/useImages";
 
 import Layout from "@components/layout";
-import Start from "./components/start";
-import About from "./components/about";
-import Skills from "./components/skills";
-import Nomad from "./components/nomad";
-import Projects from "./components/projects";
-import Services from "./components/services";
-import Connect from "./components/connect";
+import Start from "@components/home/start";
+import About from "@components/home/about";
+import Skills from "@components/home/skills";
+import Nomad from "@components/home/nomad";
+import Projects from "@components/home/projects";
+import Services from "@components/home/services";
+import Connect from "@components/home/connect";
 
 const IndexPage = () => {
   const { images } = useImages();
