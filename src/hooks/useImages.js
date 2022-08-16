@@ -1,24 +1,24 @@
-import { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 export const useImages = () => {
-  const [images, setImages] = useState({});
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      allFile(filter: { sourceInstanceName: { eq: "home-images" } }) {
-        nodes {
-          name
-          relativeDirectory
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
+  const data = useStaticQuery(
+    graphql`
+      query ImageQuery {
+        allFile(filter: { sourceInstanceName: { eq: "home-images" } }) {
+          nodes {
+            name
+            relativeDirectory
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
+            }
           }
         }
       }
-    }
-  `);
+    `
+  );
 
-  useEffect(() => {
+  const cleanImages = () => {
     const newImages = {};
 
     [...data.allFile.nodes].forEach((img) => {
@@ -28,8 +28,8 @@ export const useImages = () => {
       };
     });
 
-    setImages(newImages);
-  }, [data]);
+    return newImages;
+  };
 
-  return { images };
+  return cleanImages();
 };

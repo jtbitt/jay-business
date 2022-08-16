@@ -12,21 +12,17 @@ import Services from "@components/home/services";
 import Connect from "@components/home/connect";
 
 const IndexPage = () => {
-  const { images } = useImages();
-
-  if (!Object.keys(images).length) {
-    return <></>;
-  }
+  const { start, about, nomad, projects, services, connect } = useImages();
 
   return (
     <Layout pageTitle="About Me">
-      <Start images={images.start} />
-      <About images={images.about} />
+      <Start images={start} />
+      <About images={about} />
       <Skills />
-      <Nomad images={images.nomad} />
-      <Projects images={images.projects} />
-      <Services images={images.services} />
-      <Connect images={images.connect} />
+      <Nomad images={nomad} />
+      <Projects images={projects} />
+      <Services images={services} />
+      <Connect images={connect} />
     </Layout>
   );
 };
