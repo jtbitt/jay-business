@@ -24,7 +24,7 @@ export const useImages = () => {
     [...data.allFile.nodes].forEach((img) => {
       images[img.relativeDirectory] = {
         ...images[img.relativeDirectory],
-        [img.name]: getImage(img.childImageSharp),
+        [img.name]: getImage(img),
       };
     });
 
