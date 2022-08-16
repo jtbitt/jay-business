@@ -30,7 +30,9 @@ const Project = ({ image, alt, title, subtitle, description, tools, slug }) => {
           </p>
         </div>
         <div className="text-center md:text-left">
-          <Button name="VIEW PROJECT"></Button>
+          <Link to={`/projects/${slug}`}>
+            <Button name="VIEW PROJECT"></Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,9 +1,10 @@
 [
   { 
-    "title": "Cool Things I've Built", 
+    "title": "Project Name", 
     "subtitle": "Subtitle", 
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.",
     "tools": "Lorem ipsum, lorem ipsum, lorem.",
-    "image": "project"
+    "image": "project",
+    "link": ""
   }
 ]

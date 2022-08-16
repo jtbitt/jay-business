@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import Article from "@components/blog/article";
 
 const BlogPage = ({ data }) => {
+  console.log(data);
   return (
     <Layout pageTitle="My Blog Posts">
       {data.allMdx.nodes.map((node, key) => (
@@ -21,18 +22,21 @@ const BlogPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(
+      filter: { fileAbsolutePath: { regex: "/blog/i" } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         frontmatter {
           date(formatString: "MMMM D, YYYY")
           title
+          hero_image_alt
           hero_image {
             childImageSharp {
               gatsbyImageData
             }
           }
         }
-        id
         slug
       }
     }
