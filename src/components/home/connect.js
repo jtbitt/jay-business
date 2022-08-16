@@ -15,7 +15,7 @@ const Connect = ({ images }) => {
           </p>
           <Button name="GET IN TOUCH"></Button>
         </div>
-        <GatsbyImage image={images.connect} alt="" layout="fullWidth" />
+        <GatsbyImage image={images.connect} alt="" />
       </div>
     </section>
   );

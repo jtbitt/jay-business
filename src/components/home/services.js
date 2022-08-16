@@ -19,11 +19,7 @@ const Services = ({ images }) => {
           <div className="space-y-8 md:space-y-10" key={key}>
             <Heading type="h1">{service.name}</Heading>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-              <GatsbyImage
-                image={images[service.image]}
-                alt={service.alt}
-                layout="fullWidth"
-              />
+              <GatsbyImage image={images[service.image]} alt={service.alt} />
               <div className="space-y-8">
                 <p className="text-sm md:text-base font-light tracking-widest">
                   {service.description}

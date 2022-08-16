@@ -14,11 +14,7 @@ const Projects = ({ images }) => {
           className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16"
           key={key}
         >
-          <GatsbyImage
-            image={images[project.image]}
-            alt={project.image}
-            layout="fullWidth"
-          />
+          <GatsbyImage image={images[project.image]} alt={project.image} />
           <div className="space-y-6 md:space-y-8">
             <Heading type="h2">{project.title}</Heading>
             <div className="space-y-2">

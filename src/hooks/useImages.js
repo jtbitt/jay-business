@@ -19,16 +19,16 @@ export const useImages = () => {
   );
 
   const cleanImages = () => {
-    const newImages = {};
+    const images = {};
 
     [...data.allFile.nodes].forEach((img) => {
-      newImages[img.relativeDirectory] = {
-        ...newImages[img.relativeDirectory],
+      images[img.relativeDirectory] = {
+        ...images[img.relativeDirectory],
         [img.name]: getImage(img.childImageSharp),
       };
     });
 
-    return newImages;
+    return images;
   };
 
   return cleanImages();
