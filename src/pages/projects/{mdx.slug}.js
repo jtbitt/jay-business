@@ -8,7 +8,7 @@ const ProjectPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
 
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
+    <Layout pageTitle={data.mdx.frontmatter.title} className="space-y-10">
       <p>{data.mdx.frontmatter.date}</p>
       <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
       <p>
@@ -34,7 +34,7 @@ export const query = graphql`
         hero_image_credit_text
         hero_image {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
           }
         }
       }

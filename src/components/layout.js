@@ -3,8 +3,10 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Navbar from "./navbar";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, className }) => {
   const [showContent, setShowContent] = useState(true);
+  console.log(pageTitle);
+  console.log(className);
 
   const data = useStaticQuery(graphql`
     query {
@@ -29,7 +31,7 @@ const Layout = ({ pageTitle, children }) => {
       <main
         className={`px-9 lg:px-20 pb-16 mt-[7.25rem] space-y-20 ${
           showContent ? "visible" : "invisible overflow-hidden"
-        }`}
+        } ${className}`}
       >
         {children}
       </main>
