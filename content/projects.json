@@ -5,6 +5,14 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.",
     "tools": "Lorem ipsum, lorem ipsum, lorem.",
     "image": "project",
-    "link": ""
+    "slug": "jay-business"
+  },
+  { 
+    "title": "Project Name", 
+    "subtitle": "Subtitle", 
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.",
+    "tools": "Lorem ipsum, lorem ipsum, lorem.",
+    "image": "project",
+    "slug": "fancylingo"
   }
 ]

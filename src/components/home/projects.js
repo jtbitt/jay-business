@@ -8,17 +8,20 @@ const Projects = ({ images }) => {
   return (
     <section className="space-y-8 md:space-y-10">
       <Heading type="h1">Cool Things I've Built</Heading>
-      {projects.map((project, key) => (
-        <Project
-          image={images[project.image]}
-          alt={project.image}
-          title={project.title}
-          subtitle={project.subtitle}
-          description={project.description}
-          tools={project.tools}
-          key={key}
-        />
-      ))}
+      <div className="space-y-20">
+        {projects.map((project, key) => (
+          <Project
+            image={images[project.image]}
+            alt={project.image}
+            title={project.title}
+            subtitle={project.subtitle}
+            description={project.description}
+            tools={project.tools}
+            slug={project.slug}
+            key={key}
+          />
+        ))}
+      </div>
     </section>
   );
 };
