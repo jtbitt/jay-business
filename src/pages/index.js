@@ -15,7 +15,7 @@ const IndexPage = () => {
   const { start, about, nomad, projects, services, connect } = useImages();
 
   return (
-    <Layout pageTitle="About Me">
+    <Layout pageTitle="About Me" className="mt-0">
       <Start images={start} />
       <About images={about} />
       <Skills />

@@ -4,7 +4,6 @@ import Layout from "../../components/layout";
 import Article from "@components/blog/article";
 
 const BlogPage = ({ data }) => {
-  console.log(data);
   return (
     <Layout pageTitle="My Blog Posts">
       {data.allMdx.nodes.map((node, key) => (
