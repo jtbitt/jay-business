@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Heading from "@components/heading";
+import Description from "@components/description";
 import Button from "@components/button";
 
 const Article = ({ image, alt, title, slug }) => {
@@ -18,11 +19,11 @@ const Article = ({ image, alt, title, slug }) => {
             Lorem ipsum dolor sit amet consectet adipiscing elit iaculis. Lorem
             ipsum.
           </Heading>
-          <p className="text-sm md:text-base font-light tracking-widest">
+          <Description>
             Lorem ipsum dolor sit amet consectet adipiscing elit iaculis. Lorem
             ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
             ipsum dolor sit.
-          </p>
+          </Description>
         </div>
         <div className="text-center md:text-left">
           <Link to={`/blog/${slug}`}>

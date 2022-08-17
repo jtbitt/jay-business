@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Heading from "@components/heading";
+import Description from "@components/description";
 import Button from "@components/button";
 
 const Project = ({ image, alt, title, subtitle, description, tools, slug }) => {
@@ -17,17 +18,13 @@ const Project = ({ image, alt, title, subtitle, description, tools, slug }) => {
           <Heading type="h5" basicFont="true">
             {subtitle}
           </Heading>
-          <p className="text-sm md:text-base font-light tracking-widest">
-            {description}
-          </p>
+          <Description>{description}</Description>
         </div>
         <div className="space-y-2">
           <Heading type="h5" basicFont="true">
             Development Tools
           </Heading>
-          <p className="text-sm md:text-base font-light tracking-widest">
-            {tools}
-          </p>
+          <Description>{tools}</Description>
         </div>
         <div className="text-center md:text-left">
           <Link to={`/projects/${slug}`}>

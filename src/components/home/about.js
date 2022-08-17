@@ -2,6 +2,7 @@ import * as React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import Heading from "@components/heading";
+import Description from "@components/description";
 import Button from "@components/button";
 
 const About = ({ images }) => {
@@ -11,7 +12,7 @@ const About = ({ images }) => {
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
         <GatsbyImage image={images.about} alt="" className="basis-1/2" />
         <div className="basis-1/2 space-y-8">
-          <p className="text-base md:text-lg font-light tracking-wider leading-6 md:leading-6">
+          <Description>
             Travel enthusiast who loves to spend my time in Latin America,
             currently planning a trip to the jungle. Life has been a great
             adventure since I learned to code. When it comes to work, I love
@@ -20,11 +21,11 @@ const About = ({ images }) => {
             into an experienced Front End developer. I feel like I've maximized
             and optimized what I can do in my previous roles and I'm ready to
             dig deeper and gain some new experiences.
-          </p>
-          <p className="text-base md:text-lg font-light tracking-wider leading-6 md:leading-6">
+          </Description>
+          <Description>
             Would love to work on exciting React-based projects and/or with
             experienced developers.
-          </p>
+          </Description>
           <div className="text-center md:text-left">
             <Button name="MY RESUME"></Button>
           </div>
