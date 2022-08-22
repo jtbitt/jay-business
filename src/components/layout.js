@@ -5,8 +5,6 @@ import Navbar from "./navbar";
 
 const Layout = ({ pageTitle, children, className }) => {
   const [showContent, setShowContent] = useState(true);
-  console.log(pageTitle);
-  console.log(className);
 
   const data = useStaticQuery(graphql`
     query {

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 import Heading from "@components/heading";
 import Description from "@components/description";
@@ -9,7 +10,7 @@ import services from "@content/services.json";
 
 const Services = ({ images }) => {
   return (
-    <section className="space-y-8 md:space-y-10">
+    <section className="space-y-8 md:space-y-10" id="services">
       <Heading type="h1">Services</Heading>
       <Description>
         I'm always interested in collaborating on ambitious projects, helping
@@ -29,7 +30,9 @@ const Services = ({ images }) => {
                   ))}
                 </div>
                 <div className="text-center md:text-left">
-                  <Button name="HIRE ME"></Button>
+                  <Link to={service.callToAction.link}>
+                    <Button name={service.callToAction.name}></Button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -9,6 +9,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         "@pages": path.resolve(__dirname, "src/pages"),
         "@images": path.resolve(__dirname, "src/images"),
         "@content": path.resolve(__dirname, "content"),
+        "@downloads": path.resolve(__dirname, "downloads"),
       },
     },
   });

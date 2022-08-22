@@ -12,7 +12,7 @@
     ],
     "callToAction": {
       "name": "HIRE ME",
-      "link": ""
+      "link": "#connect"
     }
   },
   {
@@ -28,7 +28,7 @@
     ],
     "callToAction": {
       "name": "CONTACT ME",
-      "link": ""
+      "link": "#connect"
     }
   },
   {
@@ -44,7 +44,7 @@
     ],
     "callToAction": {
       "name": "GET IT",
-      "link": ""
+      "link": "#connect"
     }
   }
 ]

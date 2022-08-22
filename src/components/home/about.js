@@ -4,10 +4,11 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Heading from "@components/heading";
 import Description from "@components/description";
 import Button from "@components/button";
+import resume from "@downloads/JayBittnerResume.pdf";
 
 const About = ({ images }) => {
   return (
-    <section className="space-y-8 md:space-y-10">
+    <section className="space-y-8 md:space-y-10" id="about">
       <Heading type="h1">About me</Heading>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
         <GatsbyImage image={images.about} alt="" className="basis-1/2" />
@@ -27,7 +28,9 @@ const About = ({ images }) => {
             experienced developers.
           </Description>
           <div className="text-center md:text-left">
-            <Button name="MY RESUME"></Button>
+            <a href={resume} download>
+              <Button name="MY RESUME"></Button>
+            </a>
           </div>
         </div>
       </div>
