@@ -1,7 +1,7 @@
 [
-  { "name": "About me", "url": "/" },
-  { "name": "Cool things I've built", "url": "/" },
-  { "name": "Services", "url": "/" },
-  { "name": "Let's connect", "url": "/" },
-  { "name": "Blog", "url": "/" }
+  { "name": "About me", "url": "/#about" },
+  { "name": "Cool things I've built", "url": "/#projects" },
+  { "name": "Services", "url": "/#services" },
+  { "name": "Let's connect", "url": "/#connect" },
+  { "name": "Blog", "url": "/blog" }
 ]

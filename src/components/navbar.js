@@ -67,6 +67,7 @@ const Navbar = ({ onNavToggle }) => {
                 className={`flex justify-center items-center h-16 ${
                   key % 2 ? "" : "bg-gray-600/20"
                 }`}
+                onClick={toggleNav}
               >
                 <Link to={link.url}>{link.name}</Link>
               </li>
@@ -74,12 +75,18 @@ const Navbar = ({ onNavToggle }) => {
           </ul>
           <div className="flex flex-row justify-center items-center gap-8 h-16">
             {socials.map((social, key) => (
-              <img
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={key}
-                className="h-8 w-8"
-                src={icons[social.name]}
-                alt={social.name}
-              />
+              >
+                <img
+                  className="h-8 w-8"
+                  src={icons[social.name]}
+                  alt={social.name}
+                />
+              </a>
             ))}
           </div>
         </div>

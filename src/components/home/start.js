@@ -31,8 +31,10 @@ const Start = ({ images }) => {
             And I like to build cool things
           </Heading>
           <div className="space-y-10 md:space-y-16">
-            <Button name="CONTACT ME"></Button>
             <Link to="#connect">
+              <Button name="CONTACT ME"></Button>
+            </Link>
+            <Link to="#about">
               <ArrowDownIcon className="h-8 md:h-12 w-8 md:w-12" />
             </Link>
           </div>
