@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Navbar from "./navbar";
+import { Navbar } from "@components";
 
-const Layout = ({ pageTitle, children, className }) => {
+export const Layout = ({ pageTitle, children, className }) => {
   const [showContent, setShowContent] = useState(true);
 
   const data = useStaticQuery(graphql`
@@ -36,5 +36,3 @@ const Layout = ({ pageTitle, children, className }) => {
     </div>
   );
 };
-
-export default Layout;

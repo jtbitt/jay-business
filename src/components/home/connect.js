@@ -1,11 +1,9 @@
 import * as React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import Heading from "@components/heading";
-import Description from "@components/description";
-import Button from "@components/button";
+import { Heading, Description, Button } from "@components";
 
-const Connect = ({ images }) => {
+export const Connect = ({ images }) => {
   return (
     <section className="space-y-12 pt-36" id="connect">
       <Heading type="h1">Let's Connect</Heading>
@@ -19,5 +17,3 @@ const Connect = ({ images }) => {
     </section>
   );
 };
-
-export default Connect;

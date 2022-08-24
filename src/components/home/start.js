@@ -3,10 +3,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { ArrowDownIcon } from "@heroicons/react/solid";
 
-import Heading from "@components/heading";
-import Button from "@components/button";
+import { Heading, Button } from "@components";
 
-const Start = ({ images }) => {
+export const Start = ({ images }) => {
   return (
     <section id="start">
       <div className="flex flex-col justify-center content-start gap-16 h-screen">
@@ -43,5 +42,3 @@ const Start = ({ images }) => {
     </section>
   );
 };
-
-export default Start;

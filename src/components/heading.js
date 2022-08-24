@@ -9,7 +9,7 @@ const elements = {
   h6: { name: "h6", size: "text-base md:text-lg" },
 };
 
-const Heading = ({ type, basicFont, className, children }) => {
+export const Heading = ({ type, basicFont, className, children }) => {
   const Header = `${elements[type].name}`;
   const size = elements[type].size;
   const font = basicFont ? "font-sans" : "font-pt-sans";
@@ -20,5 +20,3 @@ const Heading = ({ type, basicFont, className, children }) => {
     </Header>
   );
 };
-
-export default Heading;

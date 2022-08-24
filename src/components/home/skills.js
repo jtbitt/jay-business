@@ -1,10 +1,9 @@
 import * as React from "react";
 
+import { Heading, Skill } from "@components";
 import skills from "@content/skills.json";
-import Heading from "@components/heading";
-import Skill from "@components/skill";
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <section className="space-y-8 md:space-y-10 pt-36" id="skills">
       <Heading type="h1">Skills</Heading>
@@ -33,5 +32,3 @@ const Skills = () => {
     </section>
   );
 };
-
-export default Skills;

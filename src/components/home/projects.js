@@ -1,10 +1,9 @@
 import * as React from "react";
 
+import { Project, Heading } from "@components";
 import projects from "@content/projects.json";
-import Project from "@components/projects/project";
-import Heading from "@components/heading";
 
-const Projects = ({ images }) => {
+export const Projects = ({ images }) => {
   return (
     <section className="space-y-8 md:space-y-10 pt-36" id="projects">
       <Heading type="h1">Cool Things I've Built</Heading>
@@ -25,5 +24,3 @@ const Projects = ({ images }) => {
     </section>
   );
 };
-
-export default Projects;

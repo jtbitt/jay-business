@@ -2,11 +2,9 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Heading from "@components/heading";
-import Description from "@components/description";
-import Button from "@components/button";
+import { Heading, Description, Button } from "@components";
 
-const Article = ({ image, alt, title, slug }) => {
+export const Article = ({ image, alt, title, slug }) => {
   const img = getImage(image);
 
   return (
@@ -34,5 +32,3 @@ const Article = ({ image, alt, title, slug }) => {
     </article>
   );
 };
-
-export default Article;

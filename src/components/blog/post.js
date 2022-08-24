@@ -2,10 +2,17 @@ import * as React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
-import Heading from "@components/heading";
-import Description from "@components/description";
+import { Heading, Description } from "@components";
 
-const Post = ({ date, title, image, alt, imageLink, imageCredit, body }) => {
+export const Post = ({
+  date,
+  title,
+  image,
+  alt,
+  imageLink,
+  imageCredit,
+  body,
+}) => {
   const img = getImage(image);
 
   return (
@@ -22,5 +29,3 @@ const Post = ({ date, title, image, alt, imageLink, imageCredit, body }) => {
     </div>
   );
 };
-
-export default Post;

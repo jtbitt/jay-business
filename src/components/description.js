@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Description = ({ className, children }) => {
+export const Description = ({ className, children }) => {
   return (
     <p
       className={`text-sm md:text-base font-light tracking-widest ${className}`}
@@ -9,5 +9,3 @@ const Description = ({ className, children }) => {
     </p>
   );
 };
-
-export default Description;

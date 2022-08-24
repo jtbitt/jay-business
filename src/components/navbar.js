@@ -3,13 +3,10 @@ import { Link } from "gatsby";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { StaticImage } from "gatsby-plugin-image";
 
-import { useScroll } from "@hooks/useScroll";
-
+import { useScroll } from "@hooks";
+import { google, github, linkedin } from "@images/social-icons";
 import links from "@content/links.json";
 import socials from "@content/socials.json";
-import google from "@images/social-icons/google.svg";
-import github from "@images/social-icons/github.svg";
-import linkedin from "@images/social-icons/linkedin.svg";
 
 const icons = {
   google: google,
@@ -17,7 +14,8 @@ const icons = {
   linkedin: linkedin,
 };
 
-const Navbar = ({ onNavToggle }) => {
+export const Navbar = ({ onNavToggle }) => {
+  console.log(google);
   const { scrollTop } = useScroll();
   const [menuOpen, setMenuOpen] = useState(false);
   const ref = useRef(null);
@@ -94,5 +92,3 @@ const Navbar = ({ onNavToggle }) => {
     </>
   );
 };
-
-export default Navbar;

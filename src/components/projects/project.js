@@ -2,11 +2,17 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Heading from "@components/heading";
-import Description from "@components/description";
-import Button from "@components/button";
+import { Heading, Description, Button } from "@components";
 
-const Project = ({ image, alt, title, subtitle, description, tools, slug }) => {
+export const Project = ({
+  image,
+  alt,
+  title,
+  subtitle,
+  description,
+  tools,
+  slug,
+}) => {
   const img = getImage(image);
 
   return (
@@ -35,5 +41,3 @@ const Project = ({ image, alt, title, subtitle, description, tools, slug }) => {
     </div>
   );
 };
-
-export default Project;

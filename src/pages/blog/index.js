@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/layout";
-import Article from "@components/blog/article";
+
+import { Layout, Article } from "@components";
 
 const BlogPage = ({ data }) => {
   return (

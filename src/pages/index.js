@@ -1,15 +1,16 @@
 import * as React from "react";
 
-import { useImages } from "@hooks/useImages";
-
-import Layout from "@components/layout";
-import Start from "@components/home/start";
-import About from "@components/home/about";
-import Skills from "@components/home/skills";
-import Nomad from "@components/home/nomad";
-import Projects from "@components/home/projects";
-import Services from "@components/home/services";
-import Connect from "@components/home/connect";
+import { useImages } from "@hooks";
+import {
+  Layout,
+  Start,
+  About,
+  Skills,
+  Nomad,
+  Projects,
+  Services,
+  Connect,
+} from "@components";
 
 const IndexPage = () => {
   const { start, about, nomad, projects, services, connect } = useImages();

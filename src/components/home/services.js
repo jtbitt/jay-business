@@ -2,13 +2,10 @@ import * as React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
-import Heading from "@components/heading";
-import Description from "@components/description";
-import Button from "@components/button";
-import Skill from "@components/skill";
+import { Heading, Description, Button, Skill } from "@components";
 import services from "@content/services.json";
 
-const Services = ({ images }) => {
+export const Services = ({ images }) => {
   return (
     <section className="space-y-8 md:space-y-10 pt-36" id="services">
       <Heading type="h1">Services</Heading>
@@ -42,5 +39,3 @@ const Services = ({ images }) => {
     </section>
   );
 };
-
-export default Services;

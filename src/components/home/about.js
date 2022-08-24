@@ -1,12 +1,10 @@
 import * as React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import Heading from "@components/heading";
-import Description from "@components/description";
-import Button from "@components/button";
+import { Heading, Description, Button } from "@components";
 import resume from "@downloads/JayBittnerResume.pdf";
 
-const About = ({ images }) => {
+export const About = ({ images }) => {
   return (
     <section className="space-y-8 md:space-y-10 pt-36" id="about">
       <Heading type="h1">About me</Heading>
@@ -37,5 +35,3 @@ const About = ({ images }) => {
     </section>
   );
 };
-
-export default About;

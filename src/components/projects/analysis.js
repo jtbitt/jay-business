@@ -2,10 +2,9 @@ import * as React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
-import Heading from "@components/heading";
-import Description from "@components/description";
+import { Heading, Description } from "@components";
 
-const Analysis = ({
+export const Analysis = ({
   date,
   title,
   image,
@@ -30,5 +29,3 @@ const Analysis = ({
     </div>
   );
 };
-
-export default Analysis;
