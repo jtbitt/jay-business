@@ -10,7 +10,7 @@ import services from "@content/services.json";
 
 const Services = ({ images }) => {
   return (
-    <section className="space-y-8 md:space-y-10" id="services">
+    <section className="space-y-8 md:space-y-10 pt-36" id="services">
       <Heading type="h1">Services</Heading>
       <Description>
         I'm always interested in collaborating on ambitious projects, helping

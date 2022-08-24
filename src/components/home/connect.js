@@ -7,7 +7,7 @@ import Button from "@components/button";
 
 const Connect = ({ images }) => {
   return (
-    <section className="space-y-12" id="connect">
+    <section className="space-y-12 pt-36" id="connect">
       <Heading type="h1">Let's Connect</Heading>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="order-1 md:-order-1 text-center md:text-left space-y-12">

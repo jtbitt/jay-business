@@ -8,7 +8,7 @@ import Button from "@components/button";
 
 const Nomad = ({ images }) => {
   return (
-    <section className="space-y-8 md:space-y-10" id="nomad">
+    <section className="space-y-8 md:space-y-10 pt-36" id="nomad">
       <Heading type="h1">Nomad Life</Heading>
       <Description>
         Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem

@@ -38,7 +38,7 @@ const Navbar = ({ onNavToggle }) => {
       {!menuOpen && (
         <nav
           ref={ref}
-          className={`fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] py-7`}
+          className={`fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] py-7 bg-[url('../images/background.webp')] bg-cover`}
         >
           <MenuIcon className="h-12 w-12 md:h-16 md:w-16" onClick={toggleNav} />
         </nav>
