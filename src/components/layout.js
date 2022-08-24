@@ -21,7 +21,7 @@ export const Layout = ({ pageTitle, children, className }) => {
   };
 
   return (
-    <div>
+    <div className="bg-[url('../images/background.webp')] bg-contain bg-left-top">
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
