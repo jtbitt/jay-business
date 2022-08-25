@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { Navbar } from "@components";
 
@@ -21,7 +22,7 @@ export const Layout = ({ pageTitle, children, className }) => {
   };
 
   return (
-    <div className="bg-[url('../images/background.webp')] bg-contain bg-left-top">
+    <div className="text-white">
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
@@ -29,7 +30,7 @@ export const Layout = ({ pageTitle, children, className }) => {
       <main
         className={`px-9 lg:px-20 pb-16 mt-[7.25rem] ${
           showContent ? "visible" : "invisible overflow-hidden"
-        } ${className}`}
+        } ${className} relative`}
       >
         {children}
       </main>

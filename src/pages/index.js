@@ -14,6 +14,7 @@ import {
 
 const IndexPage = () => {
   const { start, about, nomad, projects, services, connect } = useImages();
+  console.log(start);
 
   return (
     <Layout pageTitle="About Me" className="mt-0">
