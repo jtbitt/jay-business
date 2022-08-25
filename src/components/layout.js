@@ -22,7 +22,8 @@ export const Layout = ({ pageTitle, children, className }) => {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-white bg-[url('../images/background.webp')] bg-contain bg-left-top">
+      <img src="../images/background.webp" loading="eager" className="hidden" />
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
@@ -30,7 +31,7 @@ export const Layout = ({ pageTitle, children, className }) => {
       <main
         className={`px-9 lg:px-20 pb-16 mt-[7.25rem] ${
           showContent ? "visible" : "invisible overflow-hidden"
-        } ${className} relative`}
+        } ${className}`}
       >
         {children}
       </main>

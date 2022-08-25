@@ -15,7 +15,6 @@ const icons = {
 };
 
 export const Navbar = ({ onNavToggle }) => {
-  console.log(google);
   const { scrollTop } = useScroll();
   const [menuOpen, setMenuOpen] = useState(false);
   const ref = useRef(null);
