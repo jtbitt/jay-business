@@ -1,8 +1,8 @@
 import * as React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
-import { ArrowDownIcon } from "@heroicons/react/solid";
 
+import { ArrowDownIcon } from "@icons";
 import { Heading, Button } from "@components";
 
 export const Start = ({ images }) => {

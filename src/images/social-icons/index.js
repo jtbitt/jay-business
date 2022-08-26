@@ -1,3 +1,5 @@
-export { default as google } from "./google.svg";
-export { default as github } from "./github.svg";
-export { default as linkedin } from "./linkedin.svg";
+export default {
+  google: require("./google.svg").default,
+  github: require("./github.svg").default,
+  linkedin: require("./linkedin.svg").default,
+};

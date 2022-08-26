@@ -1,17 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { useScroll } from "@hooks";
-import { google, github, linkedin } from "@images/social-icons";
+import { MenuIcon, XIcon, GoogleIcon, GithubIcon, LinkedinIcon } from "@icons";
 import links from "@content/links.json";
 import socials from "@content/socials.json";
 
-const icons = {
-  google: google,
-  github: github,
-  linkedin: linkedin,
+const socialIcons = {
+  google: <GoogleIcon className="h-8 w-8" />,
+  github: <GithubIcon className="h-8 w-8" />,
+  linkedin: <LinkedinIcon className="h-8 w-8" />,
 };
 
 export const Navbar = ({ onNavToggle }) => {
@@ -83,16 +82,11 @@ export const Navbar = ({ onNavToggle }) => {
               rel="noopener noreferrer"
               key={key}
             >
-              <img
-                className="h-8 w-8"
-                src={icons[social.name]}
-                alt={social.name}
-              />
+              {socialIcons[social.name]}
             </a>
           ))}
         </div>
       </div>
-      {/* )} */}
     </>
   );
 };

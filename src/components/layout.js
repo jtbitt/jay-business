@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import { Navbar } from "@components";
 
-export const Layout = ({ pageTitle, children, className }) => {
+export const Layout = ({ pageTitle, children, className = "" }) => {
   const [showContent, setShowContent] = useState(true);
 
   const handleNavToggle = () => {

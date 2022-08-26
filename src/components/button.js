@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const Button = ({ className, name }) => {
+export const Button = ({ className = "", name }) => {
   return (
     <button
       className={`rounded h-9 w-36 md:h-12 md:w-40 bg-white ml-1 mt-3 ${className}`}
