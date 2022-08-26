@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `home-images`,
-        path: `${__dirname}/src/images/home`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     "gatsby-plugin-mdx",

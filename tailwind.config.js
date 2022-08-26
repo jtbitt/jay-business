@@ -9,6 +9,11 @@ module.exports = {
         "pt-sans": ["PT Sans", "sans-serif"],
         sans: ["Roboto", "sans-serif"],
       },
+      backgroundImage: (theme) => ({
+        xs: "url('../images/background/background-xs.webp')",
+        md: "url('../images/background/background-md.webp')",
+        lg: "url('../images/background/background-lg.webp')",
+      }),
     },
   },
   plugins: [],

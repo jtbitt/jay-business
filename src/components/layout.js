@@ -1,31 +1,20 @@
 import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 
 import { Navbar } from "@components";
 
 export const Layout = ({ pageTitle, children, className }) => {
   const [showContent, setShowContent] = useState(true);
 
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   const handleNavToggle = () => {
     setShowContent(!showContent);
   };
 
   return (
-    <div className="text-white bg-[url('../images/background.webp')] bg-contain bg-left-top">
-      <img src="../images/background.webp" loading="eager" className="hidden" />
+    <div className="text-white bg-xs sm:bg-md xl:bg-lg bg-contain">
       <title>
-        {pageTitle} | {data.site.siteMetadata.title}
+        Hello
+        {/* {pageTitle} | {data.site.siteMetadata.title} */}
       </title>
       <Navbar onNavToggle={handleNavToggle} />
       <main

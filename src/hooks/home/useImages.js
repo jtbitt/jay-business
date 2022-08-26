@@ -5,7 +5,7 @@ export const useImages = () => {
   const data = useStaticQuery(
     graphql`
       query ImageQuery {
-        allFile(filter: { sourceInstanceName: { eq: "home-images" } }) {
+        allFile(filter: { relativeDirectory: { regex: "/home/i" } }) {
           nodes {
             name
             relativeDirectory
@@ -22,8 +22,9 @@ export const useImages = () => {
     const images = {};
 
     [...data.allFile.nodes].forEach((img) => {
-      images[img.relativeDirectory] = {
-        ...images[img.relativeDirectory],
+      const relativeDirectory = img.relativeDirectory.replace("home/", "");
+      images[relativeDirectory] = {
+        ...images[relativeDirectory],
         [img.name]: getImage(img),
       };
     });
