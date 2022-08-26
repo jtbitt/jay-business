@@ -10,3 +10,20 @@ body,
   width: 100%;
   overscroll-behavior: none;
 }
+
+body {
+  background-image: url("../images/background/background-xs.webp");
+  background-size: cover;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    background-image: url("../images/background/background-md.webp");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url("../images/background/background-lg.webp");
+  }
+}

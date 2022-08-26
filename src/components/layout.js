@@ -11,7 +11,7 @@ export const Layout = ({ pageTitle, children, className }) => {
   };
 
   return (
-    <div className="text-white bg-xs sm:bg-md xl:bg-lg bg-contain">
+    <div className="text-white  bg-contain">
       <title>
         Hello
         {/* {pageTitle} | {data.site.siteMetadata.title} */}
