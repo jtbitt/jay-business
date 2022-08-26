@@ -11,7 +11,7 @@ export const Layout = ({ pageTitle, children, className }) => {
   };
 
   return (
-    <div className="text-white  bg-contain">
+    <div className="text-white">
       <title>
         Hello
         {/* {pageTitle} | {data.site.siteMetadata.title} */}
@@ -19,7 +19,7 @@ export const Layout = ({ pageTitle, children, className }) => {
       <Navbar onNavToggle={handleNavToggle} />
       <main
         className={`px-9 lg:px-20 pb-16 mt-[7.25rem] ${
-          showContent ? "visible" : "invisible overflow-hidden"
+          showContent ? "visible" : "invisible"
         } ${className}`}
       >
         {children}

@@ -14,5 +14,22 @@ export const useScroll = () => {
     setScrollTop(winScroll);
   };
 
-  return { scrollTop };
+  const disable = () => {
+    document.querySelector("#sidenav").addEventListener("wheel", preventScroll);
+  };
+
+  const enable = () => {
+    document
+      .querySelector("#sidenav")
+      .removeEventListener("wheel", preventScroll);
+  };
+
+  const preventScroll = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    return false;
+  };
+
+  return { scrollTop, enable, disable };
 };
