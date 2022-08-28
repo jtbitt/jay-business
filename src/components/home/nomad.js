@@ -7,7 +7,7 @@ import { Heading, Description, Button } from "@components";
 export const Nomad = ({ images }) => {
   return (
     <section className="space-y-8 md:space-y-10 pt-36" id="nomad">
-      <Heading type="h1">Nomad Life</Heading>
+      <Heading type="h1">Travel</Heading>
       <Description>
         Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
         ipsum dolor sit amet con.
