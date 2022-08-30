@@ -38,7 +38,10 @@ export const Navbar = ({ onNavToggle }) => {
           !menuOpen ? "visible" : "invisible"
         }`}
       >
-        <MenuIcon className="h-12 w-12 md:h-16 md:w-16" onClick={toggleNav} />
+        <MenuIcon
+          className="h-12 w-12 md:h-16 md:w-16 cursor-pointer"
+          onClick={toggleNav}
+        />
       </nav>
       <div
         className={`fixed flex flex-col justify-between items-center py-8 z-20 h-full w-full ${
@@ -47,7 +50,7 @@ export const Navbar = ({ onNavToggle }) => {
         id="sidenav"
       >
         <XIcon
-          className="absolute right-8 lg:right-20 z-30 h-12 w-12 md:h-12 md:w-12"
+          className="absolute right-8 lg:right-20 z-30 h-10 w-10 md:h-12 md:w-12 cursor-pointer"
           onClick={toggleNav}
         />
         <div className="flex flex-col items-center">
@@ -61,11 +64,11 @@ export const Navbar = ({ onNavToggle }) => {
             Front End Developer
           </div>
         </div>
-        <ul className="text-white font-medium text-sm md:text-xl w-full">
+        <ul className="text-white font-medium text-base md:text-xl w-full">
           {links.map((link, key) => (
             <li
               key={key}
-              className={`flex justify-center items-center h-16 ${
+              className={`flex justify-center items-center h-12 md:h-16 ${
                 key % 2 ? "" : "bg-gray-600/20"
               }`}
               onClick={toggleNav}

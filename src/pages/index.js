@@ -12,7 +12,7 @@ import {
   Connect,
 } from "@components";
 
-const IndexPage = () => {
+export const IndexPage = () => {
   const { start, about, nomad, projects, services, connect } = useImages();
 
   return (
