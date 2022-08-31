@@ -28,7 +28,7 @@ export const Start = ({ images }) => {
         </Link>
       </div>
       <div
-        className="grid grid-cols-1 md:grid-cols-3 h-screen pt-8 md:pt-16"
+        className="grid grid-cols-1 md:grid-cols-3 h-screen pt-6 md:pt-16"
         id="start2"
       >
         <GatsbyImage
