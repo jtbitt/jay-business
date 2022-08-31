@@ -11,7 +11,7 @@ export const Start = ({ images }) => {
       <div className="flex flex-col justify-center gap-14 md:gap-16 h-screen">
         <Heading
           type="h1"
-          className="leading-tight md:leading-tight md:w-3/4 mt-8 md:mt-16"
+          className="leading-tight md:leading-tight md:w-3/4 pt-4 md:pt-16"
         >
           <span className="block md:hidden">
             Hi, I'm Jay <br /> Front End <br /> Developer
