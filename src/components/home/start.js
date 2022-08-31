@@ -7,12 +7,9 @@ import { Heading, Button } from "@components";
 
 export const Start = ({ images }) => {
   return (
-    <section id="start">
+    <section id="start" className="md:pt-8">
       <div className="flex flex-col justify-center gap-14 md:gap-16 h-screen">
-        <Heading
-          type="h1"
-          className="leading-tight md:leading-tight md:w-3/4 pt-2 md:pt-16"
-        >
+        <Heading type="h1" className="leading-tight md:leading-tight md:w-3/4">
           <span className="block md:hidden">
             Hi, I'm Jay <br /> Front End <br /> Developer
           </span>
