@@ -39,7 +39,7 @@ export const Navbar = ({ onNavToggle }) => {
         }`}
       >
         <MenuIcon
-          className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20 cursor-pointer"
+          className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20 md:cursor-pointer"
           onClick={toggleNav}
         />
       </nav>
@@ -50,7 +50,7 @@ export const Navbar = ({ onNavToggle }) => {
         id="sidenav"
       >
         <XIcon
-          className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 h-10 w-10 md:h-12 md:w-12 2xl:h-16 2xl:w-16 cursor-pointer"
+          className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 h-10 w-10 md:h-12 md:w-12 2xl:h-16 2xl:w-16 md:cursor-pointer"
           onClick={toggleNav}
         />
         <div className="flex flex-col items-center">
