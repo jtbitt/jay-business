@@ -12,13 +12,10 @@ export const Layout = ({ pageTitle, children, className = "" }) => {
 
   return (
     <div className="text-white">
-      <title>
-        Hello
-        {/* {pageTitle} | {data.site.siteMetadata.title} */}
-      </title>
+      <title>{pageTitle}</title>
       <Navbar onNavToggle={handleNavToggle} />
       <main
-        className={`px-9 lg:px-20 2xl:px-[34rem] pb-16 mt-[7.25rem] ${
+        className={`px-9 lg:px-20 2xl:px-[34rem] pb-16 pt-[7.25rem] ${
           showContent ? "visible" : "invisible"
         } ${className}`}
       >

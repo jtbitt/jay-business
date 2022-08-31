@@ -5,7 +5,7 @@ import { Layout, Article } from "@components";
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout pageTitle="Jay Bittner | Blog" className="space-y-20">
       {data.allMdx.nodes.map((node, key) => (
         <Article
           image={node.frontmatter.hero_image}
