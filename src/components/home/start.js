@@ -17,8 +17,8 @@ export const Start = ({ images }) => {
             Hi, I'm Jay <br /> Front End Developer
           </span>
         </Heading>
-        <Link to="#about">
-          <Button name="ABOUT ME"></Button>
+        <Link to="#services">
+          <Button name="GET STARTED"></Button>
         </Link>
         <Link to="#start2" className="mt-5">
           <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16" />
@@ -46,7 +46,7 @@ export const Start = ({ images }) => {
             <Link to="#connect">
               <Button name="CONTACT ME"></Button>
             </Link>
-            <Link to="#about" className="mt-5">
+            <Link to="#services" className="mt-5">
               <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16" />
             </Link>
           </div>
