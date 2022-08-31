@@ -11,9 +11,14 @@ export const Start = ({ images }) => {
       <div className="flex flex-col justify-center gap-14 md:gap-16 h-screen">
         <Heading
           type="h1"
-          className="leading-tight md:leading-tight md:w-3/4 mt-8 md:mt-16"
+          className="leading-tight md:leading-tight md:w-3/4 mt-10 md:mt-16"
         >
-          Hi, I'm Jay <br /> Front End Developer
+          <span className="block md:hidden">
+            Hi, I'm Jay <br /> Front End <br /> Developer
+          </span>
+          <span className="hidden md:block">
+            Hi, I'm Jay <br /> Front End Developer
+          </span>
         </Heading>
         <Link to="#about">
           <Button name="ABOUT ME"></Button>
