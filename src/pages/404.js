@@ -26,7 +26,8 @@ const NotFoundPage = () => {
         </div>
         <br />
         <Link to="/">
-          Head back to the site by clicking here or using the navigation menu
+          You can get back to the site by clicking on this text or using the
+          navigation menu
         </Link>
       </Description>
     </Layout>
