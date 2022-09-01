@@ -1,4 +1,5 @@
 // global
+export { SEO } from "./seo";
 export { Layout } from "./layout";
 export { Navbar } from "./navbar";
 export { Button } from "./button";
