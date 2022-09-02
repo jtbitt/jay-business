@@ -6,8 +6,10 @@ import {
   Description,
   Button,
   ServiceOption,
+  Faq,
 } from "@components";
 import serviceDetails from "@content/service-details.json";
+import faqs from "@content/faqs.json";
 
 export const ServicesPage = () => {
   return (
@@ -15,11 +17,11 @@ export const ServicesPage = () => {
       <Heading type="h1" className="text-center">
         Elevate your projects
       </Heading>
-      <Heading type="h4" className="text-center px-40">
+      <Description className="md:px-40">
         Stop searching endlessly for a solid contributor, elevate your projects
         with a seasoned Front-End Developer - React, CSS, HTML, and JS done
         right.
-      </Heading>
+      </Description>
       <section className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {serviceDetails.map((service, key) => (
           <ServiceOption {...service} key={key} />
@@ -31,17 +33,10 @@ export const ServicesPage = () => {
       </section>
       <section>
         <Heading type="h1">FAQ</Heading>
-        <div classNAme="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div>
-            <Heading type="h5">
-              Which types of work am I interested in doing when it comes to
-              coding?
-            </Heading>
-            <Description>
-              I'm open to all opportunities whether it's short term contract
-              work
-            </Description>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {faqs.map((faq, key) => (
+            <Faq {...faq} key={key} />
+          ))}
         </div>
       </section>
     </Layout>

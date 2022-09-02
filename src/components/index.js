@@ -18,6 +18,7 @@ export { Connect } from "./home/connect";
 
 // services
 export { ServiceOption } from "./services/serviceoption";
+export { Faq } from "./services/faq";
 
 // blog
 export { Article } from "./blog/article";
