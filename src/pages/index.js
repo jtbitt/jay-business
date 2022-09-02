@@ -17,7 +17,7 @@ export const IndexPage = () => {
   const { start, about, nomad, projects, services, connect } = useImages();
 
   return (
-    <Layout pageTitle="Front End Developer | Jay Bittner" className="pt-0">
+    <Layout className="pt-0">
       <Start images={start} />
       <Services images={services} />
       <Projects images={projects} />

@@ -5,7 +5,7 @@ import { Layout, Analysis } from "@components";
 
 const ProjectPost = ({ data }) => {
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
+    <Layout>
       <Analysis
         date={data.mdx.frontmatter.date}
         title={data.mdx.frontmatter.title}

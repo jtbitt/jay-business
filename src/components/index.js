@@ -16,6 +16,9 @@ export { Projects } from "./home/projects";
 export { Services } from "./home/services";
 export { Connect } from "./home/connect";
 
+// services
+export { ServiceOption } from "./services/serviceoption";
+
 // blog
 export { Article } from "./blog/article";
 export { Post } from "./blog/post";

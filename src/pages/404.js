@@ -5,10 +5,7 @@ import { Link } from "gatsby";
 
 const NotFoundPage = () => {
   return (
-    <Layout
-      pageTitle="404 - Page Not Found"
-      className="flex flex-col items-center h-screen"
-    >
+    <Layout className="flex flex-col items-center h-screen">
       <Heading type="h1" className="text-center">
         404 - Page not found
       </Heading>

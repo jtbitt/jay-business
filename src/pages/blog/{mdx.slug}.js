@@ -5,7 +5,7 @@ import { Layout, Post } from "@components";
 
 const BlogPost = ({ data }) => {
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
+    <Layout>
       <Post
         date={data.mdx.frontmatter.date}
         title={data.mdx.frontmatter.title}

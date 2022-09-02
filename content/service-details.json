@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Coding",
+    "description": "Professional coding services whether on your personal project or joining your company's team to work on something bigger",
+    "price": "$70/h",
+    "highlights": [
+      "Short term work",
+      "Long term work",
+      "Bug fixes",
+      "Feature adds to existing project",
+      "Increase website speed"
+    ],
+    "callToAction": {
+      "name": "GET STARTED",
+      "link": ""
+    }
+  },
+  {
+    "name": "Mentoring",
+    "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
+    "price": "$20/h",
+    "highlights": [
+      "Career Advice",
+      "How to improve",
+      "Best Practices",
+      "Avoid common mistakes"
+    ],
+    "callToAction": {
+      "name": "DO IT",
+      "link": ""
+    }
+  },
+  {
+    "name": "Website for $1k",
+    "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
+    "price": "$1000",
+    "highlights": [
+      "Mobile First",
+      "Advanced Functionality",
+      "Professional Functions",
+      "Design Elements"
+    ],
+    "callToAction": {
+      "name": "LETS BUILD",
+      "link": ""
+    }
+  }
+]

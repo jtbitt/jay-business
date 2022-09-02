@@ -5,7 +5,7 @@ import { Layout, Project } from "@components";
 
 const ProjectsPage = ({ data }) => {
   return (
-    <Layout pageTitle="Jay Bittner | Projects" className="space-y-20">
+    <Layout className="space-y-20">
       {data.allMdx.nodes.map((node, key) => (
         <Project
           image={node.frontmatter.hero_image}
