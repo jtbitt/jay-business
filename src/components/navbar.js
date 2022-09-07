@@ -55,9 +55,10 @@ export const Navbar = ({ onNavToggle }) => {
         />
         <div className="flex flex-col items-center">
           <StaticImage
-            src="../images/logo.webp"
+            src="../images/logo.png"
             alt="logo"
             layout="constrained"
+            quality="100"
             className="w-14 md:w-24"
           />
           <div className="text-md md:text-2xl 2xl:text-3xl mt-5 w-[4.5rem] md:w-56 2xl:w-72">

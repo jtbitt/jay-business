@@ -3,7 +3,7 @@ module.exports = {
     title: `Jay Bittner | Front-End Developer`,
     description: `Stop searching endlessly for a solid contributor, elevate your projects with a seasoned Front-End Developer - React, CSS, HTML, and JS done right.`,
     siteUrl: `https://www.jaybittner.com`,
-    image: `/logo.webp`,
+    image: `/logo.png`,
     twitterUsername: `@jtbitt`,
   },
   plugins: [
@@ -28,6 +28,24 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Jay Bittner | Front-End Developer`,
+        short_name: `Jay Bittner`,
+        description: `Stop searching endlessly for a solid contributor, elevate your projects with a seasoned Front-End Developer - React, CSS, HTML, and JS done right.`,
+        lang: `en`,
+        start_url: `/`,
+        display: `standalone`,
+        icon: `src/images/logo.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/index/`, `/services/`, `/projects/*`, `/blog/*`],
       },
     },
     "gatsby-plugin-mdx",

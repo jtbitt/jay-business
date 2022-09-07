@@ -13,7 +13,7 @@ export const useImages = () => {
               gatsbyImageData(
                 layout: FULL_WIDTH
                 formats: [AUTO, WEBP]
-                quality: 90
+                quality: 100
               )
             }
           }
