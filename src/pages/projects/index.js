@@ -51,5 +51,6 @@ export const Head = () => (
   <Seo
     title="Projects | Jay Bittner"
     description="Check some of my favorite projects I've built with HTML, CSS, Javascript, and React"
+    pathname="/projects"
   />
 );

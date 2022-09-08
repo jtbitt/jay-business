@@ -3,7 +3,7 @@ module.exports = {
     title: `Front-End Developer | Jay Bittner`,
     description: `Stop searching endlessly for a solid contributor, elevate your projects with a seasoned Front-End Developer - React, CSS, HTML, and JS done right.`,
     siteUrl: `https://www.jaybittner.com`,
-    image: `/logo.png`,
+    image: `/logo-square.png`,
     twitterUsername: `@jtbitt`,
   },
   plugins: [
@@ -41,7 +41,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/images/logo.png`,
+        icon: `src/images/logo-square.png`,
       },
     },
     {

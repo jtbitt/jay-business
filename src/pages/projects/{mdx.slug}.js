@@ -45,5 +45,6 @@ export const Head = ({ data }) => (
   <Seo
     title={data.mdx.frontmatter.title + " | Jay Bittner"}
     description={data.mdx.body}
+    pathname={"/projects/" + data.mdx.frontmatter.title}
   />
 );
