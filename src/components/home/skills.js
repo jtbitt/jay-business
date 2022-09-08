@@ -16,7 +16,7 @@ export const Skills = () => {
           <Heading
             type="h3"
             size="text-lg md:text-xl 2xl:text-2xl"
-            basicFont="true"
+            basicFont={true}
             className="tracking-wider"
           >
             Technical Skills
@@ -31,7 +31,7 @@ export const Skills = () => {
           <Heading
             type="h3"
             size="text-lg md:text-xl 2xl:text-2xl"
-            basicFont="true"
+            basicFont={true}
             className="tracking-wider"
           >
             Soft Skills

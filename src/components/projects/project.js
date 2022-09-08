@@ -26,7 +26,7 @@ export const Project = ({
           <Heading
             type="h4"
             size="text-xl md:text-2xl 2xl:text-3xl"
-            basicFont="true"
+            basicFont={true}
           >
             {subtitle}
           </Heading>
@@ -36,7 +36,7 @@ export const Project = ({
           <Heading
             type="h4"
             size="text-xl md:text-2xl 2xl:text-3xl"
-            basicFont="true"
+            basicFont={true}
           >
             Development Tools
           </Heading>

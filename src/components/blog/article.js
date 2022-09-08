@@ -13,7 +13,7 @@ export const Article = ({ image, alt, title, slug }) => {
       <div className="space-y-6 md:space-y-8">
         <Heading type="h2">{title}</Heading>
         <div className="space-y-2">
-          <Heading type="h5" basicFont="true">
+          <Heading type="h5" basicFont={true}>
             Lorem ipsum dolor sit amet consectet adipiscing elit iaculis. Lorem
             ipsum.
           </Heading>
