@@ -12,6 +12,7 @@ import {
   Services,
   Connect,
 } from "@components";
+import logo from "@images/logo.png";
 
 export const IndexPage = () => {
   const { start, about, travel, projects, services, connect } = useImages();
@@ -39,7 +40,8 @@ export const Head = () => (
           "@context": "https://schema.org",
           "@type": "Organization",
           "url": "https://www.jaybittner.com",
-          "name": "Jay Bittner",
+          "brand: "Jay Bittner",
+          "logo": ${logo},
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "jaybittner@gmail.com",
