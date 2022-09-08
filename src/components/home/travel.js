@@ -3,8 +3,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 import { Heading, Description, Button } from "@components";
+import travelImages from "@content/travel";
 
-export const Nomad = ({ images }) => {
+export const Travel = ({ images }) => {
   return (
     <section className="space-y-8 md:space-y-10 pt-36" id="nomad">
       <Heading type="h1">Travel</Heading>
@@ -13,8 +14,10 @@ export const Nomad = ({ images }) => {
         ipsum dolor sit amet con.
       </Description>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {Object.values(images).map((image, key) => {
-          return <GatsbyImage image={image} alt="" key={key} />;
+        {travelImages.map((image, key) => {
+          return (
+            <GatsbyImage image={images[image.name]} alt={image.alt} key={key} />
+          );
         })}
       </div>
       <div className="text-center">

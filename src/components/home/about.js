@@ -9,7 +9,11 @@ export const About = ({ images }) => {
     <section className="space-y-8 md:space-y-10 pt-36" id="about">
       <Heading type="h1">About me</Heading>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
-        <GatsbyImage image={images.about} alt="" className="basis-1/2" />
+        <GatsbyImage
+          image={images.about}
+          alt="Front-End Developer Jay Bittner looking at the camera with a dark background"
+          className="basis-1/2"
+        />
         <div className="basis-1/2 space-y-8">
           <Description>
             Travel enthusiast who loves to spend my time in Latin America,

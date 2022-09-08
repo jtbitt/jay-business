@@ -30,7 +30,7 @@ export const Start = ({ images }) => {
       >
         <GatsbyImage
           image={images.intro}
-          alt=""
+          alt="Front-End Developer Jay Bittner standing and staring at the camera with his own shadow in the background"
           className="row-start-1 col-start-1 md:col-start-3 row-end-auto col-end-auto"
         />
         <div className="grid row-start-1 col-start-1 row-end-auto col-end-auto md:col-end-3 content-around md:content-center md:gap-16 relative">

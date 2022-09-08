@@ -11,7 +11,7 @@ export { Skill } from "./skill";
 export { Start } from "./home/start";
 export { About } from "./home/about";
 export { Skills } from "./home/skills";
-export { Nomad } from "./home/nomad";
+export { Travel } from "./home/travel";
 export { Projects } from "./home/projects";
 export { Services } from "./home/services";
 export { Connect } from "./home/connect";

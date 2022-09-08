@@ -19,6 +19,8 @@ export const SEO = ({ title, description, pathname, children }) => {
     twitterUsername,
   };
 
+  console.log(seo.image);
+
   return (
     <>
       <title>{seo.title}</title>

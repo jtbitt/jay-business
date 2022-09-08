@@ -7,14 +7,14 @@ import {
   Start,
   About,
   Skills,
-  Nomad,
+  Travel,
   Projects,
   Services,
   Connect,
 } from "@components";
 
 export const IndexPage = () => {
-  const { start, about, nomad, projects, services, connect } = useImages();
+  const { start, about, travel, projects, services, connect } = useImages();
 
   return (
     <Layout className="pt-0">
@@ -23,7 +23,7 @@ export const IndexPage = () => {
       <Projects images={projects} />
       <About images={about} />
       <Skills />
-      <Nomad images={nomad} />
+      <Travel images={travel} />
       <Connect images={connect} />
     </Layout>
   );

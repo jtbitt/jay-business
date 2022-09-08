@@ -56,7 +56,7 @@ export const Navbar = ({ onNavToggle }) => {
         <div className="flex flex-col items-center">
           <StaticImage
             src="../images/logo.png"
-            alt="logo"
+            alt="Logo of the Jay Bittner business"
             layout="constrained"
             quality="100"
             className="w-14 md:w-24"
