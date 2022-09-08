@@ -39,7 +39,7 @@ export const Head = () => (
           "@context": "https://schema.org",
           "@type": "Organization",
           "url": "https://www.jaybittner.com",
-          "brand: "Jay Bittner",
+          "brand": "Jay Bittner",
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "jaybittner@gmail.com",
