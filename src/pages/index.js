@@ -31,4 +31,22 @@ export const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <Seo />;
+export const Head = () => (
+  <Seo>
+    <script type="application/ld+json">
+      {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://www.jaybittner.com",
+          "name": "Jay Bittner",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "jaybittner@gmail.com",
+            "contactType": "Customer Support"
+          }
+        }
+      `}
+    </script>
+  </Seo>
+);
