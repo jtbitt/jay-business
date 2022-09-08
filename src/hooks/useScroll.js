@@ -16,12 +16,18 @@ export const useScroll = () => {
 
   const disable = () => {
     document.querySelector("#sidenav").addEventListener("wheel", preventScroll);
+    document
+      .querySelector("#sidenav")
+      .addEventListener("touchmove", preventScroll);
   };
 
   const enable = () => {
     document
       .querySelector("#sidenav")
       .removeEventListener("wheel", preventScroll);
+    document
+      .querySelector("#sidenav")
+      .removeEventListener("touchmove", preventScroll);
   };
 
   const preventScroll = (e) => {
