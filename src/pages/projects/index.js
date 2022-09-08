@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import { Layout, Project } from "@components";
+import { SEO, Layout, Project } from "@components";
 
 const ProjectsPage = ({ data }) => {
   return (
@@ -46,3 +46,10 @@ export const query = graphql`
 `;
 
 export default ProjectsPage;
+
+export const Head = () => (
+  <SEO
+    title="Projects | Jay Bittner"
+    description="Check some of my favorite projects I've built with HTML, CSS, Javascript, and React"
+  />
+);

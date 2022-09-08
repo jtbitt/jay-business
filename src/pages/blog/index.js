@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import { Layout, Article } from "@components";
+import { SEO, Layout, Article } from "@components";
 
 const BlogPage = ({ data }) => {
   return (
@@ -43,3 +43,10 @@ export const query = graphql`
 `;
 
 export default BlogPage;
+
+export const Head = () => (
+  <SEO
+    title="Blog | Jay Bittner"
+    description="Read about the modern Frontend world - I write guides, share insights, and explain some of my experiences"
+  />
+);

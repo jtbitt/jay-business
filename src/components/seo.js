@@ -19,7 +19,7 @@ export const SEO = ({ title, description, pathname, children }) => {
     twitterUsername,
   };
 
-  console.log(seo.image);
+  console.log(seo.url);
 
   return (
     <>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import { Layout, Analysis } from "@components";
+import { SEO, Layout, Analysis } from "@components";
 
 const ProjectPost = ({ data }) => {
   return (
@@ -40,3 +40,10 @@ export const query = graphql`
 `;
 
 export default ProjectPost;
+
+export const Head = ({ data }) => (
+  <SEO
+    title={data.mdx.frontmatter.title + " | Jay Bittner"}
+    description={data.mdx.body}
+  />
+);

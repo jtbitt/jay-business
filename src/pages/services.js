@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import {
+  SEO,
   Layout,
   Heading,
   Description,
-  Button,
   ServiceOption,
   Faq,
 } from "@components";
@@ -44,3 +44,10 @@ export const ServicesPage = () => {
 };
 
 export default ServicesPage;
+
+export const Head = () => (
+  <SEO
+    title="Services | Jay Bittner"
+    description="Elevate your projects with a seasoned Front-End Developer"
+  />
+);

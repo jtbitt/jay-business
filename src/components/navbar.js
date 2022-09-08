@@ -40,7 +40,7 @@ export const Navbar = ({ onNavToggle }) => {
       >
         <button
           onClick={toggleNav}
-          onKeyboardDown={toggleNav}
+          onKeyDown={toggleNav}
           aria-label="Open Side Navigation"
           className="md:cursor-pointer"
         >
@@ -55,20 +55,22 @@ export const Navbar = ({ onNavToggle }) => {
       >
         <button
           onClick={toggleNav}
-          onKeyboardDown={toggleNav}
+          onKeyDown={toggleNav}
           aria-label="Close Side Navigation"
           className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 md:cursor-pointer"
         >
           <XIcon className="h-10 w-10 md:h-12 md:w-12 2xl:h-16 2xl:w-16" />
         </button>
         <div className="flex flex-col items-center">
-          <StaticImage
-            src="../images/logo.png"
-            alt="Logo of the Jay Bittner business"
-            layout="constrained"
-            quality="100"
-            className="w-14 md:w-24"
-          />
+          <Link to="/" aria-label="Go to homepage">
+            <StaticImage
+              src="../images/logo.png"
+              alt="Logo of the Jay Bittner business"
+              layout="constrained"
+              quality="100"
+              className="w-14 md:w-24"
+            />
+          </Link>
           <div className="text-md md:text-2xl 2xl:text-3xl mt-5 w-[4.5rem] md:w-56 2xl:w-72">
             Front End Developer
           </div>

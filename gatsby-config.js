@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jay Bittner | Front-End Developer`,
+    title: `Front-End Developer | Jay Bittner`,
     description: `Stop searching endlessly for a solid contributor, elevate your projects with a seasoned Front-End Developer - React, CSS, HTML, and JS done right.`,
     siteUrl: `https://www.jaybittner.com`,
     image: `/logo.png`,

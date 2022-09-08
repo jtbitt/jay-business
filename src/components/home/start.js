@@ -7,7 +7,7 @@ import { Heading, Button } from "@components";
 
 export const Start = ({ images }) => {
   return (
-    <section id="start" className="md:pt-8" aria-label="Start">
+    <section id="start" className="mt-4 md:-mt-24" aria-label="Start">
       <div className="flex flex-col justify-center gap-14 md:gap-16 h-screen">
         <Heading
           type="h1"

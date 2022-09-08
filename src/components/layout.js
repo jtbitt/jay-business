@@ -13,7 +13,7 @@ export const Layout = ({ children, className = "" }) => {
     <div className="text-white">
       <Navbar onNavToggle={handleNavToggle} />
       <main
-        className={`px-9 lg:px-20 2xl:px-[34rem] pb-16 pt-[7.25rem] ${
+        className={`px-9 lg:px-20 2xl:px-[34rem] pb-16 md:pt-[7.5rem] ${
           showContent ? "visible" : "invisible"
         } ${className}`}
       >
