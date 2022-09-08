@@ -10,9 +10,9 @@ export const Travel = ({ images }) => {
     <section
       className="space-y-8 md:space-y-10 pt-36"
       id="travel"
-      aria-label="travel"
+      aria-label="Travel"
     >
-      <Heading type="h1">Travel</Heading>
+      <Heading type="h2">Travel</Heading>
       <Description>
         Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
         ipsum dolor sit amet con.

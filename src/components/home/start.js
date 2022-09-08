@@ -7,9 +7,13 @@ import { Heading, Button } from "@components";
 
 export const Start = ({ images }) => {
   return (
-    <section id="start" className="md:pt-8" aria-label="start">
+    <section id="start" className="md:pt-8" aria-label="Start">
       <div className="flex flex-col justify-center gap-14 md:gap-16 h-screen">
-        <Heading type="h1" className="leading-tight md:leading-tight md:w-3/4">
+        <Heading
+          type="h1"
+          size="text-4xl md:text-5.5xl 2xl:text-6xl"
+          className="leading-tight md:leading-tight md:w-3/4"
+        >
           <span className="block md:hidden">
             Hi, I'm Jay <br /> Front End <br /> Developer
           </span>
@@ -34,7 +38,7 @@ export const Start = ({ images }) => {
           className="row-start-1 col-start-1 md:col-start-3 row-end-auto col-end-auto"
         />
         <div className="grid row-start-1 col-start-1 row-end-auto col-end-auto md:col-end-3 content-around md:content-center md:gap-16 relative">
-          <Heading type="h1" className="leading-tight md:leading-tight">
+          <Heading type="h2" className="leading-tight md:leading-tight">
             <span className="block md:hidden">
               And I like to build cool things
             </span>

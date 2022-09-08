@@ -8,9 +8,9 @@ export const Skills = () => {
     <section
       className="space-y-8 md:space-y-10 pt-36"
       id="skills"
-      aria-label="skills"
+      aria-label="Skills"
     >
-      <Heading type="h1">Skills</Heading>
+      <Heading type="h2">Skills</Heading>
       <div className="flex flex-col xl:flex-row gap-16">
         <div className="basis-full xl:basis-3/5 space-y-10 md:space-y-12">
           <Heading type="h6" basicFont="true" className="tracking-wider">

@@ -10,9 +10,9 @@ export const Services = ({ images }) => {
     <section
       className="space-y-8 md:space-y-10 pt-36"
       id="services"
-      aria-label="services"
+      aria-label="Services"
     >
-      <Heading type="h1">Services</Heading>
+      <Heading type="h2">Services</Heading>
       <Description>
         I'm always interested in collaborating on ambitious projects, helping
         other developers, and consulting with tech companies and startups.
@@ -20,7 +20,9 @@ export const Services = ({ images }) => {
       <div className="space-y-20">
         {services.map((service, key) => (
           <div className="space-y-8 md:space-y-10" key={key}>
-            <Heading type="h1">{service.name}</Heading>
+            <Heading type="h3" size="text-4xl md:text-5.5xl 2xl:text-6xl">
+              {service.name}
+            </Heading>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
               <GatsbyImage image={images[service.image]} alt={service.alt} />
               <div className="space-y-8">

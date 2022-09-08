@@ -9,9 +9,9 @@ export const About = ({ images }) => {
     <section
       className="space-y-8 md:space-y-10 pt-36"
       id="about"
-      aria-label="about"
+      aria-label="About"
     >
-      <Heading type="h1">About me</Heading>
+      <Heading type="h2">About me</Heading>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
         <GatsbyImage
           image={images.about}
@@ -34,7 +34,7 @@ export const About = ({ images }) => {
             experienced developers.
           </Description>
           <div className="text-center md:text-left">
-            <a href={resume} download>
+            <a href={resume} aria-label="Download Resume" download>
               <Button name="MY RESUME"></Button>
             </a>
           </div>
