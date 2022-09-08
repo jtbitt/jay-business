@@ -8,7 +8,6 @@ export const useSiteMetadata = () => {
           title
           description
           twitterUsername
-          image
           siteUrl
         }
       }
