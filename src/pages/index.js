@@ -41,7 +41,7 @@ export const Head = () => (
           "@type": "Organization",
           "url": "https://www.jaybittner.com",
           "brand: "Jay Bittner",
-          "logo": ${logo},
+          "logo": "${logo}",
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "jaybittner@gmail.com",
