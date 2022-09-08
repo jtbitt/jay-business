@@ -44,7 +44,7 @@ export const Navbar = ({ onNavToggle }) => {
             if (e.key !== "Tab") toggleNav();
           }}
           aria-label="Open Side Navigation"
-          className="md:cursor-pointer"
+          className="cursor-default md:cursor-pointer"
         >
           <MenuIcon className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20" />
         </button>
@@ -61,12 +61,19 @@ export const Navbar = ({ onNavToggle }) => {
             if (e.key !== "Tab") toggleNav();
           }}
           aria-label="Close Side Navigation"
-          className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 md:cursor-pointer"
+          className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 cursor-default md:cursor-pointer"
         >
           <XIcon className="h-10 w-10 md:h-12 md:w-12 2xl:h-16 2xl:w-16" />
         </button>
         <div className="flex flex-col items-center">
-          <Link to="/" aria-label="Go to homepage">
+          <Link
+            to="/"
+            aria-label="Go to homepage"
+            onClick={toggleNav}
+            onKeyDown={(e) => {
+              if (e.key !== "Tab") toggleNav();
+            }}
+          >
             <StaticImage
               src="../images/logo.png"
               alt="Logo of the Jay Bittner business"
