@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import {
-  SEO,
+  Seo,
   Layout,
   Heading,
   Description,
@@ -46,7 +46,7 @@ export const ServicesPage = () => {
 export default ServicesPage;
 
 export const Head = () => (
-  <SEO
+  <Seo
     title="Services | Jay Bittner"
     description="Elevate your projects with a seasoned Front-End Developer"
   />

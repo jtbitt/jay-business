@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { useImages } from "@hooks";
 import {
-  SEO,
+  Seo,
   Layout,
   Start,
   About,
@@ -31,4 +31,4 @@ export const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <SEO />;
+export const Head = () => <Seo />;

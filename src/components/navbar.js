@@ -83,6 +83,7 @@ export const Navbar = ({ onNavToggle }) => {
                 key % 2 ? "" : "bg-gray-600/20"
               }`}
               onClick={toggleNav}
+              onKeyDown={toggleNav}
             >
               <Link to={link.url}>{link.name}</Link>
             </li>
