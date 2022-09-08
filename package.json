@@ -1,8 +1,10 @@
 {
   "name": "jay-business",
   "version": "1.0.0",
+  "description": "Business website of Jay Bittner",
+  "repository": "https://github.com/jtbitt/jay-business.git",
+  "author": "Jay Bittner <jaybittner@gmail.com>",
   "private": true,
-  "description": "jay-business",
   "keywords": [
     "gatsby"
   ],
