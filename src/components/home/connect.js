@@ -5,7 +5,7 @@ import { Heading, Description, Button } from "@components";
 
 export const Connect = ({ images }) => {
   return (
-    <section className="space-y-12 pt-36" id="connect">
+    <section className="space-y-12 pt-36" id="connect" aria-label="connect">
       <Heading type="h1">Let's Connect</Heading>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <GatsbyImage

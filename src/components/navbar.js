@@ -31,17 +31,21 @@ export const Navbar = ({ onNavToggle }) => {
   };
 
   return (
-    <nav>
+    <nav aria-label="Main">
       <div
         ref={ref}
         className={`fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] 2xl:px-[33.5rem] py-7 bg-xs sm:bg-md 2xl:bg-lg bg-cover border-transparent ${
           !menuOpen ? "visible" : "invisible"
         }`}
       >
-        <MenuIcon
-          className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20 md:cursor-pointer"
+        <button
           onClick={toggleNav}
-        />
+          onKeyboardDown={toggleNav}
+          aria-label="Open Side Navigation"
+          className="md:cursor-pointer"
+        >
+          <MenuIcon className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20" />
+        </button>
       </div>
       <div
         className={`fixed flex flex-col justify-between items-center py-8 2xl:py-20 z-20 h-full w-full 2xl:px-[34.5rem] ${
@@ -49,10 +53,14 @@ export const Navbar = ({ onNavToggle }) => {
         }`}
         id="sidenav"
       >
-        <XIcon
-          className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 h-10 w-10 md:h-12 md:w-12 2xl:h-16 2xl:w-16 md:cursor-pointer"
+        <button
           onClick={toggleNav}
-        />
+          onKeyboardDown={toggleNav}
+          aria-label="Close Side Navigation"
+          className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 md:cursor-pointer"
+        >
+          <XIcon className="h-10 w-10 md:h-12 md:w-12 2xl:h-16 2xl:w-16" />
+        </button>
         <div className="flex flex-col items-center">
           <StaticImage
             src="../images/logo.png"

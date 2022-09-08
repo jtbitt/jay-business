@@ -7,7 +7,7 @@ import { Heading, Button } from "@components";
 
 export const Start = ({ images }) => {
   return (
-    <section id="start" className="md:pt-8">
+    <section id="start" className="md:pt-8" aria-label="start">
       <div className="flex flex-col justify-center gap-14 md:gap-16 h-screen">
         <Heading type="h1" className="leading-tight md:leading-tight md:w-3/4">
           <span className="block md:hidden">
@@ -20,7 +20,7 @@ export const Start = ({ images }) => {
         <Link to="#services">
           <Button name="GET STARTED"></Button>
         </Link>
-        <Link to="#start2" className="mt-5">
+        <Link to="#start2" className="mt-5" aria-label="Go to next section">
           <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16" />
         </Link>
       </div>
@@ -46,7 +46,11 @@ export const Start = ({ images }) => {
             <Link to="#connect">
               <Button name="CONTACT ME"></Button>
             </Link>
-            <Link to="#services" className="mt-5">
+            <Link
+              to="#services"
+              className="mt-5"
+              aria-label="Go to next section"
+            >
               <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16" />
             </Link>
           </div>

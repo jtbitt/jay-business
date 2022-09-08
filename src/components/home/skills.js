@@ -5,7 +5,11 @@ import skills from "@content/skills.json";
 
 export const Skills = () => {
   return (
-    <section className="space-y-8 md:space-y-10 pt-36" id="skills">
+    <section
+      className="space-y-8 md:space-y-10 pt-36"
+      id="skills"
+      aria-label="skills"
+    >
       <Heading type="h1">Skills</Heading>
       <div className="flex flex-col xl:flex-row gap-16">
         <div className="basis-full xl:basis-3/5 space-y-10 md:space-y-12">

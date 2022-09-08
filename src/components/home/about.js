@@ -6,7 +6,11 @@ import resume from "@downloads/JayBittnerResume.pdf";
 
 export const About = ({ images }) => {
   return (
-    <section className="space-y-8 md:space-y-10 pt-36" id="about">
+    <section
+      className="space-y-8 md:space-y-10 pt-36"
+      id="about"
+      aria-label="about"
+    >
       <Heading type="h1">About me</Heading>
       <div className="flex flex-col sm:flex-row justify-between content-start gap-8 md:gap-16">
         <GatsbyImage

@@ -7,7 +7,11 @@ import travelImages from "@content/travel";
 
 export const Travel = ({ images }) => {
   return (
-    <section className="space-y-8 md:space-y-10 pt-36" id="nomad">
+    <section
+      className="space-y-8 md:space-y-10 pt-36"
+      id="travel"
+      aria-label="travel"
+    >
       <Heading type="h1">Travel</Heading>
       <Description>
         Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
