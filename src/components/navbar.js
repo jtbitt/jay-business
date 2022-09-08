@@ -40,7 +40,9 @@ export const Navbar = ({ onNavToggle }) => {
       >
         <button
           onClick={toggleNav}
-          onKeyDown={toggleNav}
+          onKeyDown={(e) => {
+            if (e.key !== "Tab") toggleNav();
+          }}
           aria-label="Open Side Navigation"
           className="md:cursor-pointer"
         >
@@ -55,7 +57,9 @@ export const Navbar = ({ onNavToggle }) => {
       >
         <button
           onClick={toggleNav}
-          onKeyDown={toggleNav}
+          onKeyDown={(e) => {
+            if (e.key !== "Tab") toggleNav();
+          }}
           aria-label="Close Side Navigation"
           className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 md:cursor-pointer"
         >
@@ -83,7 +87,9 @@ export const Navbar = ({ onNavToggle }) => {
                 key % 2 ? "" : "bg-gray-600/20"
               }`}
               onClick={toggleNav}
-              onKeyDown={toggleNav}
+              onKeyDown={(e) => {
+                if (e.key !== "Tab") toggleNav();
+              }}
             >
               <Link to={link.url}>{link.name}</Link>
             </li>
