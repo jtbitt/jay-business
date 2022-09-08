@@ -13,7 +13,12 @@ export const Skills = () => {
       <Heading type="h2">Skills</Heading>
       <div className="flex flex-col xl:flex-row gap-16">
         <div className="basis-full xl:basis-3/5 space-y-10 md:space-y-12">
-          <Heading type="h6" basicFont="true" className="tracking-wider">
+          <Heading
+            type="h3"
+            size="text-lg md:text-xl 2xl:text-2xl"
+            basicFont="true"
+            className="tracking-wider"
+          >
             Technical Skills
           </Heading>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 gap-6">
@@ -23,7 +28,12 @@ export const Skills = () => {
           </div>
         </div>
         <div className="basis-full xl:basis-2/5 space-y-10 md:space-y-12">
-          <Heading type="h6" basicFont="true" className="tracking-wider">
+          <Heading
+            type="h3"
+            size="text-lg md:text-xl 2xl:text-2xl"
+            basicFont="true"
+            className="tracking-wider"
+          >
             Soft Skills
           </Heading>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-2 place-content-start gap-6">
