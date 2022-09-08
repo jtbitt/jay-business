@@ -73,6 +73,7 @@ export const Navbar = ({ onNavToggle }) => {
             onKeyDown={(e) => {
               if (e.key !== "Tab") toggleNav();
             }}
+            activeClassName="cursor-default"
           >
             <StaticImage
               src="../images/logo.png"
@@ -98,7 +99,9 @@ export const Navbar = ({ onNavToggle }) => {
                 if (e.key !== "Tab") toggleNav();
               }}
             >
-              <Link to={link.url}>{link.name}</Link>
+              <Link to={link.url} activeClassName="cursor-default">
+                {link.name}
+              </Link>
             </li>
           ))}
         </ul>
