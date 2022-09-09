@@ -39,3 +39,9 @@ const NotFoundPage = () => {
 };
 
 export default NotFoundPage;
+
+export const Head = () => (
+  <>
+    <title>404 | Jay Bittner</title>
+  </>
+);
