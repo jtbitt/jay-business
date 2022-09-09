@@ -1,6 +1,6 @@
 export { Seo } from "./Seo";
 export { Layout } from "./Layout";
-export { Navbar } from "./Navbar";
+export { Navbar } from "./navbar";
 export { Button } from "./Button";
 export { Heading } from "./Heading";
 export { Description } from "./Description";

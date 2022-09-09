@@ -9,8 +9,8 @@ export const Layout = ({
   className = "",
 }) => {
   const [showContent, setShowContent] = useState(true);
-  const px = paddingHorizontal ? "px-9 lg:px-20 2xl:px-[34rem]" : "";
-  const pt = paddingTop ? "pt-24 md:pt-32" : "";
+  const px = paddingHorizontal ? "px-9 lg:px-20 2xl:px-[34rem]" : "px-0";
+  const pt = paddingTop ? "pt-24 md:pt-32" : "pt-0";
 
   const handleNavToggle = () => {
     setShowContent(!showContent);
@@ -20,7 +20,7 @@ export const Layout = ({
     <div className="text-white">
       <Navbar onNavToggle={handleNavToggle} />
       <main
-        className={`${px} ${pt} ${
+        className={`${px} ${pt} pb-16 ${
           showContent ? "visible" : "invisible"
         } ${className}`}
       >
