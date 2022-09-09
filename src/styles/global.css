@@ -16,7 +16,8 @@ body {
   background-size: contain;
 }
 
-a {
+a,
+button {
   cursor: default;
 }
 
@@ -32,7 +33,8 @@ a {
     background-size: cover;
   }
 
-  a {
+  a,
+  button {
     cursor: pointer;
   }
 }

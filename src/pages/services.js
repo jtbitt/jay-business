@@ -8,7 +8,7 @@ import {
   ServiceOption,
   Faq,
 } from "@components";
-import serviceDetails from "@content/service-details.json";
+import services from "@content/services.json";
 import faqs from "@content/faqs.json";
 
 export const ServicesPage = () => {
@@ -23,7 +23,7 @@ export const ServicesPage = () => {
         right.
       </Description>
       <section className="grid grid-cols-1 md:grid-cols-3 gap-10">
-        {serviceDetails.map((service, key) => (
+        {services.map((service, key) => (
           <ServiceOption {...service} key={key} />
         ))}
       </section>

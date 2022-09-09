@@ -28,7 +28,6 @@ export const NavClosed = ({ onNavOpen, visible }) => {
           if (e.key !== "Tab") openNav();
         }}
         aria-label="Open Side Navigation"
-        className="cursor-default md:cursor-pointer"
       >
         <MenuIcon className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20" />
       </button>

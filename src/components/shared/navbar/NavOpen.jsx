@@ -28,7 +28,7 @@ export const NavOpen = ({ onNavClose, visible }) => {
           if (e.key !== "Tab") closeNav();
         }}
         aria-label="Close Side Navigation"
-        className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30 cursor-default md:cursor-pointer"
+        className="absolute right-8 lg:right-20 2xl:right-[34rem] z-30"
       >
         <XIcon className="h-10 w-10 md:h-12 md:w-12 2xl:h-16 2xl:w-16" />
       </button>

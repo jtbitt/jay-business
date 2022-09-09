@@ -3,22 +3,35 @@
     "name": "Coding",
     "alt": "several lines of code",
     "image": "coding",
-    "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
+    "price": "$70/h",
+    "description": "Professional coding services whether on your personal project or joining your company's team to work on something bigger",
     "skills": [
       "Front End",
       "Productivity Improvement",
       "Automated Integration",
       "Performance Testing Tools"
     ],
+    "highlights": [
+      "Short term work",
+      "Long term work",
+      "Bug fixes",
+      "Feature adds to existing project",
+      "Increase website speed"
+    ],
     "callToAction": {
       "name": "HIRE ME",
-      "link": "#connect"
+      "link": "/services"
+    },
+    "salesAction": {
+      "name": "GET STARTED",
+      "link": ""
     }
   },
   {
     "name": "Mentoring",
     "alt": "person talking with mentor on a video call",
     "image": "mentoring",
+    "price": "$20/h",
     "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
     "skills": [
       "Career Advice",
@@ -26,15 +39,26 @@
       "Best Practices",
       "Avoid common mistakes"
     ],
+    "highlights": [
+      "Career Advice",
+      "How to improve",
+      "Best Practices",
+      "Avoid common mistakes"
+    ],
     "callToAction": {
       "name": "CONTACT ME",
-      "link": "#connect"
+      "link": "/services"
+    },
+    "salesAction": {
+      "name": "DO IT",
+      "link": ""
     }
   },
   {
     "name": "Website for $1k",
     "alt": "monitor showing a brand new site on the home page",
     "image": "1kwebpage",
+    "price": "$1000",
     "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
     "skills": [
       "Mobile First",
@@ -42,9 +66,19 @@
       "Professional Functions",
       "Design Elements"
     ],
+    "highlights": [
+      "Mobile First",
+      "Advanced Functionality",
+      "Professional Functions",
+      "Design Elements"
+    ],
     "callToAction": {
       "name": "GET IT",
-      "link": "#connect"
+      "link": "/services"
+    },
+    "salesAction": {
+      "name": "LETS BUILD",
+      "link": ""
     }
   }
 ]
