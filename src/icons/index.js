@@ -1,9 +1,9 @@
 // socials
-export { GoogleIcon } from "./google";
-export { GithubIcon } from "./github";
-export { LinkedinIcon } from "./linkedin";
+export { GoogleIcon } from "./Google";
+export { GithubIcon } from "./Github";
+export { LinkedinIcon } from "./Linkedin";
 
 // normal
-export { MenuIcon } from "./menu";
-export { XIcon } from "./x";
-export { ArrowDownIcon } from "./arrow-down";
+export { MenuIcon } from "./Menu";
+export { XIcon } from "./X";
+export { ArrowDownIcon } from "./ArrowDown";

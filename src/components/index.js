@@ -1,29 +1,30 @@
 // global
-export { Seo } from "./seo";
-export { Layout } from "./layout";
-export { Navbar } from "./navbar";
-export { Button } from "./button";
-export { Heading } from "./heading";
-export { Description } from "./description";
-export { Skill } from "./skill";
+export {
+  Seo,
+  Layout,
+  Navbar,
+  Button,
+  Heading,
+  Description,
+  Skill,
+} from "./shared";
 
 // home
-export { Start } from "./home/start";
-export { About } from "./home/about";
-export { Skills } from "./home/skills";
-export { Travel } from "./home/travel";
-export { Projects } from "./home/projects";
-export { Services } from "./home/services";
-export { Connect } from "./home/connect";
+export {
+  Start,
+  About,
+  Skills,
+  Travel,
+  Projects,
+  Services,
+  Connect,
+} from "./home/";
 
 // services
-export { ServiceOption } from "./services/serviceoption";
-export { Faq } from "./services/faq";
+export { ServiceOption, Faq } from "./services";
 
 // blog
-export { Article } from "./blog/article";
-export { Post } from "./blog/post";
+export { Article, Post } from "./blog";
 
 // projects
-export { Project } from "./projects/project";
-export { Analysis } from "./projects/analysis";
+export { Project, Analysis } from "./projects";

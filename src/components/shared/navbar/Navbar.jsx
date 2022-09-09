@@ -5,11 +5,11 @@ import { NavClosed } from "./NavClosed";
 import { NavOpen } from "./NavOpen";
 
 export const Navbar = ({ onNavToggle }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
   const { enable, disable } = useScroll();
 
   const handleNavToggle = (toggle) => {
-    setMenuOpen(toggle);
+    setNavOpen(toggle);
     onNavToggle();
     toggle ? enable() : disable();
   };
@@ -18,11 +18,11 @@ export const Navbar = ({ onNavToggle }) => {
     <nav>
       <NavClosed
         onNavOpen={handleNavToggle}
-        visible={menuOpen ? "invisible" : "visible"}
+        visible={navOpen ? "invisible" : "visible"}
       />
       <NavOpen
         onNavClose={handleNavToggle}
-        visible={menuOpen ? "visible" : "invisible"}
+        visible={navOpen ? "visible" : "invisible"}
       />
     </nav>
   );
