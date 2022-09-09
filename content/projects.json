@@ -5,6 +5,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.",
     "tools": "Lorem ipsum, lorem ipsum, lorem.",
     "image": "project",
+    "alt": "A view of the cold brew process",
     "slug": "jay-business"
   },
   { 
@@ -13,6 +14,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.",
     "tools": "Lorem ipsum, lorem ipsum, lorem.",
     "image": "project",
+    "alt": "A view of the cold brew process",
     "slug": "fancylingo"
   }
 ]

@@ -42,7 +42,7 @@ export const NavOpen = ({ onNavClose, visible }) => {
           }}
         >
           <StaticImage
-            src="../images/logo.png"
+            src="../../../images/logo.png"
             alt="Logo of the Jay Bittner business"
             layout="constrained"
             quality="100"

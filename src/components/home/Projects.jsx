@@ -13,16 +13,7 @@ export const Projects = ({ images }) => {
       <Heading type="h2">Cool Things I've Built</Heading>
       <div className="space-y-20">
         {projects.map((project, key) => (
-          <Project
-            image={images[project.image]}
-            alt={project.image}
-            title={project.title}
-            subtitle={project.subtitle}
-            description={project.description}
-            tools={project.tools}
-            slug={project.slug}
-            key={key}
-          />
+          <Project {...project} image={images[project.image]} key={key} />
         ))}
       </div>
     </section>
