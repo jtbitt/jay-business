@@ -34,6 +34,8 @@ export default IndexPage;
 
 export const Head = () => (
   <Seo>
-    <script type="application/ld+json">{richResults.index}</script>
+    <script type="application/ld+json">
+      {JSON.stringify(richResults.index)}
+    </script>
   </Seo>
 );
