@@ -1,13 +1,13 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
 import { Layout, Heading, Description } from "@components";
-import { Link } from "gatsby";
 import options from "@content/404.json";
 
 const NotFoundPage = () => {
   return (
-    <Layout>
-      <div className="flex flex-col h-screen px-4 md:px-20 xl:px-40 space-y-6">
+    <Layout paddingHorizontal={false}>
+      <div className="flex flex-col px-10 md:px-20 xl:px-60 space-y-6">
         <Heading
           type="h1"
           size="text-4xl md:text-5.5xl 2xl:text-6xl"
