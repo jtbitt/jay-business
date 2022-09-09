@@ -60,12 +60,16 @@ export const NavOpen = ({ onNavClose, visible }) => {
             className={`flex justify-center items-center h-16 2xl:h-20 ${
               key % 2 ? "" : "bg-gray-600/20"
             }`}
-            onClick={closeNav}
-            onKeyDown={(e) => {
-              if (e.key !== "Tab") closeNav();
-            }}
           >
-            <Link to={link.url}>{link.name}</Link>
+            <Link 
+              to={link.url} 
+              onClick={closeNav}
+              onKeyDown={(e) => {
+                if (e.key !== "Tab") closeNav();
+              }}
+            >
+              {link.name}
+            </Link>
           </li>
         ))}
       </ul>

@@ -11,7 +11,7 @@ import {
 import services from "@content/services.json";
 import faqs from "@content/faqs.json";
 
-export const ServicesPage = () => {
+const ServicesPage = () => {
   return (
     <Layout className="space-y-8">
       <Heading type="h1" className="text-center">
