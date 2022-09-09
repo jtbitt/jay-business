@@ -31,4 +31,8 @@ a {
     background-image: url("../images/background/background-lg.webp");
     background-size: cover;
   }
+
+  a {
+    cursor: pointer;
+  }
 }

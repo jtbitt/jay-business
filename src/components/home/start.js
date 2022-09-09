@@ -14,10 +14,8 @@ export const Start = ({ images }) => {
           size="text-4xl md:text-5.5xl 2xl:text-6xl"
           className="leading-tight md:leading-tight md:w-3/4"
         >
-          <span>
-            Hi, I'm Jay <br /> Front End <br className="block md:hidden" />{" "}
-            Developer
-          </span>
+          Hi, I'm Jay <br /> Front End <br className="block md:hidden" />{" "}
+          Developer
         </Heading>
         <Link to="#services">
           <Button name="GET STARTED"></Button>
@@ -34,9 +32,7 @@ export const Start = ({ images }) => {
         />
         <div className="grid row-start-1 col-start-1 row-end-auto col-end-auto md:col-end-3 content-around md:content-center md:gap-16 relative">
           <Heading type="h2" className="leading-tight md:leading-tight">
-            <span>
-              And I like to build <br className="hidden md:block" /> cool things
-            </span>
+            And I like to build <br className="hidden md:block" /> cool things
           </Heading>
           <div className="flex flex-col gap-6 md:gap-16">
             <Link to="#connect">
