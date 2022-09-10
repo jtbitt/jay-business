@@ -3,28 +3,28 @@
     "name": "Coding",
     "alt": "Several lines of code",
     "image": "coding",
-    "price": "$70/h",
+    "price": "$70/hour",
     "description": "Achieve whatever goals you have with my several years of Front-End experience and variety of skills",
-    "skills": [
+    "highlights": [
       "Front-End",
       "React",
       "Professional",
       "Best Practices"
     ],
-    "highlights": [
-      "Work on a single project or MVP",
+    "features": [
+      "Construct a single project or MVP",
       "Add me to your team for bigger projects and long term work",
       "Maintain and upgrade tools and make enhancements for your existing application",
       "Fix bugs",
       "Improve website performance",
-      "Migrate your project to React or GatsbyJS"
+      "Migrate your existing project to React or GatsbyJS"
     ],
     "callToAction": {
       "name": "HIRE ME",
       "link": "/services"
     },
     "salesAction": {
-      "name": "GET STARTED",
+      "name": "HIRE ME",
       "link": ""
     }
   },
@@ -32,15 +32,15 @@
     "name": "Mentoring",
     "alt": "Student talking with mentor on a video call",
     "image": "mentoring",
-    "price": "$20/h",
+    "price": "$20/hour",
     "description": "Get the skills you need in order to get hired for your first Front-End Development job",
-    "skills": [
+    "highlights": [
       "Eliminate mistakes",
       "Focus on 80/20",
       "Build a portfolio",
       "Get a job"
     ],
-    "highlights": [
+    "features": [
       "Build a strategy",
       "Stop spending time on common mistakes",
       "Focus on what is important in order to get a job, avoid the fluff",
@@ -49,11 +49,11 @@
       "Get a job"
     ],
     "callToAction": {
-      "name": "CONTACT ME",
+      "name": "GET HIRED",
       "link": "/services"
     },
     "salesAction": {
-      "name": "DO IT",
+      "name": "GET HIRED",
       "link": ""
     }
   },
@@ -63,27 +63,25 @@
     "image": "1kwebpage",
     "price": "$1000",
     "description": "Build a static website with me using your design or migrating an existing version of your website",
-    "skills": [
+    "highlights": [
       "GatsbyJS",
       "Responsive",
       "Speed Optimized",
       "Maintainable"
     ],
-    "highlights": [
-      "Static website built with GatsbyJS",
-      "Styled with TailwindCSS for easy maintenance",
-      "Best Practices",
-      "Mobile Responsive",
-      "Website performance & speed optimizations",
-      "Search engine optimization",
-      "Built from your design or migrated with existing design"
+    "features": [
+      "Produce a static website built with GatsbyJS",
+      "Style it with TailwindCSS for easy maintenance",
+      "Use best practices for best performance",
+      "Utilize mobile responsive so all devices look good",
+      "Optimize website performance & speed"
     ],
     "callToAction": {
-      "name": "GET IT",
+      "name": "BUILD IT",
       "link": "/services"
     },
     "salesAction": {
-      "name": "LETS BUILD",
+      "name": "BUILD IT",
       "link": ""
     }
   }

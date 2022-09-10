@@ -1,9 +1,11 @@
 import * as React from "react";
 
-export const Description = ({ className = "", children }) => {
+export const Description = ({ size, className = "", children }) => {
+  const fontSize = size ? size : "text-base md:text-lg 2xl:text-xl";
+
   return (
     <p
-      className={`text-base md:text-lg 2xl:text-xl font-light tracking-widest ${className}`}
+      className={`${className} ${fontSize} font-light tracking-widest`}
     >
       {children}
     </p>

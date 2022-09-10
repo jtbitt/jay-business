@@ -9,7 +9,7 @@ export const ServicePreview = ({
   alt,
   image,
   description,
-  skills,
+  highlights,
   callToAction
 }) => {
   return (
@@ -22,8 +22,8 @@ export const ServicePreview = ({
         <div className="space-y-8">
           <Description>{description}</Description>
           <div className="grid grid-cols-2 gap-6">
-            {skills.map((skill, key) => (
-              <Skill name={skill} key={key} />
+            {highlights.map((highlight, key) => (
+              <Skill name={highlight} key={key} />
             ))}
           </div>
           <div className="text-center md:text-left">

@@ -13,32 +13,38 @@ import faqs from "@content/faqs.json";
 
 const ServicesPage = () => {
   return (
-    <Layout className="space-y-8">
-      <Heading type="h1" className="text-center">
-        Elevate your projects
-      </Heading>
-      <Description className="md:px-40">
-        Stop searching endlessly for a solid contributor, elevate your projects
-        with a seasoned Front-End Developer - React, CSS, HTML, and JS done
-        right.
-      </Description>
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-10">
-        {services.map((service, key) => (
-          <ServiceOption {...service} key={key} />
-        ))}
-      </section>
-      <section>
-        <Heading type="h1">How it works</Heading>
-        <div className="grid grid-cols-1 md:grid-cols-3"></div>
-      </section>
-      <section>
-        <Heading type="h1">FAQ</Heading>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {faqs.map((faq, key) => (
-            <Faq {...faq} key={key} />
+    <Layout>
+      <div className="space-y-8">
+        <Heading
+          type="h1"
+          size="text-4xl md:text-5.5xl 2xl:text-6xl"
+          className="text-center"
+        >
+          Accelerate your projects
+        </Heading>
+        <Description className="md:px-32 lg:px-36 xl:px-40 text-center">
+          Stop searching endlessly for a solid contributor. Let's focus on
+          what's important and start building the projects that you care about
+          today.
+        </Description>
+        <section className="grid grid-cols-1 xl:grid-cols-3 gap-10 md:px-32 lg:px-40 xl:px-0">
+          {services.map((service, key) => (
+            <ServiceOption {...service} key={key} />
           ))}
-        </div>
-      </section>
+        </section>
+        <section>
+          <Heading type="h1">How it works</Heading>
+          <div className="grid grid-cols-1 md:grid-cols-3"></div>
+        </section>
+        <section>
+          <Heading type="h1">FAQ</Heading>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {faqs.map((faq, key) => (
+              <Faq {...faq} key={key} />
+            ))}
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 };

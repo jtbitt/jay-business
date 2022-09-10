@@ -6,24 +6,26 @@ export const ServiceOption = ({
   name,
   description,
   price,
-  highlights,
-  callToAction,
+  features,
+  salesAction,
 }) => {
   return (
-    <div className="flex flex-col bg-gray-500/70 p-10 box-border rounded">
-      <Heading type="h3" className="mb-4">
+    <div className="flex flex-col bg-gray-500/70 p-6 md:p-10 box-border rounded">
+      <Heading type="h2" size="text-2xl md:text-3xl 2xl:text-4xl" className="mb-4">
         {name}
       </Heading>
-      <Description className="md:text-base min-h-[6rem]">
+      <Description size="text-sm md:text-base 2xl:text-xl" className="leading-6 md:leading-7 xl:min-h-[4.5rem] mb-8">
         {description}
       </Description>
-      <Description className="md:text-4xl mb-8">{price}</Description>
-      <ul className="list-disc pl-4 text-base font-light tracking-widest space-y-2 mb-8">
-        {highlights.map((highlight, key) => (
-          <li key={key}>{highlight}</li>
+      <div className="flex flex-col justify-center">
+        <Heading type="h3" className="mb-8">{price}</Heading>
+      </div>
+      <ul className="list-disc pl-4 text-sm md:text-base font-light tracking-widest space-y-2 mb-8 xl:h-72">
+        {features.map((feature, key) => (
+          <li key={key}>{feature}</li>
         ))}
       </ul>
-      <Button name={callToAction.name}></Button>
+      <Button name={salesAction.name}></Button>
     </div>
   );
 };

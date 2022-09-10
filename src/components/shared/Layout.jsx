@@ -6,7 +6,6 @@ export const Layout = ({
   children,
   paddingHorizontal = true,
   paddingTop = true,
-  className = "",
 }) => {
   const [showContent, setShowContent] = useState(true);
   const px = paddingHorizontal ? "px-9 lg:px-20 2xl:px-[34rem]" : "px-0";
@@ -22,7 +21,7 @@ export const Layout = ({
       <main
         className={`${px} ${pt} pb-16 ${
           showContent ? "visible" : "invisible"
-        } ${className}`}
+        }`}
       >
         {children}
       </main>
