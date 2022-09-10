@@ -1,18 +1,18 @@
 [
   {
-    "question": "Which types of work am I interested in doing when it comes to coding?",
-    "answer": "I'm open to all opportunities whether it's short term contract work"
+    "question": "Which type of coding am I interested in doing?",
+    "answer": "I'm open to all opportunities whether it's helping you quickly build an MVP, helping you build your dream project, fixing a few bugs, migrating your website over to React, or joining your existing team to build something bigger and work long term."
   },
   {
-    "question": "Which types of work am I interested in doing when it comes to coding?",
-    "answer": "I'm open to all opportunities whether it's short term contract work"
+    "question": "Which frameworks do I work with?",
+    "answer": "I primarily work with Javascript using the React, GatsbyJS, and Angular frameworks. I'm open to working with other frameworks in JS but these are what I'm best with. When it comes to CSS I'm focused on Tailwind right now as I think it's easy to maintain but I can work with other CSS iterations."
   },
   {
-    "question": "Which types of work am I interested in doing when it comes to coding?",
-    "answer": "I'm open to all opportunities whether it's short term contract work"
+    "question": "What is my coding philosophy?",
+    "answer": "My philosophy is to make the most simple, efficient code as possible to get the job done. I try to think about making code which the next developer would be able to easily understand and read. Easy maintenance is important to me. Reading overcomplicated code is a nightmare."
   },
   {
-    "question": "Which types of work am I interested in doing when it comes to coding?",
-    "answer": "I'm open to all opportunities whether it's short term contract work"
+    "question": "What will I bring to the table with my services?",
+    "answer": "I'm a hard worker and take pride in what I do so my goal is always to deliver the best product possible while getting maximum customer satisfaction. The only services I offer are things that I am very confident in delivering. You will have my dedication and communication to whatever you hire me for."
   }
 ]
