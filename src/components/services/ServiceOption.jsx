@@ -14,11 +14,11 @@ export const ServiceOption = ({
       <Heading type="h3" className="mb-4">
         {name}
       </Heading>
-      <Description className="md:text-sm min-h-[6rem]">
+      <Description className="md:text-base min-h-[6rem]">
         {description}
       </Description>
       <Description className="md:text-4xl mb-8">{price}</Description>
-      <ul className="space-y-2 mb-8">
+      <ul className="list-disc pl-4 text-base font-light tracking-widest space-y-2 mb-8">
         {highlights.map((highlight, key) => (
           <li key={key}>{highlight}</li>
         ))}

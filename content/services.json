@@ -1,22 +1,23 @@
 [
   {
     "name": "Coding",
-    "alt": "several lines of code",
+    "alt": "Several lines of code",
     "image": "coding",
     "price": "$70/h",
-    "description": "Professional coding services whether on your personal project or joining your company's team to work on something bigger",
+    "description": "Achieve whatever goals you have with my several years of Front-End experience and variety of skills",
     "skills": [
-      "Front End",
-      "Productivity Improvement",
-      "Automated Integration",
-      "Performance Testing Tools"
+      "Front-End",
+      "React",
+      "Professional",
+      "Best Practices"
     ],
     "highlights": [
-      "Short term work",
-      "Long term work",
-      "Bug fixes",
-      "Feature adds to existing project",
-      "Increase website speed"
+      "Work on a single project or MVP",
+      "Add me to your team for bigger projects and long term work",
+      "Maintain and upgrade tools and make enhancements for your existing application",
+      "Fix bugs",
+      "Improve website performance",
+      "Migrate your project to React or GatsbyJS"
     ],
     "callToAction": {
       "name": "HIRE ME",
@@ -29,21 +30,23 @@
   },
   {
     "name": "Mentoring",
-    "alt": "person talking with mentor on a video call",
+    "alt": "Student talking with mentor on a video call",
     "image": "mentoring",
     "price": "$20/h",
-    "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
+    "description": "Get the skills you need in order to get hired for your first Front-End Development job",
     "skills": [
-      "Career Advice",
-      "How to improve",
-      "Best Practices",
-      "Avoid common mistakes"
+      "Eliminate mistakes",
+      "Focus on 80/20",
+      "Build a portfolio",
+      "Get a job"
     ],
     "highlights": [
-      "Career Advice",
-      "How to improve",
-      "Best Practices",
-      "Avoid common mistakes"
+      "Build a strategy",
+      "Stop spending time on common mistakes",
+      "Focus on what is important in order to get a job, avoid the fluff",
+      "Learn best practices, do things the right way",
+      "Create projects that will make employers want to hire you",
+      "Get a job"
     ],
     "callToAction": {
       "name": "CONTACT ME",
@@ -56,21 +59,24 @@
   },
   {
     "name": "Website for $1k",
-    "alt": "monitor showing a brand new site on the home page",
+    "alt": "Computer screen showing a brand new site on the home page",
     "image": "1kwebpage",
     "price": "$1000",
-    "description": "Lorem ipsum dolor sit amet consecte adipiscing elit iaculis. Lorem ipsum dolor sit amet consectetur adipiscing.",
+    "description": "Build a static website with me using your design or migrating an existing version of your website",
     "skills": [
-      "Mobile First",
-      "Advanced Functionality",
-      "Professional Functions",
-      "Design Elements"
+      "GatsbyJS",
+      "Responsive",
+      "Speed Optimized",
+      "Maintainable"
     ],
     "highlights": [
-      "Mobile First",
-      "Advanced Functionality",
-      "Professional Functions",
-      "Design Elements"
+      "Static website built with GatsbyJS",
+      "Styled with TailwindCSS for easy maintenance",
+      "Best Practices",
+      "Mobile Responsive",
+      "Website performance & speed optimizations",
+      "Search engine optimization",
+      "Built from your design or migrated with existing design"
     ],
     "callToAction": {
       "name": "GET IT",
