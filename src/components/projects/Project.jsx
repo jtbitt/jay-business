@@ -8,7 +8,6 @@ export const Project = ({
   image,
   alt,
   title,
-  subtitle,
   description,
   tools,
   slug,
@@ -28,7 +27,7 @@ export const Project = ({
             size="text-xl md:text-2xl 2xl:text-3xl"
             basicFont={true}
           >
-            {subtitle}
+            Description
           </Heading>
           <Description>{description}</Description>
         </div>

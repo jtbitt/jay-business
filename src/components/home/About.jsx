@@ -20,13 +20,12 @@ export const About = ({ images }) => {
         />
         <div className="basis-1/2 space-y-8">
           <Description>
-            Travel enthusiast who loves to spend my time in Latin America,
-            currently planning a trip to the jungle. Life has been a great
-            adventure since I learned to code. When it comes to work, I love
-            tackling interesting challenges that lead to growth. Dove all in on
-            knowing coding and starting from the ground up and have built myself
-            into an experienced Front End developer. I feel like I've maximized
-            and optimized what I can do in my previous roles and I'm ready to
+            Travel enthusiast who loves to spend my time in Latin America. 
+            Life has been a great adventure since I learned to code. When it comes 
+            to work, I love tackling interesting challenges that lead to growth. 
+            Dove all in on knowing coding and starting from the ground up and have 
+            built myself into an experienced Front End developer. I feel like I've 
+            maximized and optimized what I can do in my previous roles and I'm ready to
             dig deeper and gain some new experiences.
           </Description>
           <Description>

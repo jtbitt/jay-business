@@ -11,7 +11,7 @@ export const Navbar = ({ onNavToggle }) => {
   const handleNavToggle = (toggle) => {
     setNavOpen(toggle);
     onNavToggle();
-    toggle ? enable() : disable();
+    toggle ? disable() : enable();
   };
 
   return (

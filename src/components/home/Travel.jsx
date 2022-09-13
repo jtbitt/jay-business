@@ -14,8 +14,7 @@ export const Travel = ({ images }) => {
     >
       <Heading type="h2">Travel</Heading>
       <Description>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis. Lorem
-        ipsum dolor sit amet con.
+        When I'm not coding, I love getting to know new people and cultures
       </Description>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {travelImages.map((image, key) => {

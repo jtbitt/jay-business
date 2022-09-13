@@ -14,7 +14,7 @@ export const Start = ({ images }) => {
           size="text-4xl md:text-5.5xl 2xl:text-6xl"
           className="leading-tight md:leading-tight md:w-3/4"
         >
-          Hi, I'm Jay <br /> Front End <br className="block md:hidden" />{" "}
+          Hi, I'm Jay <br /> Front-End <br className="block md:hidden" />{" "}
           Developer
         </Heading>
         <Link to="#services">
@@ -36,7 +36,7 @@ export const Start = ({ images }) => {
           </Heading>
           <div className="flex flex-col gap-6 md:gap-16">
             <Link to="#connect">
-              <Button name="CONTACT ME"></Button>
+              <Button name="GET STARTED"></Button>
             </Link>
             <Link
               to="#services"

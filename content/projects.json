@@ -1,18 +1,16 @@
 [
   { 
-    "title": "Project Name", 
-    "subtitle": "Subtitle", 
-    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.",
-    "tools": "Lorem ipsum, lorem ipsum, lorem.",
+    "title": "Fancylingo",
+    "description": "Flashcard style language learning application",
+    "tools": "React Native, Expo, Apollo, GraphQL, Hasura, and Firebase",
     "image": "project",
-    "alt": "A view of the cold brew process",
+    "alt": "Language learning application Fancylingo created by Jay Bittner",
     "slug": "jay-business"
   },
   { 
-    "title": "Project Name", 
-    "subtitle": "Subtitle", 
-    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis.",
-    "tools": "Lorem ipsum, lorem ipsum, lorem.",
+    "title": "Jay Bittner",
+    "description": "My business website (this one)",
+    "tools": "GatsbyJS, GraphQL, and TailwindCSS",
     "image": "project",
     "alt": "A view of the cold brew process",
     "slug": "fancylingo"
