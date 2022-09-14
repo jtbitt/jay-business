@@ -14,7 +14,7 @@ export const ServiceOption = ({
       <Heading type="h2" size="text-2xl md:text-3xl 2xl:text-4xl" className="mb-4">
         {name}
       </Heading>
-      <Description size="text-sm md:text-base 2xl:text-xl" className="leading-6 md:leading-7 xl:min-h-[4.5rem] mb-8">
+      <Description size="text-sm md:text-base 2xl:text-xl" className="leading-6 md:leading-7 xl:min-h-[5rem] mb-8">
         {description}
       </Description>
       <div className="flex flex-col justify-center">

@@ -29,24 +29,25 @@
     }
   },
   {
-    "name": "Mentoring",
+    "name": "Port your Front-End",
     "alt": "Student talking with mentor on a video call",
     "image": "mentoring",
-    "price": "$20/hour",
-    "description": "Get the skills you need in order to get hired for your first Front-End Development job",
+    "price": "$2000",
+    "description": "Migrate your current Front-End to GatsbyJS, React, or Angular, depending on your needs",
     "highlights": [
-      "Eliminate mistakes",
-      "Focus on 80/20",
-      "Build a portfolio",
-      "Get a job"
+      "Javascript",
+      "Tailwind",
+      "Modern Tools",
+      "Organized"
     ],
     "features": [
-      "Build a strategy",
-      "Stop spending time on common mistakes",
-      "Focus on what is important in order to get a job, avoid the fluff",
-      "Learn best practices, do things the right way",
-      "Create projects that will make employers want to hire you",
-      "Get a job"
+      "Convert to modern Javascript",
+      "Update your CSS to Tailwind",
+      "Get your project up to current standards",
+      "Optimize performance",
+      "Update data retrieval",
+      "Replicate all current functionality",
+      "Deploy to service of your choice (i.e. Heroku)"
     ],
     "callToAction": {
       "name": "GET HIRED",
@@ -62,7 +63,7 @@
     "alt": "Computer screen showing a brand new site on the home page",
     "image": "1kwebpage",
     "price": "$1000",
-    "description": "Build a static website with me using your design or migrating an existing version of your website",
+    "description": "Build a static website with me using your design and content requirements",
     "highlights": [
       "GatsbyJS",
       "Responsive",
@@ -71,8 +72,8 @@
     ],
     "features": [
       "Produce a static website built with GatsbyJS",
-      "Style it with TailwindCSS for easy maintenance",
-      "Use best practices for best performance",
+      "Style it with Tailwind for easy maintenance",
+      "Use best practices for high performance",
       "Utilize mobile responsive so all devices look good",
       "Optimize website performance & speed"
     ],
