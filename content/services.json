@@ -14,13 +14,13 @@
     "features": [
       "Construct a single project or MVP",
       "Add me to your team for bigger projects and long term work",
-      "Maintain and upgrade tools and make enhancements for your existing application",
+      "Maintain, upgrade tools, and make enhancements for your existing application",
       "Fix bugs",
       "Improve website performance",
       "Migrate your existing project to React or GatsbyJS"
     ],
     "callToAction": {
-      "name": "HIRE ME",
+      "name": "GET STARTED",
       "link": "/services"
     },
     "salesAction": {
@@ -50,11 +50,11 @@
       "Deploy to service of your choice (i.e. Heroku)"
     ],
     "callToAction": {
-      "name": "GET HIRED",
+      "name": "GET STARTED",
       "link": "/services"
     },
     "salesAction": {
-      "name": "GET HIRED",
+      "name": "PORT IT",
       "link": ""
     }
   },
@@ -78,7 +78,7 @@
       "Optimize website performance & speed"
     ],
     "callToAction": {
-      "name": "BUILD IT",
+      "name": "GET STARTED",
       "link": "/services"
     },
     "salesAction": {

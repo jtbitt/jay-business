@@ -25,7 +25,7 @@ export const Travel = ({ images }) => {
       </div>
       <div className="text-center">
         <Link to="#connect">
-          <Button name="GET IN TOUCH"></Button>
+          <Button>GET IN TOUCH</Button>
         </Link>
       </div>
     </section>

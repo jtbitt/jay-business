@@ -34,7 +34,7 @@ export const About = ({ images }) => {
           </Description>
           <div className="text-center md:text-left">
             <a href={resume} aria-label="Download Resume" download>
-              <Button name="MY RESUME"></Button>
+              <Button>MY RESUME</Button>
             </a>
           </div>
         </div>

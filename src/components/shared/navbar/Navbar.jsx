@@ -6,12 +6,12 @@ import { NavOpen } from "./NavOpen";
 
 export const Navbar = ({ onNavToggle }) => {
   const [navOpen, setNavOpen] = useState(false);
-  const { enable, disable } = useScroll();
+  const { enableScroll, disableScroll } = useScroll();
 
-  const handleNavToggle = (toggle) => {
-    setNavOpen(toggle);
+  const handleNavToggle = (open) => {
+    setNavOpen(open);
     onNavToggle();
-    toggle ? disable() : enable();
+    open ? disableScroll() : enableScroll();
   };
 
   return (

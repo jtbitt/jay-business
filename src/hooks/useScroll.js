@@ -14,28 +14,13 @@ export const useScroll = () => {
     setScrollTop(winScroll);
   };
 
-  const disable = () => {
-    document.querySelector("#sidenav").addEventListener("wheel", preventScroll);
-    document
-      .querySelector("#sidenav")
-      .addEventListener("touchmove", preventScroll);
+  const disableScroll = () => {
+    document.body.style.overflowY = "hidden";
   };
 
-  const enable = () => {
-    document
-      .querySelector("#sidenav")
-      .removeEventListener("wheel", preventScroll);
-    document
-      .querySelector("#sidenav")
-      .removeEventListener("touchmove", preventScroll);
+  const enableScroll = () => {
+    document.body.style.overflowY = "auto";
   };
 
-  const preventScroll = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    return false;
-  };
-
-  return { scrollTop, enable, disable };
+  return { scrollTop, enableScroll, disableScroll };
 };

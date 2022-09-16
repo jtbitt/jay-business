@@ -43,7 +43,7 @@ export const Project = ({
         </div>
         <div className="text-center md:text-left">
           <Link to={`/projects/${slug}`}>
-            <Button name="VIEW PROJECT"></Button>
+            <Button>VIEW PROJECT</Button>
           </Link>
         </div>
       </div>

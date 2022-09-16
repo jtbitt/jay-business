@@ -28,7 +28,7 @@ export const ServicePreview = ({
           </div>
           <div className="text-center md:text-left">
             <Link to={callToAction.link}>
-              <Button name={callToAction.name}></Button>
+              <Button>{callToAction.name}</Button>
             </Link>
           </div>
         </div>

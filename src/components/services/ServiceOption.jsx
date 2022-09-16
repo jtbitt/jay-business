@@ -1,5 +1,7 @@
-import * as React from "react";
+import React, { useState } from "react";
+import { PopupModal, InlineWidget } from "react-calendly";
 
+import { useScroll } from "@hooks";
 import { Heading, Description, Button } from "@components";
 
 export const ServiceOption = ({
@@ -9,6 +11,14 @@ export const ServiceOption = ({
   features,
   salesAction,
 }) => {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
+  const { enableScroll, disableScroll } = useScroll();
+
+  const handleCalendlyToggle = (open) => {
+    setCalendlyOpen(open);
+    open ? disableScroll() : enableScroll();
+  }
+
   return (
     <div className="flex flex-col bg-gray-500/70 p-6 md:p-10 box-border rounded">
       <Heading type="h2" size="text-2xl md:text-3xl 2xl:text-4xl" className="mb-4">
@@ -25,7 +35,15 @@ export const ServiceOption = ({
           <li key={key}>{feature}</li>
         ))}
       </ul>
-      <Button name={salesAction.name}></Button>
+      <Button onClick={() => handleCalendlyToggle(true)}>{salesAction.name}</Button>
+      <PopupModal
+        url="https://calendly.com/d/dyw-bgs-c76"
+        onModalClose={() => handleCalendlyToggle(false)}
+        open={calendlyOpen}
+        rootElement={document.body}
+        className="bg-stone"
+      />
+      {/* <InlineWidget url="https://calendly.com/d/dyw-bgs-c76" /> */}
     </div>
   );
 };

@@ -50,7 +50,7 @@ export const NavOpen = ({ onNavClose, visible }) => {
           />
         </Link>
         <div className="text-md md:text-2xl 2xl:text-3xl mt-5 w-[4.5rem] md:w-56 2xl:w-72">
-          Front End Developer
+          Front-End Developer
         </div>
       </div>
       <ul className="text-white font-medium text-base md:text-xl 2xl:text-2xl w-full">

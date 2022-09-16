@@ -14,7 +14,7 @@ export const Connect = ({ images }) => {
         />
         <div className="text-center md:text-left space-y-12">
           <Description>If you would like to work together</Description>
-          <Button name="GET IN TOUCH"></Button>
+          <Button>GET IN TOUCH</Button>
         </div>
       </div>
     </section>
