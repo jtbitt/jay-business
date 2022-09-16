@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PopupModal, InlineWidget } from "react-calendly";
+import { PopupModal } from "react-calendly";
 
 import { useScroll } from "@hooks";
 import { Heading, Description, Button } from "@components";
@@ -40,10 +40,9 @@ export const ServiceOption = ({
         url="https://calendly.com/d/dyw-bgs-c76"
         onModalClose={() => handleCalendlyToggle(false)}
         open={calendlyOpen}
-        rootElement={document.body}
+        rootElement={document.getElementById("___gatsby")}
         className="bg-stone"
       />
-      {/* <InlineWidget url="https://calendly.com/d/dyw-bgs-c76" /> */}
     </div>
   );
 };
