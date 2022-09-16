@@ -11,13 +11,13 @@ export const ServiceOption = ({
   features,
   salesAction,
 }) => {
-  const [root, setRoot] = useState(null);
+  const [portal, setPortal] = useState(null);
   const [calendlyOpen, setCalendlyOpen] = useState(false);
   const { enableScroll, disableScroll } = useScroll();
 
   useEffect(() => {
     const root = document.getElementById('portal');
-    setRoot(root);
+    setPortal(root);
   }, []);
 
   const handleCalendlyToggle = (open) => {
@@ -43,10 +43,10 @@ export const ServiceOption = ({
       </ul>
       <Button onClick={() => handleCalendlyToggle(true)}>{salesAction.name}</Button>
       <PopupModal
-        url="https://calendly.com/d/dyw-bgs-c76"
+        url="https://calendly.com/jaybittner/15min"
         onModalClose={() => handleCalendlyToggle(false)}
         open={calendlyOpen}
-        rootElement={root}
+        rootElement={portal}
       />
     </div>
   );
