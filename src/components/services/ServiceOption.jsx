@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PopupModal } from "react-calendly";
 
 import { useScroll } from "@hooks";
@@ -11,9 +11,14 @@ export const ServiceOption = ({
   features,
   salesAction,
 }) => {
+  const [root, setRoot] = useState(null);
   const [calendlyOpen, setCalendlyOpen] = useState(false);
   const { enableScroll, disableScroll } = useScroll();
-  const root = typeof document !== undefined ? document.getElementById("portal") : null;
+
+  useEffect(() => {
+    const root = document.getElementById('portal');
+    setRoot(root);
+  }, []);
 
   const handleCalendlyToggle = (open) => {
     setCalendlyOpen(open);
@@ -42,7 +47,6 @@ export const ServiceOption = ({
         onModalClose={() => handleCalendlyToggle(false)}
         open={calendlyOpen}
         rootElement={root}
-        className="bg-stone"
       />
     </div>
   );
