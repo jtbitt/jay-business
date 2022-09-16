@@ -13,6 +13,7 @@ export const ServiceOption = ({
 }) => {
   const [calendlyOpen, setCalendlyOpen] = useState(false);
   const { enableScroll, disableScroll } = useScroll();
+  const root = typeof document !== undefined ? document.getElementById("portal") : null;
 
   const handleCalendlyToggle = (open) => {
     setCalendlyOpen(open);
@@ -40,7 +41,7 @@ export const ServiceOption = ({
         url="https://calendly.com/d/dyw-bgs-c76"
         onModalClose={() => handleCalendlyToggle(false)}
         open={calendlyOpen}
-        rootElement={document.getElementById("___gatsby")}
+        rootElement={root}
         className="bg-stone"
       />
     </div>
