@@ -10,7 +10,7 @@ export const Connect = ({ images }) => {
   const [portal, setPortal] = useState(null);
 
   useEffect(() => {
-    const root = document.getElementById('portal');
+    const root = document.getElementById("portal");
     setPortal(root);
   }, []);
 
@@ -23,7 +23,9 @@ export const Connect = ({ images }) => {
           alt="A laptop computer open on a desk with a Front End Developer services website open"
         />
         <div className="text-left space-y-8">
-          <Heading type="h3" basicFont={true}>Let's build something <br /> amazing together</Heading>
+          <Heading type="h3" basicFont={true}>
+            Let's build something <br /> amazing together
+          </Heading>
           <Description>
             Start by scheduling a&nbsp;
             <PopupButton
@@ -45,8 +47,22 @@ export const Connect = ({ images }) => {
             </Link>
           </Description>
           <div className="flex flex-row gap-8 h-16">
-            <GithubIcon className="h-8 w-8 2xl:h-12 2xl:w-12" />
-            <LinkedinIcon className="h-8 w-8 2xl:h-12 2xl:w-12" />
+            <a
+              href="https://github.com/jtbitt"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Github"
+            >
+              <GithubIcon className="h-8 w-8 2xl:h-12 2xl:w-12" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jay-bittner-b3257a20/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin"
+            >
+              <LinkedinIcon className="h-8 w-8 2xl:h-12 2xl:w-12" />
+            </a>
           </div>
         </div>
       </div>
