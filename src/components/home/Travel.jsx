@@ -1,8 +1,7 @@
 import * as React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
 
-import { Heading, Description, Button } from "@components";
+import { Heading, Description } from "@components";
 import travelImages from "@content/travel";
 
 export const Travel = ({ images }) => {

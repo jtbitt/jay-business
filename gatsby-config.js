@@ -49,6 +49,13 @@ module.exports = {
         precachePages: [`/index/`, `/services/`, `/projects/*`, `/blog/*`],
       },
     },
+    {
+      resolve: "@sentry/gatsby",
+      options: {
+        dsn: "https://37a0156551a747eaa3ba96a5060c886e@o1422801.ingest.sentry.io/6769850",
+        sampleRate: 0.7,
+      },
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
