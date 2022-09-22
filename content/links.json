@@ -3,5 +3,5 @@
   { "name": "Services", "url": "/services" },
   { "name": "Cool things I've built", "url": "/projects" },
   { "name": "Blog", "url": "/blog" },
-  { "name": "Let's connect", "url": "/#connect" }
+  { "name": "Let's connect", "url": "/contact" }
 ]

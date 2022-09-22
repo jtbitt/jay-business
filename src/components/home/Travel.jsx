@@ -23,11 +23,6 @@ export const Travel = ({ images }) => {
           );
         })}
       </div>
-      <div className="text-center">
-        <Link to="#connect">
-          <Button>GET IN TOUCH</Button>
-        </Link>
-      </div>
     </section>
   );
 };

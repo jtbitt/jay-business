@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Layout, Heading, Description, ContactForm } from "@components";
+import { Seo, Layout, Heading, Description, ContactForm } from "@components";
 
 const ContactPage = () => {
   return (
@@ -24,3 +24,11 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+export const Head = () => (
+  <Seo
+    title="Contact | Jay Bittner"
+    description="Get in touch with me about whatever services you are interested in"
+    pathname="/contact"
+  />
+);

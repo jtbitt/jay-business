@@ -24,7 +24,7 @@ export const Connect = ({ images }) => {
         />
         <div className="text-left space-y-8">
           <Heading type="h3" basicFont={true}>
-            Let's build something <br /> amazing together
+            Let's build something <br /> cool together
           </Heading>
           <Description>
             Start by scheduling a&nbsp;
@@ -35,8 +35,8 @@ export const Connect = ({ images }) => {
               text="Meeting"
             />
             &nbsp;/&nbsp;
-            <Link className="text-amber-500" to="">
-              Email Me
+            <Link className="text-amber-500" to="/contact">
+              Email
             </Link>
           </Description>
           <Description>OR</Description>
