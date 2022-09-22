@@ -14,7 +14,7 @@ import {
 } from "@components";
 import richResults from "@content/rich-results";
 
-export const IndexPage = () => {
+const IndexPage = () => {
   const { start, about, travel, projects, services, connect } = useImages();
 
   return (

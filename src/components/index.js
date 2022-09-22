@@ -28,3 +28,6 @@ export { Article, Post } from "./blog";
 
 // projects
 export { Project, Analysis } from "./projects";
+
+// contact
+export { ContactForm } from "./contact";
