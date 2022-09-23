@@ -20,10 +20,6 @@ export const Seo = ({ title, description, pathname, children }) => {
 
   return (
     <>
-      <meta
-        name="ahrefs-site-verification"
-        content="62c91a1a72f8db4cc79f7f08b3e11c71560859e59ec1eba3f30c6d0ea6405e29"
-      ></meta>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={logo} />

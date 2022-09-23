@@ -56,14 +56,6 @@ module.exports = {
         sampleRate: 0.7,
       },
     },
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        includeInDevelopment: false,
-        id: 3170670,
-        sv: 6,
-      },
-    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
