@@ -11,7 +11,7 @@ const ProjectPost = ({ data }) => {
         title={data.mdx.frontmatter.title}
         image={data.mdx.frontmatter.hero_image}
         alt={data.mdx.frontmatter.hero_image_alt}
-        imageLink={data.mdx.frontmatter.here_image_credit_link}
+        imageLink={data.mdx.frontmatter.hero_image_credit_link}
         imageCredit={data.mdx.frontmatter.hero_image_credit_text}
         body={data.mdx.body}
       />

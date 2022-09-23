@@ -4,7 +4,7 @@
     "description": "Flashcard style language learning application",
     "tools": "React Native, Expo, Apollo, GraphQL, Hasura, and Firebase",
     "image": "fancylingo",
-    "alt": "Language learning application Fancylingo created by Jay Bittner",
+    "alt": "A snapshot of some of the screens in Fancylingo language learning application for Android and iPhone",
     "slug": "fancylingo"
   },
   {
@@ -12,7 +12,7 @@
     "description": "My business website (this one)",
     "tools": "GatsbyJS, GraphQL, and TailwindCSS",
     "image": "jay-business",
-    "alt": "A view of the cold brew process",
+    "alt": "A snapshot of the Jay Bittner business site, built with GatsbyJS",
     "slug": "jay-business"
   }
 ]

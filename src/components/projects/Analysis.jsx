@@ -21,7 +21,10 @@ export const Analysis = ({
       <Heading type="h1">{title}</Heading>
       <GatsbyImage image={img} alt={alt} className="h-40 md:h-80" />
       <Description>
-        Photo Credit: <a href={imageLink}>{imageCredit}</a>
+        Photo Credit:{" "}
+        <a href={imageLink} className="text-amber-500">
+          {imageCredit}
+        </a>
       </Description>
       <Description>
         <MDXRenderer>{body}</MDXRenderer>
