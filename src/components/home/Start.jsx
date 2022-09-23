@@ -17,9 +17,6 @@ export const Start = ({ images }) => {
           Hi, I'm Jay <br /> Front-End <br className="block md:hidden" />{" "}
           Developer
         </Heading>
-        {/* <Link to="#services">
-          <Button>GET STARTED</Button>
-        </Link> */}
         <Link to="#start2" className="mt-5" aria-label="Go to next section">
           <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16" />
         </Link>
@@ -36,7 +33,7 @@ export const Start = ({ images }) => {
           </Heading>
           <div className="flex flex-col gap-6 md:gap-16">
             <Link to="/services">
-              <Button>GET STARTED</Button>
+              <Button>HIRE ME</Button>
             </Link>
             <Link
               to="#services"
