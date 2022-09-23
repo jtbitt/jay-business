@@ -3,4 +3,4 @@ export * from "./useSiteMetadata";
 export * from "./useScroll";
 
 // home
-export * from "./home/useImages";
+export { useImages } from "./home";

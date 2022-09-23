@@ -11,9 +11,10 @@ export const useImages = () => {
             relativeDirectory
             childImageSharp {
               gatsbyImageData(
-                layout: FULL_WIDTH
+                layout: CONSTRAINED
                 formats: [AUTO, WEBP]
                 quality: 100
+                width: 700
               )
             }
           }
