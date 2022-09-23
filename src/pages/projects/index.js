@@ -5,19 +5,21 @@ import { Seo, Layout, Project } from "@components";
 
 const ProjectsPage = ({ data }) => {
   return (
-    <Layout className="space-y-20">
-      {data.allMdx.nodes.map((node, key) => (
-        <Project
-          image={node.frontmatter.hero_image}
-          alt={node.frontmatter.hero_image_alt}
-          title={node.frontmatter.title}
-          subtitle={"lorem ipsum"}
-          description={"lorem ipsum"}
-          tools={["cool", "cool", "cool"]}
-          slug={node.slug}
-          key={key}
-        />
-      ))}
+    <Layout>
+      <div className="space-y-20">
+        {data.allMdx.nodes.map((node, key) => (
+          <Project
+            image={node.frontmatter.hero_image}
+            alt={node.frontmatter.hero_image_alt}
+            title={node.frontmatter.title}
+            subtitle={"lorem ipsum"}
+            description={"lorem ipsum"}
+            tools={["cool", "cool", "cool"]}
+            slug={node.slug}
+            key={key}
+          />
+        ))}
+      </div>
     </Layout>
   );
 };

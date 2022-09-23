@@ -5,16 +5,18 @@ import { Seo, Layout, Article } from "@components";
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout className="space-y-20">
-      {data.allMdx.nodes.map((node, key) => (
-        <Article
-          image={node.frontmatter.hero_image}
-          alt={node.frontmatter.hero_image_alt}
-          title={node.frontmatter.title}
-          slug={node.slug}
-          key={key}
-        />
-      ))}
+    <Layout>
+      <div className="space-y-20">
+        {data.allMdx.nodes.map((node, key) => (
+          <Article
+            image={node.frontmatter.hero_image}
+            alt={node.frontmatter.hero_image_alt}
+            title={node.frontmatter.title}
+            slug={node.slug}
+            key={key}
+          />
+        ))}
+      </div>
     </Layout>
   );
 };
