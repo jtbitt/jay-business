@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Front-End Developer | Jay Bittner`,
@@ -61,6 +65,6 @@ module.exports = {
     "gatsby-plugin-postcss",
   ],
   partytownProxiedURLs: [
-    `https://www.googletagmanager.com/gtag/js?id=G-TQW41CM45E`,
+    `https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG}`,
   ],
 };

@@ -15,20 +15,18 @@ export const RootWrapper = ({ children }) => {
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')`}
       </Script> */}
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-TQW41CM45E`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG}`}
         strategy="off-main-thread"
-        forward={[`gtag`]}
+        forward={[`dataLayer.push`]}
       />
-      <Script
-        id="gtag-config"
-        strategy="off-main-thread"
-        dangerouslySetInnerHTML={{
-          __html: `window.dataLayer = window.dataLayer || [];
-          window.gtag = function gtag(){ window.dataLayer.push(arguments);}
-          gtag('js', new Date()); 
-          gtag('config', 'G-TQW41CM45E', { send_page_view: false })`,
-        }}
-      />
+      <Script id="gtag-config" strategy="off-main-thread" forward={[`gtag`]}>
+        {`
+          window.dataLayer = window.dataLayer || []
+          window.gtag = function gtag() { window.dataLayer.push(arguments) }
+          gtag('js', new Date())
+          gtag('config', ${process.env.GTAG}, { page_path: location ? location.pathname + location.search + location.hash : undefined })
+        `}
+      </Script>
       <div>{children}</div>
     </>
   );
