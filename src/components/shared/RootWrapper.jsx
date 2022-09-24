@@ -4,8 +4,7 @@ import { Script } from "gatsby";
 export const RootWrapper = ({ children }) => {
   return (
     <>
-      {children}
-      <Script>
+      <Script strategy="idle">
         {`(function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:3170670,hjsv:6};
@@ -15,6 +14,7 @@ export const RootWrapper = ({ children }) => {
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')`}
       </Script>
+      {children}
     </>
   );
 };
