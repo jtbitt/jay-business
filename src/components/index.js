@@ -1,5 +1,6 @@
 // global
 export {
+  RootWrapper,
   Seo,
   Layout,
   Navbar,

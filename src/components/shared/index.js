@@ -1,3 +1,4 @@
+export { RootWrapper } from "./RootWrapper";
 export { Seo } from "./Seo";
 export { Layout } from "./Layout";
 export { Navbar } from "./navbar";
