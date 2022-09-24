@@ -16,6 +16,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@builder.io/partytown": "^0.7.0",
     "@fontsource/pt-sans": "^4.5.9",
     "@fontsource/roboto": "^4.5.7",
     "@mdx-js/mdx": "^1.6.22",

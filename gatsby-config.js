@@ -60,4 +60,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
   ],
+  partytownProxiedURLs: [
+    `https://www.googletagmanager.com/gtag/js?id=G-TQW41CM45E`,
+  ],
 };
