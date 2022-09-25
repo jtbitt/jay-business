@@ -4,7 +4,7 @@ import { Script } from "gatsby";
 export const RootWrapper = ({ children }) => {
   return (
     <>
-      <Script id="hotjar" strategy="off-main-thread" forward={[`document`]}>
+      <Script id="hotjar" strategy="off-main-thread">
         {`(function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:3170670,hjsv:6};
