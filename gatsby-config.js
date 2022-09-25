@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: `https://www.jaybittner.com`,
     twitterUsername: `@jtbitt`,
   },
+  partytownProxiedURLs: [`https://static.hotjar.com/c/hotjar-3170670.js?sv=6`],
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
