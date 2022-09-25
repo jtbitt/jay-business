@@ -4,7 +4,7 @@ import { Script } from "gatsby";
 export const RootWrapper = ({ children }) => {
   return (
     <>
-      <Script id="hotjar">
+      <Script id="hotjar" strategy="off-main-thread" forward={[`document`]}>
         {`(function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:3170670,hjsv:6};
@@ -26,8 +26,8 @@ export const RootWrapper = ({ children }) => {
           gtag('js', new Date())
           gtag('config', ${process.env.GTAG}, { page_path: location ? location.pathname + location.search + location.hash : undefined })
         `}
-      </Script>
-      <div>{children}</div> */}
+      </Script> */}
+      <div>{children}</div>
     </>
   );
 };
