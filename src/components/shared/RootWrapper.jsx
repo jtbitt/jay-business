@@ -12,7 +12,7 @@ export const RootWrapper = ({ children }) => {
         crossOrigin="anonymous"
         onLoad={() => setSentryLoaded(true)}
       ></Script>
-      {loaded && (
+      {sentryLoaded && (
         <Script id="hotjar">
           {`
           (function(h,o,t,j,a,r){
