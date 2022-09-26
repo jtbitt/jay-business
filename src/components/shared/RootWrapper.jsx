@@ -21,6 +21,11 @@ export const RootWrapper = ({ children }) => {
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')
         `}
       </Script>
+      <Script
+        id="hotjar2"
+        strategy="off-main-thread"
+        src="https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html"
+      ></Script>
       {/* <Script
         id="sentry"
         strategy="off-main-thread"
