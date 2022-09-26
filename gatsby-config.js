@@ -9,7 +9,7 @@ module.exports = {
     `https://static.hotjar.com/c/hotjar-3170670.js?sv=6`,
     `https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html`,
     `https://script.hotjar.com/modules.01a02f6e8b126e8c8358.js`,
-    `https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js`,
+    // `https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js`,
   ],
   plugins: [
     "gatsby-plugin-image",
