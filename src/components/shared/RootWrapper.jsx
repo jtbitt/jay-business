@@ -19,7 +19,6 @@ export const RootWrapper = ({ children }) => {
         strategy="off-main-thread"
         src="https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js"
         crossorigin="anonymous"
-        data-lazy="no"
       ></Script>
       {children}
     </>
