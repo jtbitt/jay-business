@@ -17,6 +17,7 @@ export const RootWrapper = ({ children }) => {
       <Script
         id="sentry"
         src="https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js"
+        crossorigin="anonymous"
       ></Script>
       {children}
     </>
