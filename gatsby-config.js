@@ -5,7 +5,10 @@ module.exports = {
     siteUrl: `https://www.jaybittner.com`,
     twitterUsername: `@jtbitt`,
   },
-  partytownProxiedURLs: [`https://static.hotjar.com/c/hotjar-3170670.js?sv=6`],
+  partytownProxiedURLs: [
+    `https://static.hotjar.com/c/hotjar-3170670.js?sv=6`,
+    `https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js`,
+  ],
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
@@ -48,13 +51,6 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/index/`, `/services/`, `/projects/*`, `/blog/*`],
-      },
-    },
-    {
-      resolve: "@sentry/gatsby",
-      options: {
-        dsn: "https://37a0156551a747eaa3ba96a5060c886e@o1422801.ingest.sentry.io/6769850",
-        sampleRate: 0.7,
       },
     },
     "gatsby-plugin-mdx",

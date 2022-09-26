@@ -14,7 +14,14 @@ export const RootWrapper = ({ children }) => {
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')`}
       </Script>
-      <div>{children}</div>
+      <Script
+        id="sentry"
+        strategy="off-main-thread"
+        src="https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js"
+        crossorigin="anonymous"
+        data-lazy="no"
+      ></Script>
+      {children}
     </>
   );
 };
