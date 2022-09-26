@@ -57,11 +57,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
-        allPageHeaders: [
-          "Access-Control-Allow-Origin: https://static.hotjar.com/c/hotjar-3170670.js?sv=6",
-          "Access-Control-Allow-Origin: https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html",
-          "Access-Control-Allow-Origin: https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js",
-        ],
+        headers: {
+          "/*": ["Access-Control-Allow-Origin: *"],
+        },
         mergeSecurityHeaders: true,
         mergeCachingHeaders: true,
         transformHeaders: (headers, path) => headers,
