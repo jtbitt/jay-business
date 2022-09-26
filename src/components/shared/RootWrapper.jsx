@@ -17,7 +17,7 @@ export const RootWrapper = ({ children }) => {
           })(window);
         `}
       </Script> */}
-      <Script id="hotjar" strategy="off-main-thread">
+      <Script id="hotjar" strategy="idle">
         {`
           (function(h,o,t,j,a,r){
               h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
