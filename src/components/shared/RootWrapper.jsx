@@ -8,24 +8,20 @@ export const RootWrapper = ({ children }) => {
         id="hotjar"
         strategy="off-main-thread"
         crossOrigin="anonymous"
-        data-hj-allow-iframe
-        forward={[`hj`, `_hjSettings`]}
+        src="https://static.hotjar.com/c/hotjar-3170670.js?sv=6"
+        forward={[`hj`, `_hjSettings`, `hjSiteSettings`, `hjBootstrap`]}
       >
-        {`(function(h,o,t,j,a,r){
+        {`
+          (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:3170670,hjsv:6};
             a=o.getElementsByTagName('head')[0];
             r=o.createElement('script');r.async=1;
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
-          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}
       </Script>
-      <Script
-        id="hotjar2"
-        strategy="off-main-thread"
-        src="https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html"
-      ></Script>
       {/* <Script
         id="sentry"
         strategy="off-main-thread"
