@@ -5,7 +5,6 @@ module.exports = {
     siteUrl: `https://www.jaybittner.com`,
     twitterUsername: `@jtbitt`,
   },
-  partytownProxiedURLs: [],
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
@@ -50,18 +49,7 @@ module.exports = {
         precachePages: [`/index/`, `/services/`, `/projects/*`, `/blog/*`],
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {
-          "/*": ["Access-Control-Allow-Origin: *"],
-        },
-        mergeSecurityHeaders: true,
-        mergeCachingHeaders: true,
-        transformHeaders: (headers, path) => headers,
-        generateMatchPathRewrites: true,
-      },
-    },
+    "gatsby-plugin-netlify",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
