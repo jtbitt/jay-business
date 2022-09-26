@@ -4,11 +4,7 @@ import { Script } from "gatsby";
 export const RootWrapper = ({ children }) => {
   return (
     <>
-      <Script
-        id="hotjar"
-        strategy="off-main-thread"
-        forward={[`hj`, `_hjSettings`]}
-      >
+      <Script id="hotjar" strategy="off-main-thread" crossOrigin="anonymous">
         {`(function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:3170670,hjsv:6};
@@ -19,12 +15,12 @@ export const RootWrapper = ({ children }) => {
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')
         `}
       </Script>
-      {/* <Script
+      <Script
         id="sentry"
         strategy="off-main-thread"
         src="https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js"
         crossOrigin="anonymous"
-      ></Script> */}
+      ></Script>
       {children}
     </>
   );
