@@ -2,23 +2,19 @@ import React from "react";
 import { Script } from "gatsby";
 
 export const RootWrapper = ({ children }) => {
+  const [sentryLoaded, setSentryLoaded] = useState(false);
+
   return (
     <>
-      {/* <Script
-        id="hotjar"
-        src="./hotjar.js"
-        strategy="off-main-thread"
-        forward={[`hj`, `_hjSettings`]}
-      >
-        {`
-          (function(h,o,t,j,a,r){
-            window.hj=window.hj||function(){(window.hj.q=windows.hj.q||[]).push(arguments)};
-            window._hjSettings={hjid:3170670,hjsv:6};
-          })(window);
-        `}
-      </Script> */}
-      <Script id="hotjar" strategy="idle">
-        {`
+      <Script
+        id="sentry"
+        src="https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js"
+        crossOrigin="anonymous"
+        onLoad={() => setSentryLoaded(true)}
+      ></Script>
+      {loaded && (
+        <Script id="hotjar">
+          {`
           (function(h,o,t,j,a,r){
               h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
               h._hjSettings={hjid:3170670,hjsv:6};
@@ -29,12 +25,8 @@ export const RootWrapper = ({ children }) => {
               a.appendChild(r);
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}
-      </Script>
-      <Script
-        id="sentry"
-        src="https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js"
-        crossOrigin="anonymous"
-      ></Script>
+        </Script>
+      )}
       {children}
     </>
   );
