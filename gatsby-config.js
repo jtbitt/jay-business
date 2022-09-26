@@ -8,6 +8,7 @@ module.exports = {
   partytownProxiedURLs: [
     `https://static.hotjar.com/c/hotjar-3170670.js?sv=6`,
     `https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html`,
+    `https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js`,
   ],
   plugins: [
     "gatsby-plugin-image",
@@ -59,12 +60,12 @@ module.exports = {
         allPageHeaders: [
           "Access-Control-Allow-Origin: https://static.hotjar.com/c/hotjar-3170670.js?sv=6",
           "Access-Control-Allow-Origin: https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html",
+          "Access-Control-Allow-Origin: https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js",
         ],
-        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
-        mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeCachingHeaders: true, // boolean to turn off the default caching headers
-        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+        mergeSecurityHeaders: true,
+        mergeCachingHeaders: true,
+        transformHeaders: (headers, path) => headers,
+        generateMatchPathRewrites: true,
       },
     },
     "gatsby-plugin-mdx",
