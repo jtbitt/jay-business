@@ -56,5 +56,6 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
+    "gatsby-plugin-netlify",
   ],
 };
