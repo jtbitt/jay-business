@@ -9,7 +9,7 @@ export const Start = ({ images }) => {
   images.intro.width = 430;
   return (
     <section id="start" aria-label="Start">
-      <div className="flex flex-col justify-center gap-14 md:gap-16 h-screen">
+      <div className="flex flex-col justify-center gap-14 md:gap-16 h-[calc(100vh-3.75rem)] xl:h-screen">
         <Heading
           type="h1"
           size="text-4xl md:text-5.5xl 2xl:text-6xl"

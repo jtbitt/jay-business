@@ -19,9 +19,7 @@ export const Layout = ({
     <div className="text-white">
       <Navbar onNavToggle={handleNavToggle} />
       <main
-        className={`${px} ${pt} pb-16 ${
-          showContent ? "visible" : "invisible"
-        }`}
+        className={`${px} ${pt} pb-16 ${showContent ? "visible" : "invisible"}`}
       >
         {children}
       </main>
