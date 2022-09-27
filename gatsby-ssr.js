@@ -17,17 +17,13 @@ export const onRenderBody = ({
       dangerouslySetInnerHTML={{
         __html: `partytown = {
           resolveUrl(url, location) {
-            console.log(url, location);
             switch (url.hostname) {
-              case 'static.hotjar.com': {
-                return
-                }
-                case 'vars.hotjar.com': {
-                return
-                }
-                case 'script.hotjar.com': {
-                  return
-                }
+              case 'vars.hotjar.com': {
+                return new URL(location.origin + '/__third-party-proxy?url=https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html');
+              }
+              case 'script.hotjar.com': {
+                return new URL(location.origin + '/__third-party-proxy?url=https://script.hotjar.com/modules.01a02f6e8b126e8c8358.js');
+              }
             }
           }
         }`,
