@@ -15,7 +15,7 @@ export const RootWrapper = ({ children }) => {
         src="https://plausible.io/js/plausible.js"
         crossOrigin="anonymous"
       ></Script>
-      <Script
+      {/* <Script
         id="hotjar-init"
         strategy="off-main-thread"
         forward={[`hj`, `_hjSettings`]}
@@ -30,7 +30,13 @@ export const RootWrapper = ({ children }) => {
             a.appendChild(r);
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}
-      </Script>
+      </Script> */}
+      {/* <Script
+        id="hotjar"
+        src="https://static.hotjar.com/c/hotjar-3170670.js?sv=6"
+        strategy="off-main-thread"
+        forward={[`hj`, `_hjSettings`]}
+      ></Script> */}
       {children}
     </>
   );
