@@ -46,6 +46,7 @@ export const NavOpen = ({ onNavClose, visible }) => {
             alt="Logo of the Jay Bittner business"
             layout="constrained"
             quality="100"
+            width="100"
             className="w-14 md:w-24"
           />
         </Link>
@@ -61,8 +62,8 @@ export const NavOpen = ({ onNavClose, visible }) => {
               key % 2 ? "" : "bg-gray-600/20"
             }`}
           >
-            <Link 
-              to={link.url} 
+            <Link
+              to={link.url}
               onClick={closeNav}
               onKeyDown={(e) => {
                 if (e.key !== "Tab") closeNav();
