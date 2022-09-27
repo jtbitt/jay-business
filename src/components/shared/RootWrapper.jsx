@@ -13,7 +13,6 @@ export const RootWrapper = ({ children }) => {
         id="plausible"
         data-domain="jaybittner.com"
         src="https://plausible.io/js/plausible.js"
-        strategy="off-main-thread"
       ></Script>
       <Script id="hotjar-init" strategy="off-main-thread">
         {`
