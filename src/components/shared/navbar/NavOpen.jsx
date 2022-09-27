@@ -46,7 +46,7 @@ export const NavOpen = ({ onNavClose, visible }) => {
             alt="Logo of the Jay Bittner business"
             layout="constrained"
             quality="100"
-            width="100"
+            width={200}
             className="w-14 md:w-24"
           />
         </Link>

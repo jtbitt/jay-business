@@ -9,6 +9,12 @@ export const RootWrapper = ({ children }) => {
         src="https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js"
         crossOrigin="anonymous"
       ></Script>
+      <Script
+        id="plausible"
+        data-domain="jaybittner.com"
+        src="https://plausible.io/js/plausible.js"
+        strategy="off-main-thread"
+      ></Script>
       <Script id="hotjar-init" strategy="off-main-thread">
         {`
           window.hj=window.hj||function(){(window.hj.q=window.hj.q||[]).push(arguments)};
