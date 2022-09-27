@@ -14,7 +14,7 @@ export const useImages = () => {
                 layout: CONSTRAINED
                 formats: [AUTO, WEBP]
                 quality: 100
-                width: 700
+                width: 610
               )
             }
           }

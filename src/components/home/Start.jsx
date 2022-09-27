@@ -6,6 +6,7 @@ import { ArrowDownIcon } from "@icons";
 import { Heading, Button } from "@components";
 
 export const Start = ({ images }) => {
+  images.intro.width = 430;
   return (
     <section id="start" aria-label="Start">
       <div className="flex flex-col justify-center gap-14 md:gap-16 h-screen">
