@@ -9,8 +9,10 @@ export const Analysis = ({
   title,
   image,
   alt,
-  imageLink,
-  imageCredit,
+  designLink,
+  designCredit,
+  githubLink,
+  projectLink,
   body,
 }) => {
   const img = getImage(image);
@@ -21,14 +23,39 @@ export const Analysis = ({
       <Heading type="h1">{title}</Heading>
       <GatsbyImage image={img} alt={alt} className="h-40 md:h-80" />
       <Description>
-        Photo Credit:{" "}
-        <a href={imageLink} className="text-amber-500">
-          {imageCredit}
+        Design Credit:{" "}
+        <a
+          href={designLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-amber-500"
+        >
+          {designCredit}
+        </a>
+        <br />
+        Github:{" "}
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-amber-500"
+        >
+          {title}
+        </a>
+        <br />
+        Project Demo:{" "}
+        <a
+          href={projectLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-amber-500"
+        >
+          {title}
         </a>
       </Description>
-      <Description>
-        <MDXRenderer>{body}</MDXRenderer>
-      </Description>
+      <div className="text-base md:text-lg 2xl:text-xl font-light tracking-widest space-y-10">
+        <MDXRenderer className="space-y-10">{body}</MDXRenderer>
+      </div>
     </div>
   );
 };

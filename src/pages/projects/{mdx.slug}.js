@@ -11,8 +11,10 @@ const ProjectPost = ({ data }) => {
         title={data.mdx.frontmatter.title}
         image={data.mdx.frontmatter.hero_image}
         alt={data.mdx.frontmatter.hero_image_alt}
-        imageLink={data.mdx.frontmatter.hero_image_credit_link}
-        imageCredit={data.mdx.frontmatter.hero_image_credit_text}
+        designCredit={data.mdx.frontmatter.design_credit_text}
+        designLink={data.mdx.frontmatter.design_credit_link}
+        githubLink={data.mdx.frontmatter.github_link}
+        projectLink={data.mdx.frontmatter.project_link}
         body={data.mdx.body}
       />
     </Layout>
@@ -27,13 +29,15 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         hero_image_alt
-        hero_image_credit_link
-        hero_image_credit_text
         hero_image {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
           }
         }
+        design_credit_text
+        design_credit_link
+        github_link
+        project_link
       }
     }
   }
