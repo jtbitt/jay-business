@@ -1470,7 +1470,7 @@
   resolved "https://registry.yarnpkg.com/@lmdb/lmdb-win32-x64/-/lmdb-win32-x64-2.5.3.tgz#c72e8b6faae31d925d23a6db0379cc3fe0216fdd"
   integrity sha512-cK+Elf3RjEzrm3SerAhrFWL5oQAsZSJ/LmjL1joIpTfEP1etJJ9CTRvdaV6XLYAxaEkfdhk/9hOvHLbR9yIhCA==
 
-"@mdx-js/mdx@^2.1.1":
+"@mdx-js/mdx@^2.1.1", "@mdx-js/mdx@^2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-2.1.3.tgz#d5821920ebe546b45192f4c7a64dcc68a658f7f9"
   integrity sha512-ahbb47HJIJ4xnifaL06tDJiSyLEy1EhFAStO7RZIm3GTa7yGW3NGhZaj+GUCveFgl5oI54pY4BgiLmYm97y+zg==
@@ -5560,7 +5560,7 @@ gatsby-page-utils@^2.24.0:
     lodash "^4.17.21"
     micromatch "^4.0.5"
 
-gatsby-parcel-config@^0.15.0:
+gatsby-parcel-config@0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-0.15.0.tgz#4dc8df4ee59c24e18e7bdf75efb39630e8636641"
   integrity sha512-hdJVL6QNygQT8BRuhyV5YjMZz2A27gJGLH8vWJJjCIsXX2/qi5nJRaEqRI0mRccA8G8/P7ezxKQiFQSwK8RZlA==
@@ -5831,9 +5831,9 @@ gatsby-worker@^1.24.0:
     "@babel/runtime" "^7.15.4"
 
 gatsby@^4.21.1:
-  version "4.24.0"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.24.0.tgz#bbb3b5f90c90ce2594197e538608af7ae091e22a"
-  integrity sha512-NS57z11p9mZ6OctLgO/ba2DmBRTyYFi4DU+AHJD1B3cL8jVKIVsTrzafMEsUyIgE0ikSi4mJ9FzHt8DCb+b/ww==
+  version "4.24.1"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.24.1.tgz#1c72fa484ed84942cdd8439a4528fcb1b6d14194"
+  integrity sha512-3+1RGtXpMmN5AQzcJHy1c0L5RDLI92KF3z97uJ3cnbw2fSr5uxHoaenMJLNIoSfNViZ5FzIoYaqWzDyJHyvNMQ==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -5921,7 +5921,7 @@ gatsby@^4.21.1:
     gatsby-legacy-polyfills "^2.24.0"
     gatsby-link "^4.24.0"
     gatsby-page-utils "^2.24.0"
-    gatsby-parcel-config "^0.15.0"
+    gatsby-parcel-config "0.15.0"
     gatsby-plugin-page-creator "^4.24.0"
     gatsby-plugin-typescript "^4.24.0"
     gatsby-plugin-utils "^3.18.0"
@@ -7564,9 +7564,9 @@ mdast-util-from-markdown@^1.0.0:
     uvu "^0.5.0"
 
 mdast-util-mdx-expression@^1.0.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/mdast-util-mdx-expression/-/mdast-util-mdx-expression-1.3.0.tgz#fed063cc6320da1005c8e50338bb374d6dac69ba"
-  integrity sha512-9kTO13HaL/ChfzVCIEfDRdp1m5hsvsm6+R8yr67mH+KS2ikzZ0ISGLPTbTswOFpLLlgVHO9id3cul4ajutCvCA==
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/mdast-util-mdx-expression/-/mdast-util-mdx-expression-1.3.1.tgz#2224cf0b5b150093704a3c225bd529d2de21f50f"
+  integrity sha512-TTb6cKyTA1RD+1su1iStZ5PAv3rFfOUKcoU5EstUpv/IZo63uDX03R8+jXjMEhcobXnNOiG6/ccekvVl4eV1zQ==
   dependencies:
     "@types/estree-jsx" "^1.0.0"
     "@types/hast" "^2.0.0"
@@ -7685,6 +7685,11 @@ mdurl@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==
+
+mdx-embed@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mdx-embed/-/mdx-embed-1.0.0.tgz#b1d6ae7fe8d27299769430b2ea7df280ae85c539"
+  integrity sha512-Ey2TqM7EA+EKHXUheD4me1rfxYvd633ZqoRIFv1shsfSxUQ+5776hUtPYm5g8WMZAKOkzta7cZKZ/ipUWCNoXQ==
 
 meant@^1.0.3:
   version "1.0.3"
@@ -9129,9 +9134,9 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.1.0, postcss-value-parser@^
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
 postcss@^8.2.15, postcss@^8.2.9, postcss@^8.3.11, postcss@^8.4.14:
-  version "8.4.16"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.16.tgz#33a1d675fac39941f5f445db0de4db2b6e01d43c"
-  integrity sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==
+  version "8.4.17"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.17.tgz#f87863ec7cd353f81f7ab2dec5d67d861bbb1be5"
+  integrity sha512-UNxNOLQydcOFi41yHNMcKRZ39NeXlr8AxGuZJsdub8vIb12fHzcq37DTU/QtbI6WLxNg2gF9Z+8qtRwTj1UI1Q==
   dependencies:
     nanoid "^3.3.4"
     picocolors "^1.0.0"

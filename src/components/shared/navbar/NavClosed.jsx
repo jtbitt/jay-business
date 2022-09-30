@@ -20,7 +20,7 @@ export const NavClosed = ({ onNavOpen, visible }) => {
   return (
     <div
       ref={ref}
-      className={`fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] 2xl:px-[33.5rem] py-4 md:py-7 bg-xs sm:bg-md 2xl:bg-lg bg-cover border-transparent ${visible}`}
+      className={`fixed z-20 w-full top-0 left-0 right-0 px-7 lg:px-[4.5rem] 2xl:px-[33.5rem] py-4 md:py-7 bg-xs sm:bg-md xl:bg-lg bg-cover border-transparent ${visible}`}
     >
       <button
         onClick={openNav}

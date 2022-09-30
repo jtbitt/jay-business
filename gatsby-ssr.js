@@ -7,28 +7,16 @@ export const wrapRootElement = ({ element }) => {
 
 export const onRenderBody = ({
   setHtmlAttributes,
-  setHeadComponents,
+  setBodyAttributes,
   setPostBodyComponents,
 }) => {
-  setHtmlAttributes({ lang: "en" });
-  setHeadComponents([
-    <script
-      key="partytown-vanilla-config"
-      dangerouslySetInnerHTML={{
-        __html: `partytown = {
-          resolveUrl(url, location) {
-            switch (url.hostname) {
-              case 'vars.hotjar.com': {
-                return new URL(location.origin + '/__third-party-proxy?url=https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html');
-              }
-              case 'script.hotjar.com': {
-                return new URL(location.origin + '/__third-party-proxy?url=https://script.hotjar.com/modules.01a02f6e8b126e8c8358.js');
-              }
-            }
-          }
-        }`,
-      }}
-    />,
-  ]);
+  setHtmlAttributes({
+    lang: "en",
+    className: "h-full w-full",
+  });
+  setBodyAttributes({
+    className:
+      "text-white h-full w-full overscroll-none bg-xs sm:bg-md xl:bg-lg",
+  });
   setPostBodyComponents([<div id="portal" key="portal"></div>]);
 };

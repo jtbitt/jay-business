@@ -2,39 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-#___gatsby,
-#gatsby-focus-wrapper {
-  height: 100%;
-  width: 100%;
-  overscroll-behavior: none;
-}
-
-body {
-  background-image: url("../images/background/background-xs.webp");
-  background-size: contain;
-}
-
-a,
-button {
-  cursor: default;
-}
-
-@media screen and (min-width: 640px) {
+@layer base {
   body {
-    background-image: url("../images/background/background-md.webp");
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  body {
-    background-image: url("../images/background/background-lg.webp");
-    background-size: cover;
+    @apply bg-contain xl:bg-cover;
   }
 
   a,
   button {
-    cursor: pointer;
+    @apply cursor-default xl:cursor-pointer;
   }
 }

@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-// import { Gist, Instagram } from "mdx-embed";
-// import { MDXProvider } from "@mdx-js/react";
+import { Gist } from "mdx-embed";
+import { MDXProvider } from "@mdx-js/react";
 
 import { Navbar } from "@components";
-
-// const shortcodes = { Gist, Instagram };
 
 export const Layout = ({
   children,
@@ -20,13 +18,13 @@ export const Layout = ({
   };
 
   return (
-    <div className="text-white">
+    <MDXProvider components={{ Gist }}>
       <Navbar onNavToggle={handleNavToggle} />
       <main
         className={`${px} ${pt} pb-16 ${showContent ? "visible" : "invisible"}`}
       >
         {children}
       </main>
-    </div>
+    </MDXProvider>
   );
 };
