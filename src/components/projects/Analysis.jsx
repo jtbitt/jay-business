@@ -1,6 +1,5 @@
 import * as React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 
 import { Heading, Description } from "@components";
 
@@ -13,12 +12,12 @@ export const Analysis = ({
   designCredit,
   githubLink,
   projectLink,
-  body,
+  children,
 }) => {
   const img = getImage(image);
 
   return (
-    <div className="space-y-8">
+    <div className="xl:px-40 space-y-8">
       <Description>{date}</Description>
       <Heading type="h1">{title}</Heading>
       <GatsbyImage image={img} alt={alt} className="h-40 md:h-80" />
@@ -54,7 +53,7 @@ export const Analysis = ({
         </a>
       </Description>
       <div className="text-base md:text-lg 2xl:text-xl font-light tracking-widest space-y-10">
-        <MDXRenderer className="space-y-10">{body}</MDXRenderer>
+        {children}
       </div>
     </div>
   );

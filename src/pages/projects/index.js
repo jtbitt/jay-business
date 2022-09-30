@@ -15,7 +15,7 @@ const ProjectsPage = ({ data }) => {
             subtitle={"lorem ipsum"}
             description={"lorem ipsum"}
             tools={["cool", "cool", "cool"]}
-            slug={node.slug}
+            slug={node.frontmatter.slug}
             key={key}
           />
         ))}
@@ -27,13 +27,14 @@ const ProjectsPage = ({ data }) => {
 export const query = graphql`
   query {
     allMdx(
-      filter: { fileAbsolutePath: { regex: "/projects/i" } }
+      filter: { internal: { contentFilePath: { regex: "/projects/i" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {
         frontmatter {
           date(formatString: "MMMM D, YYYY")
           title
+          slug
           hero_image_alt
           hero_image {
             childImageSharp {
@@ -41,7 +42,6 @@ export const query = graphql`
             }
           }
         }
-        slug
       }
     }
   }

@@ -3,17 +3,17 @@ import { graphql } from "gatsby";
 
 import { Seo, Layout, Post } from "@components";
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data: { mdx }, children }) => {
   return (
     <Layout>
       <Post
-        date={data.mdx.frontmatter.date}
-        title={data.mdx.frontmatter.title}
-        image={data.mdx.frontmatter.hero_image}
-        alt={data.mdx.frontmatter.hero_image_alt}
-        imageLink={data.mdx.frontmatter.here_image_credit_link}
-        imageCredit={data.mdx.frontmatter.hero_image_credit_text}
-        body={data.mdx.body}
+        date={mdx.frontmatter.date}
+        title={mdx.frontmatter.title}
+        image={mdx.frontmatter.hero_image}
+        alt={mdx.frontmatter.hero_image_alt}
+        imageLink={mdx.frontmatter.here_image_credit_link}
+        imageCredit={mdx.frontmatter.hero_image_credit_text}
+        children={children}
       />
     </Layout>
   );
@@ -22,7 +22,6 @@ const BlogPost = ({ data }) => {
 export const query = graphql`
   query ($id: String) {
     mdx(id: { eq: $id }) {
-      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

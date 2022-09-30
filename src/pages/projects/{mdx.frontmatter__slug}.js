@@ -3,20 +3,20 @@ import { graphql } from "gatsby";
 
 import { Seo, Layout, Analysis } from "@components";
 
-const ProjectPost = ({ data }) => {
+const ProjectPost = ({ data: { mdx }, children }) => {
   return (
     <Layout>
       <Analysis
-        date={data.mdx.frontmatter.date}
-        title={data.mdx.frontmatter.title}
-        image={data.mdx.frontmatter.hero_image}
-        alt={data.mdx.frontmatter.hero_image_alt}
-        designCredit={data.mdx.frontmatter.design_credit_text}
-        designLink={data.mdx.frontmatter.design_credit_link}
-        githubLink={data.mdx.frontmatter.github_link}
-        projectLink={data.mdx.frontmatter.project_link}
-        body={data.mdx.body}
-      />
+        date={mdx.frontmatter.date}
+        title={mdx.frontmatter.title}
+        image={mdx.frontmatter.hero_image}
+        alt={mdx.frontmatter.hero_image_alt}
+        designCredit={mdx.frontmatter.design_credit_text}
+        designLink={mdx.frontmatter.design_credit_link}
+        githubLink={mdx.frontmatter.github_link}
+        projectLink={mdx.frontmatter.project_link}
+        children={children}
+      ></Analysis>
     </Layout>
   );
 };
@@ -24,7 +24,6 @@ const ProjectPost = ({ data }) => {
 export const query = graphql`
   query ($id: String) {
     mdx(id: { eq: $id }) {
-      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

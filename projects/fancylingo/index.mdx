@@ -1,5 +1,6 @@
 ---
 title: "Fancylingo"
+slug: "fancylingo"
 date: "2021-11-30"
 hero_image: "./fancylingo.jpg"
 hero_image_alt:
@@ -47,6 +48,9 @@ project_link: "https://photos.google.com/share/AF1QipO42_ViBLqLBAhIuIzBmLyaxdh8X
   but once I figured it out it was pretty straightforward. Utilizing React hooks
   I was able to take care of the different authentication api calls.
 </p>
+
+![Fancylingo Firebase authentication console](./authentication.png)
+
 <p>
   Following that up, I thought pretty hard when it came to the database. I
   really wanted to use the NoSQL Firebase database but it didn't seem to make
@@ -54,11 +58,25 @@ project_link: "https://photos.google.com/share/AF1QipO42_ViBLqLBAhIuIzBmLyaxdh8X
   relational database made much more sense. I didn't want to build out a server
   and put a database there so I used Hasura, which is a cloud PostgreSQL
   database. It gives you all the features of a relational database and generates
-  RestAPIs and GraphQL so you can pull the data into your project. I created a
-  specific role for authenticated users so they could pull the content from the
-  app but then I had another problem, I needed each user to have a unique token
-  to tap into the lesson content.
+  RestAPIs and GraphQL so you can pull the data into your project.
 </p>
+
+![Fancylingo Hasura Dashboard](./hasura-dashboard.png)
+
+<p>
+  {" "}
+  I created tables for each course (ie. Spanish), lessons (ie. Colombian Slang),
+  cards (ie. Avion), and lesson_cards (organizes which cards go in each lesson, which
+  order, etc) to contain all the data for language content. I also created user_lessons,
+  so users only have access to the lessons they purchased and user_cards which are
+  cards that a user specifically saved to practice more. I created a specific role
+  for authenticated users so they could pull the lesson data from the database but
+  then I had another problem, I needed each user to have a unique token to tap into
+  the lesson content.
+</p>
+
+![Fancylingo Hasura PostgreSQL Database](./hasura-db.png)
+
 <p>
   I went back searching into the documentation to see how I could generate a
   token after the Firebase authentication and pass it to Hasura. What ended up
@@ -70,6 +88,9 @@ project_link: "https://photos.google.com/share/AF1QipO42_ViBLqLBAhIuIzBmLyaxdh8X
   Hasura while passing the token and pulled the lessons into the app from the
   cloud.
 </p>
+
+{/* <Gist gistLink="f91930c353c796bc82b494108942927e" /> */}
+
 <p>
   This was all great but there was one last technical thing I needed to do,
   which was to load a set of flash cards whenever a lesson was selected. I also
@@ -81,6 +102,9 @@ project_link: "https://photos.google.com/share/AF1QipO42_ViBLqLBAhIuIzBmLyaxdh8X
   the data, grab the media, and then merge them together into one flashcard
   object for each card. It ended up working out well.
 </p>
+
+![Fancylingo Firebase Media Storage](./storage.png)
+
 <p>
   Finally, I worked hard to make the UI look great, using CSS-in-JS and Flexbox
   for pretty much everything. I ended up getting it looking good on all mobile

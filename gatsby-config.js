@@ -35,6 +35,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+              showCaptions: true,
+              withWebp: true,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Jay Bittner | Front-End Developer`,
@@ -55,7 +70,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-netlify",
-    "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
   ],

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 
 import { Heading, Description } from "@components";
 
@@ -11,7 +10,7 @@ export const Post = ({
   alt,
   imageLink,
   imageCredit,
-  body,
+  children,
 }) => {
   const img = getImage(image);
 
@@ -23,9 +22,7 @@ export const Post = ({
       <Description>
         Photo Credit: <a href={imageLink}>{imageCredit}</a>
       </Description>
-      <Description>
-        <MDXRenderer>{body}</MDXRenderer>
-      </Description>
+      <Description>{children}</Description>
     </div>
   );
 };

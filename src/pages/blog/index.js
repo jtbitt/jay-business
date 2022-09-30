@@ -12,7 +12,7 @@ const BlogPage = ({ data }) => {
             image={node.frontmatter.hero_image}
             alt={node.frontmatter.hero_image_alt}
             title={node.frontmatter.title}
-            slug={node.slug}
+            slug={node.frontmatter.slug}
             key={key}
           />
         ))}
@@ -24,13 +24,14 @@ const BlogPage = ({ data }) => {
 export const query = graphql`
   query {
     allMdx(
-      filter: { fileAbsolutePath: { regex: "/blog/i" } }
+      filter: { internal: { contentFilePath: { regex: "/blog/i" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {
         frontmatter {
           date(formatString: "MMMM D, YYYY")
           title
+          slug
           hero_image_alt
           hero_image {
             childImageSharp {
@@ -38,7 +39,6 @@ export const query = graphql`
             }
           }
         }
-        slug
       }
     }
   }

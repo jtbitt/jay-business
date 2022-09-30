@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+// import { Gist, Instagram } from "mdx-embed";
+// import { MDXProvider } from "@mdx-js/react";
 
 import { Navbar } from "@components";
+
+// const shortcodes = { Gist, Instagram };
 
 export const Layout = ({
   children,
