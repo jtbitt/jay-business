@@ -6,3 +6,4 @@ export { Button } from "./Button";
 export { Heading } from "./Heading";
 export { Description } from "./Description";
 export { Skill } from "./Skill";
+export { MobileVideo } from "./MobileVideo";

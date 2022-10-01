@@ -12,6 +12,9 @@ github_link: "https://github.com/jtbitt/fancylingo"
 project_link: "https://photos.google.com/share/AF1QipO42_ViBLqLBAhIuIzBmLyaxdh8XV3QAIDhbFrqkvUqPZg-FQzziE0sIOkOfRjsUA/photo/AF1QipPLdi9eUL9RTKtnY0cklkeOr8vED_wblrFV4xM7?key=clFJMjdUV0JwMjhNcGdwcGxrcDZsek5MeWNIbU9n"
 ---
 
+import { Gist } from "mdx-embed";
+import { MobileVideo } from "@components";
+
 I love to travel and get to know new countries, no doubt about it. So do my
 friends. The new food, all the novelty, and new places to check out, it's dope.
 But one of the biggest issues, while amusing at times, is that we don't always
@@ -26,6 +29,8 @@ we could come up with. Jason had the initial idea so we analyzed his vision and
 he put together a wireframe. From there, Mafer did her work in building out a
 design from the wireframe and research and making it look pretty. Once she was
 done with her magic, that was when it was my turn to step in.
+
+<figure>![Fancylingo prototype](./prototype.png)</figure>
 
 When I was deciding how to build I wanted to leverage skills I already had
 (Javascript, React) and also to use one codebase for both Android and iPhone.
@@ -42,7 +47,16 @@ email. I found it somewhat tedious to implement for the first time on mobile,
 but once I figured it out it was pretty straightforward. Utilizing React hooks I
 was able to take care of the different authentication api calls.
 
-<>![Fancylingo Firebase authentication console](./authentication.png)</>
+<figure>![Firebase authentication console](./authentication.png)</figure>
+
+Since I was already invested in Fiirebase, their Cloud Storage made a lot of
+sense to handle the storage of the lesson images, flashcard images, and
+flaschard audio. I split up the 3 different media types into seperate buckets in
+the cloud. I made sure to keep the naming simple and straightforward as I knew I
+would need to add these corresponding values in the database later with the rest
+of the lesson data.
+
+<figure>![Fancylingo Firebase Media Storage](./storage.png)</figure>
 
 Following that up, I thought pretty hard when it came to the database. I really
 wanted to use the NoSQL Firebase database but it didn't seem to make sense for
@@ -52,7 +66,7 @@ database there so I used Hasura, which is a cloud PostgreSQL database. It gives
 you all the features of a relational database and generates RestAPIs and GraphQL
 so you can pull the data into your project.
 
-<>![Fancylingo Hasura Dashboard](./hasura-dashboard.png)</>
+<figure>![Fancylingo Hasura Dashboard](./hasura-dashboard.png)</figure>
 
 I created tables for each course (ie. Spanish), lessons (ie. Colombian Slang),
 cards (ie. Avion), and lesson_cards (organizes which cards go in each lesson,
@@ -60,36 +74,97 @@ which order, etc) to contain all the data for language content. I also created
 user_lessons, so users only have access to the lessons they purchased and
 user_cards which are cards that a user specifically saved to practice more. I
 created a specific role for authenticated users so they could pull the lesson
-data from the database but then I had another problem, I needed each user to
-have a unique token to tap into the lesson content.
+data from the database but then I had another problem, I needed a way to tell
+Hasura that each Firebase user was authenticated and allowed to access the data.
 
-<>![Fancylingo Hasura PostgreSQL Database](./hasura-db.png)</>
+<figure>![Fancylingo Hasura PostgreSQL Database](./hasura-db.png)</figure>
 
 I went back searching into the documentation to see how I could generate a token
 after the Firebase authentication and pass it to Hasura. What ended up being the
 solution necessary was to use Firebase cloud functions along with setting up
 several env variables to link Firebase with Hasura. The cloud function I created
-basically listened for authentication than would generate a hasura token and add
-it to the Firebase user object. Once the user was authenticated and sent to the
-lessons section, Apollo made a GraphQL query to Hasura while passing the token
-and pulled the lessons into the app from the cloud.
+used node in the cloud and listened for Firebase authentication. On this
+authentication, the claims, which are Hasura's way of tracking authenticated
+users, were sent to Hasura. The refresh needed to be implemented on the cloud
+function, otherwise the new Hasura claims would not show up in the user object
+until a page refresh in the application.
 
-This was all great but there was one last technical thing I needed to do, which
-was to load a set of flash cards whenever a lesson was selected. I also needed
-to have an audio file attached to each flash card that played the sound. Since I
-was already invested, Firebase Cloud Storage made a lot of sense to handle both
-of those things. I split up the audio files and image files and put them into
-the cloud then I put the corresponding file names into the database entry for
-each card. From there, I used more hooks to pull down the data, grab the media,
-and then merge them together into one flashcard object for each card. It ended
-up working out well.
+I also gave access to all the lessons to any newly authenticated user by making
+a graphql mutation query the user_lessons table. If this was a fully built app I
+would do this differently, keeping all these lesson objects in a seperate json
+file or similar idea. Also, other than a few free lessons, this lesson access
+would be triggered and adjusted when a user pays for one of the lessons rather
+than when they register.
 
-<>![Fancylingo Firebase Media Storage](./storage.png)</>
+<Gist gistLink="f91930c353c796bc82b494108942927e" />
+
+The mobile application had a listener in the Auth hook that paid attention to
+any changes in the Firebase Auth State. When the state changed, the claims on
+the Firebase user were sent to Hasura for verification. If the claim matched in
+Hasura, the user received an auth token that was applied to the global
+AuthProvider. In another case, if a previously authenticated user already had
+the token on their phone it was synced into the AuthProvider.
+
+<figure>![AuthContext checking for Hasura claims](./auth-provider.png)</figure>
+
+Once the user got through authentication checks, they were allowed to pass
+through the routing into the application. This is the same time Apollo was
+allowed to configure GraphQL calls for a specific user, now that they were
+verified and had the token.
+
+<figure>![Fancylingo router](./routing-check.png)</figure>
+
+This token was also used to pull lesson data at various parts of the application
+once the user had access. The first thing the user saw was the Lesson List
+screen, which initiated a custom useLessons hook. This is also where the lessons
+were loaded once retrieved from the hook.
+
+<figure>![Fancylingo Lesson List component](./lesson-list-screen.png)</figure>
+<figure>![Fancylingo useLessons hook](./use-lessons-hook.png)</figure>
+
+Within this lessons hook there was another useFirebase hook utilized where I
+pulled the specific images for each lesson that were stored in the PostgreSQL
+database. Once I retrieved the images from Firebase storage I merged them with
+the other lesson data pulled from the Hasura PostgreSQL database and returned
+them back to the Lesson List screen for rendering.
+
+<figure>![getMedia function from useFirebase hook](./get-media.png)</figure>
+
+As you can see, I really like hooks and tried to break down all the logic into
+as many smaller pieces as possible with specific jobs. This is one snapshot of
+doing it but I used a similar process a few more times in the application to get
+different flashcard data. You can see my entire implementation in the code.
 
 Finally, I worked hard to make the UI look great, using CSS-in-JS and Flexbox
 for pretty much everything. I ended up getting it looking good on all mobile
-screens and really matching the design. Overall, I found building out a mobile
-app to be much more difficult than building a web app, but maybe it's because I
-have so much experience in web. I was really stoked to pull it off and we'll see
-where this project goes, we may try to do a kickstarter with it. Was a cool
-learning experience.
+screens and really matching the design.
+
+<div className="flex flex-row justify-center">
+  <figure>![Fancylingo lesson options](./lessons.png)</figure>
+</div>
+
+Overall, I found building out a mobile app to be more time consuming than
+building a web app, as I felt a lot of the normal tools I used were not
+compatible on mobile. The debugging was also quite a bit harder in my opinion.
+It may just because I'm so much more experienced on web and my process isn't as
+optimized but a lot of my skills carried over to React Native which was nice. It
+was an interesting challenge and I'm glad I saw it through to the end.
+
+There wasn't a great way to show off the finished application to all users on
+the web for easy access. I was able to deploy it on Expo for Android but this
+option was not available for iPhone which was not ideal. Also, in order for the
+Android user to view the application they needed the Expo application on their
+phone and to scan a QR code.
+
+<figure>![Expo deployment dashboard](./expo-dashboard.png)</figure>
+
+Some options exist to register for the corresponding app stores and launch a
+test deployment, but they involved buying licenses and a lot of configuration
+which kind of went against the point to me which was to get it out there and
+show it to as many people as possible. There is an option in Expo to deploy to
+web so I'll put that out there at some point. For now, I did a screen record
+from my Android to show a demo of the application. We've been pretty swamped
+with work and haven't pursued this project too hard but we'd like to at some
+point, whether as a mobile app, web app, or some kind of web3 iteration.
+
+<MobileVideo url="https://video-downloads.googleusercontent.com/AEwWKPw5IkNrzHSl0pS-9Tr1N6VVvnlVQuAoVp0dMURyXHPBCE_-xvr1_wYfgNyv-Hkth8iRWc7k8dBiubC4Q402Jo1bA0fehhiCX2--M4p1vf-DFIZHYDcDyO_HILKHrZdqhek8nNUPSvPzmg1FBVIep0SGo3I5oLgkhCcVZvHOmTN4cD6gri_CgvFM2XBFTcjqYziDeO7EoSCmxQb8C5310EUid_31aQm4SPWMf4uUvx8rUG1YTQ--Zju5ICrloXs8l3OJ8DG0bQQB3UOueNBdXtnl33-7JLQnzkVBSr-N_HOns9dq4piAocZ_OD6xCehHDvT0M-7sTetj7Pig60nIe4cS6K-H5-hrsyXZtBoB49vU949A2k3BwNml0UDC5cWLoiSrkHNYUgsG5UPa0veu9oViZbDPmfR4Y_1fngGVGNVgJN37pSoF9rHJ4QktslXCeYXfd6Geb1l8AEqdW_7mzH5-xR47OCNn0TKxhqYHJrbRAt9lhjUgEBxhWDOE0dkueX0ogpB_Gb6MrBwJ1bxRoSoHliYtcYperw0sbsg-SJ1cgXNi785HG-l7KpzjdbQVgJk9DZdUg74IZx_xOMXuhgXUHn7pbD_SOXjZmucU9JNNqNoS6OmfWf-mDyXWR9rnEt8Dfiqa-E0EJz-zgvC9g7aQ4ucB0JC_9MzYKyvZoBeSCKZAXu4ZnyYHgA9WjN12VrXlRtQmAky6CcVf3aZyBhvK0N9_X_t3YR9tYAavVHFJDKDqnl5CYm5mzhv0fGThQD2CpdIMTs2t0xYIjXtz_PpOtfP1FwcPc0s6Se03JEGqqN-C0NCbzRYAipIGcRb6h9to2X-JZx5Q5GzU3AOqQJerBN7ZTznJ5J_8KQYqsS_ju44JZVe0XQ6mPIp63neElk7hJnXe7VH8pFSqlPm_wU_yjtWbfZekWaHL03RjZTYqAt5h9T2pNUipjAK3oN0pn_1pAeWoTdjB4ohbWj5TNM-6E-gqoWG-g9A8YmWQTT3KD90tE7-g-Z6FzxMDdadHqbKhq7FaBDFkBe-BluNMYxzugQHRz7bYqcvsElLiK7VmQKHF0dsOarPFvhpm8C3AypwP5DELIxmu1a2hGzkchc2o16xlplS8-LYtxp_CyBh61cqh3y-JBwUgFBu6BtKjHWE9zGnqGkPV8PhyVlEKod4ueEPCEA?authuser=0" />

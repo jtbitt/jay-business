@@ -11,4 +11,8 @@
   button {
     @apply cursor-default xl:cursor-pointer;
   }
+
+  figcaption {
+    @apply italic text-sm md:text-base 2xl:text-lg mt-2;
+  }
 }

@@ -8,6 +8,7 @@ export {
   Heading,
   Description,
   Skill,
+  MobileVideo,
 } from "./shared";
 
 // home
