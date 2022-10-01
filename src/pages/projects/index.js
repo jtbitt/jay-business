@@ -12,9 +12,8 @@ const ProjectsPage = ({ data }) => {
             image={node.frontmatter.hero_image}
             alt={node.frontmatter.hero_image_alt}
             title={node.frontmatter.title}
-            subtitle={"lorem ipsum"}
-            description={"lorem ipsum"}
-            tools={["cool", "cool", "cool"]}
+            description={node.frontmatter.description}
+            tools={node.frontmatter.tools}
             slug={node.frontmatter.slug}
             key={key}
           />
@@ -34,6 +33,8 @@ export const query = graphql`
         frontmatter {
           date(formatString: "MMMM D, YYYY")
           title
+          description
+          tools
           slug
           hero_image_alt
           hero_image {
