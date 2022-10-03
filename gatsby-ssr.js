@@ -12,7 +12,7 @@ export const onRenderBody = ({
 }) => {
   setHtmlAttributes({
     lang: "en",
-    className: "h-full w-full",
+    className: "h-full w-full bg-black",
   });
   setBodyAttributes({
     className: "text-white h-full w-full bg-xs sm:bg-md xl:bg-lg",
