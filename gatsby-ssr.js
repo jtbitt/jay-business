@@ -15,8 +15,7 @@ export const onRenderBody = ({
     className: "h-full w-full",
   });
   setBodyAttributes({
-    className:
-      "text-white h-full w-full overscroll-none bg-xs sm:bg-md xl:bg-lg",
+    className: "text-white h-full w-full bg-xs sm:bg-md xl:bg-lg",
   });
   setPostBodyComponents([<div id="portal" key="portal"></div>]);
 };
