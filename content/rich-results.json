@@ -1,13 +1,30 @@
 {
   "index": {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "Corporation",
+    "name": "Jay Bittner LLC",
+    "alternateName": "Jay Bittner",
     "url": "https://www.jaybittner.com",
-    "brand": "Jay Bittner",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "jaybittner@gmail.com",
-      "contactType": "Customer Support"
+    "logo": "../images/logo.png",
+    "sameAs": "https://github.com/jtbitt"
+  },
+  "services": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Static website for $1k",
+    "image": "",
+    "description": "Build a fast static website with GatsbyJS and TailwindCSS using best practices for easy maintenance and high performance",
+    "brand": {
+      "@type": "Brand",
+      "name": "Jay Bittner"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.jaybittner.com/services",
+      "priceCurrency": "USD",
+      "price": "1000",
+      "priceValidUntil": "2023-07-01",
+      "availability": "https://schema.org/InStock"
     }
   }
 }

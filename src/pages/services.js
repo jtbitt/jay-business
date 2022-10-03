@@ -10,6 +10,7 @@ import {
 } from "@components";
 import services from "@content/services.json";
 import faqs from "@content/faqs.json";
+import richResults from "@content/rich-results";
 
 const ServicesPage = () => {
   return (
@@ -57,5 +58,9 @@ export const Head = () => (
     title="Services | Jay Bittner"
     description="Elevate your projects with a seasoned Front-End Developer"
     pathname="/services"
-  />
+  >
+    <script type="application/ld+json">
+      {JSON.stringify(richResults.services)}
+    </script>
+  </Seo>
 );
