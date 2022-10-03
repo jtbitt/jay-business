@@ -26,11 +26,17 @@ export const query = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         title
+        description
         date(formatString: "MMMM DD, YYYY")
         hero_image_alt
         hero_image {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
+            gatsbyImageData(
+              layout: CONSTRAINED
+              formats: [AUTO, WEBP]
+              width: 1000
+              quality: 100
+            )
           }
         }
         design_credit_text
@@ -44,10 +50,10 @@ export const query = graphql`
 
 export default ProjectPost;
 
-export const Head = ({ data }) => (
+export const Head = ({ data: { mdx } }) => (
   <Seo
-    title={data.mdx.frontmatter.title + " | Jay Bittner"}
-    description={data.mdx.body}
-    pathname={"/projects/" + data.mdx.frontmatter.title}
+    title={mdx.frontmatter.title + " | Jay Bittner"}
+    description={mdx.frontmatter.description}
+    pathname={"/projects/" + mdx.frontmatter.title}
   />
 );
