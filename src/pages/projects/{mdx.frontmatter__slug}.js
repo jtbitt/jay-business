@@ -85,7 +85,7 @@ export const Head = ({ data: { mdx } }) => (
               "url": "${logo}"
             }
           },
-          "datePublished": ${mdx.frontmatter.date}
+          "datePublished": "${mdx.frontmatter.date}"
         }
       `}
     </script>
