@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-black;
+  }
+
+  html,
   body {
-    @apply bg-contain xl:bg-cover overscroll-none;
+    @apply h-full w-full;
+  }
+
+  body {
+    @apply text-white bg-xs sm:bg-md xl:bg-lg bg-contain xl:bg-cover overscroll-none;
   }
 
   a,
