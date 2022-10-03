@@ -1,7 +1,9 @@
 import * as React from "react";
 import { graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 
 import { Seo, Layout, Post } from "@components";
+import logo from "@images/logo.png";
 
 const BlogPost = ({ data: { mdx }, children }) => {
   return (
@@ -25,6 +27,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        slug
         date(formatString: "MMMM DD, YYYY")
         hero_image_alt
         hero_image_credit_link
@@ -46,5 +49,36 @@ export const Head = ({ data: { mdx } }) => (
     title={mdx.frontmatter.title + " | Jay Bittner"}
     description={mdx.frontmatter.description}
     pathname={"/blog/" + mdx.frontmatter.title}
-  />
+  >
+    <script type="application/ld+json">
+      {`
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.jaybittner.com/projects/${mdx.frontmatter.slug}"
+          },
+          "headline": "${mdx.frontmatter.title}",
+          "image": "https://www.jaybittner.com${
+            getImage(mdx.frontmatter.hero_image).images.fallback.src
+          }",
+          "author": {
+            "@type": "Person",
+            "name": "Jay Bittner",
+            "url": "https://www.jaybittner.com"
+          },  
+          "publisher": {
+            "@type": "Organization",
+            "name": "Jay Bittner",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "${logo}"
+            }
+          },
+          "datePublished": "${mdx.frontmatter.date}"
+        }
+      `}
+    </script>
+  </Seo>
 );
