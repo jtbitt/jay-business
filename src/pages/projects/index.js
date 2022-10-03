@@ -1,4 +1,4 @@
-Simport * as React from "react";
+import * as React from "react";
 import { graphql } from "gatsby";
 
 import { Seo, Layout, Project } from "@components";

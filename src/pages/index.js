@@ -12,7 +12,7 @@ import {
   Services,
   Connect,
 } from "@components";
-import richResults from "@content/rich-results";
+import logo from "@images/logo.png";
 
 const IndexPage = () => {
   const { start, about, travel, projects, services, connect } = useImages();
@@ -35,7 +35,17 @@ export default IndexPage;
 export const Head = () => (
   <Seo>
     <script type="application/ld+json">
-      {JSON.stringify(richResults.index)}
+      {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Corporation",
+          "name": "Jay Bittner LLC",
+          "alternateName": "Jay Bittner",
+          "url": "https://www.jaybittner.com",
+          "logo": "${logo}",
+          "sameAs": "https://github.com/jtbitt"
+        }
+      `}
     </script>
   </Seo>
 );

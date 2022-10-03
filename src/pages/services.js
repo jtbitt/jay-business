@@ -10,7 +10,7 @@ import {
 } from "@components";
 import services from "@content/services.json";
 import faqs from "@content/faqs.json";
-import richResults from "@content/rich-results";
+import logo from "@images/logo.png";
 
 const ServicesPage = () => {
   return (
@@ -60,7 +60,27 @@ export const Head = () => (
     pathname="/services"
   >
     <script type="application/ld+json">
-      {JSON.stringify(richResults.services)}
+      {`
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Static website for $1k",
+          "image": "${logo}",
+          "description": "Build a fast static website with GatsbyJS and TailwindCSS using best practices for easy maintenance and high performance",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jay Bittner"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.jaybittner.com/services",
+            "priceCurrency": "USD",
+            "price": "1000",
+            "priceValidUntil": "2023-07-01",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      `}
     </script>
   </Seo>
 );
