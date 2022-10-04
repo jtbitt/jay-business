@@ -48,7 +48,7 @@ export const Head = ({ data: { mdx } }) => (
   <Seo
     title={mdx.frontmatter.title + " | Jay Bittner"}
     description={mdx.frontmatter.description}
-    pathname={"/blog/" + mdx.frontmatter.title}
+    pathname={"/blog/" + mdx.frontmatter.slug}
   >
     <script type="application/ld+json">
       {`

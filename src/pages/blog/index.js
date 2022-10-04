@@ -9,9 +9,11 @@ const BlogPage = ({ data }) => {
       <div className="space-y-20">
         {data.allMdx.nodes.map((node, key) => (
           <Article
+            date={node.frontmatter.date}
             image={node.frontmatter.hero_image}
             alt={node.frontmatter.hero_image_alt}
             title={node.frontmatter.title}
+            description={node.frontmatter.description}
             slug={node.frontmatter.slug}
             key={key}
           />
@@ -31,6 +33,7 @@ export const query = graphql`
         frontmatter {
           date(formatString: "MMMM D, YYYY")
           title
+          description
           slug
           hero_image_alt
           hero_image {
