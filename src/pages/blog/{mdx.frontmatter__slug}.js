@@ -13,7 +13,7 @@ const BlogPost = ({ data: { mdx }, children }) => {
         title={mdx.frontmatter.title}
         image={mdx.frontmatter.hero_image}
         alt={mdx.frontmatter.hero_image_alt}
-        imageLink={mdx.frontmatter.here_image_credit_link}
+        imageLink={mdx.frontmatter.hero_image_credit_link}
         imageCredit={mdx.frontmatter.hero_image_credit_text}
         children={children}
       />
