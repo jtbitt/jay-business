@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import { Seo, Layout, Analysis } from "@components";
-import logo from "@images/logo.png";
 
 const ProjectPost = ({ data: { mdx }, children }) => {
   return (
@@ -16,7 +15,6 @@ const ProjectPost = ({ data: { mdx }, children }) => {
         designCredit={mdx.frontmatter.design_credit_text}
         designLink={mdx.frontmatter.design_credit_link}
         githubLink={mdx.frontmatter.github_link}
-        projectLink={mdx.frontmatter.project_link}
         children={children}
       ></Analysis>
     </Layout>
@@ -45,7 +43,6 @@ export const query = graphql`
         design_credit_text
         design_credit_link
         github_link
-        project_link
       }
     }
   }
@@ -82,7 +79,7 @@ export const Head = ({ data: { mdx } }) => (
             "name": "Jay Bittner",
             "logo": {
               "@type": "ImageObject",
-              "url": "${logo}"
+              "url": "${"/logo.png"}"
             }
           },
           "datePublished": "${mdx.frontmatter.date}"

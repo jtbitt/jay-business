@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import { Seo, Layout, Post } from "@components";
-import logo from "@images/logo.png";
 
 const BlogPost = ({ data: { mdx }, children }) => {
   return (
@@ -73,7 +72,7 @@ export const Head = ({ data: { mdx } }) => (
             "name": "Jay Bittner",
             "logo": {
               "@type": "ImageObject",
-              "url": "${logo}"
+              "url": "${"/logo.png"}"
             }
           },
           "datePublished": "${mdx.frontmatter.date}"

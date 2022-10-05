@@ -10,7 +10,6 @@ import {
 } from "@components";
 import services from "@content/services.json";
 import faqs from "@content/faqs.json";
-import logo from "@images/logo.png";
 
 const ServicesPage = () => {
   return (
@@ -65,7 +64,7 @@ export const Head = () => (
           "@context": "https://schema.org/",
           "@type": "Product",
           "name": "Static website for $1k",
-          "image": "${logo}",
+          "image": "${"/logo.png"}",
           "description": "Build a fast static website with GatsbyJS and TailwindCSS using best practices for easy maintenance and high performance",
           "brand": {
             "@type": "Brand",

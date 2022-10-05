@@ -11,7 +11,6 @@ export const Analysis = ({
   designLink,
   designCredit,
   githubLink,
-  projectLink,
   children,
 }) => {
   const img = getImage(image);
@@ -35,16 +34,6 @@ export const Analysis = ({
         Github:{" "}
         <a
           href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-amber-500"
-        >
-          {title}
-        </a>
-        <br />
-        Project Demo:{" "}
-        <a
-          href={projectLink}
           target="_blank"
           rel="noopener noreferrer"
           className="text-amber-500"

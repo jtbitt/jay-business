@@ -12,7 +12,6 @@ import {
   Services,
   Connect,
 } from "@components";
-import logo from "@images/logo.png";
 
 const IndexPage = () => {
   const { start, about, travel, projects, services, connect } = useImages();
@@ -42,7 +41,7 @@ export const Head = () => (
           "name": "Jay Bittner LLC",
           "alternateName": "Jay Bittner",
           "url": "https://www.jaybittner.com",
-          "logo": "${logo}",
+          "logo": "${"/logo.png"}",
           "sameAs": "https://github.com/jtbitt"
         }
       `}
