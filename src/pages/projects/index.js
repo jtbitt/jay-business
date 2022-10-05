@@ -31,7 +31,7 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          date(formatString: "MMMM D, YYYY")
+          date(formatString: "MMMM DD, YYYY")
           title
           description
           tools

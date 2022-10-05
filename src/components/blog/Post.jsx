@@ -17,7 +17,7 @@ export const Post = ({
   return (
     <div className="xl:px-40 space-y-8">
       <Description>{date}</Description>
-      <Heading type="h1">{title}</Heading>
+      <Heading type="h2">{title}</Heading>
       <GatsbyImage image={img} alt={alt} className="h-40 md:h-80" />
       <Description>
         Photo Credit:{" "}
