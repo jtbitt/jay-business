@@ -5,12 +5,7 @@
     "image": "coding",
     "price": "$70/hour",
     "description": "Achieve whatever goals you have with my several years of Front-End experience and variety of skills",
-    "highlights": [
-      "Front-End",
-      "React",
-      "Professional",
-      "Best Practices"
-    ],
+    "highlights": ["Front-End", "React", "Professional", "Best Practices"],
     "features": [
       "Construct a single project or MVP",
       "Add me to your team for bigger projects and long term work",
@@ -34,12 +29,7 @@
     "image": "mentoring",
     "price": "$2000",
     "description": "Migrate your current Front-End to GatsbyJS, React, or Angular, depending on your needs",
-    "highlights": [
-      "Javascript",
-      "Tailwind",
-      "Modern Tools",
-      "Organized"
-    ],
+    "highlights": ["Javascript", "Tailwind", "Modern Tools", "Organized"],
     "features": [
       "Convert to modern Javascript",
       "Update your CSS to Tailwind",
@@ -64,17 +54,12 @@
     "image": "1kwebpage",
     "price": "$1000",
     "description": "Build a static website with me using your design and content requirements",
-    "highlights": [
-      "GatsbyJS",
-      "Responsive",
-      "Speed Optimized",
-      "Maintainable"
-    ],
+    "highlights": ["GatsbyJS", "Responsive", "Speed Optimized", "Maintainable"],
     "features": [
       "Produce a static website built with GatsbyJS",
       "Style it with Tailwind for easy maintenance",
       "Use best practices for high performance",
-      "Utilize mobile responsive so all devices look good",
+      "Utilize mobile responsiveness so all devices look good",
       "Optimize website performance & speed"
     ],
     "callToAction": {

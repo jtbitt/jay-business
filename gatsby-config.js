@@ -5,11 +5,6 @@ module.exports = {
     siteUrl: `https://www.jaybittner.com`,
     twitterUsername: `@jtbitt`,
   },
-  partytownProxiedURLs: [
-    `https://static.hotjar.com/c/hotjar-3170670.js?sv=6`,
-    `https://vars.hotjar.com/box-69edcc3187336f9b0a3fbb4c73be9fe6.html`,
-    `https://script.hotjar.com/modules.01a02f6e8b126e8c8358.js`,
-  ],
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
