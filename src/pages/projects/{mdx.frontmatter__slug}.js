@@ -10,6 +10,7 @@ const ProjectPost = ({ data: { mdx }, children }) => {
       <Analysis
         date={mdx.frontmatter.date}
         title={mdx.frontmatter.title}
+        shortTitle={mdx.frontmatter.short_title}
         image={mdx.frontmatter.hero_image}
         alt={mdx.frontmatter.hero_image_alt}
         designCredit={mdx.frontmatter.design_credit_text}
@@ -26,6 +27,7 @@ export const query = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         title
+        short_title
         description
         slug
         date(formatString: "MMMM DD, YYYY")

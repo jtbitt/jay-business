@@ -6,6 +6,7 @@ import { Heading, Description } from "@components";
 export const Analysis = ({
   date,
   title,
+  shortTitle,
   image,
   alt,
   designLink,
@@ -38,7 +39,7 @@ export const Analysis = ({
           rel="noopener noreferrer"
           className="text-amber-500"
         >
-          {title}
+          {shortTitle}
         </a>
       </Description>
       <div className="text-base md:text-lg 2xl:text-xl font-light tracking-widest space-y-10">

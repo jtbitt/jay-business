@@ -11,7 +11,7 @@ const ProjectsPage = ({ data }) => {
           <Project
             image={node.frontmatter.hero_image}
             alt={node.frontmatter.hero_image_alt}
-            title={node.frontmatter.title}
+            title={node.frontmatter.short_title}
             description={node.frontmatter.description}
             tools={node.frontmatter.tools}
             slug={node.frontmatter.slug}
@@ -32,7 +32,7 @@ export const query = graphql`
       nodes {
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
-          title
+          short_title
           description
           tools
           slug
