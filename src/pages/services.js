@@ -64,7 +64,7 @@ export const Head = () => (
           "@context": "https://schema.org/",
           "@type": "Product",
           "name": "Static website for $1k",
-          "image": "${"/logo.png"}",
+          "image": "https://www.jaybittner.com/logo.png",
           "description": "Build a fast static website with GatsbyJS and TailwindCSS using best practices for easy maintenance and high performance",
           "brand": {
             "@type": "Brand",

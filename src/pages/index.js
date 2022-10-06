@@ -41,7 +41,7 @@ export const Head = () => (
           "name": "Jay Bittner LLC",
           "alternateName": "Jay Bittner",
           "url": "https://www.jaybittner.com",
-          "logo": "${"/logo.png"}",
+          "logo": "https://www.jaybittner.com/logo.png",
           "sameAs": "https://github.com/jtbitt"
         }
       `}

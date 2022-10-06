@@ -81,7 +81,7 @@ export const Head = ({ data: { mdx } }) => (
             "name": "Jay Bittner",
             "logo": {
               "@type": "ImageObject",
-              "url": "${"/logo.png"}"
+              "url": "https://www.jaybittner.com/logo.png"
             }
           },
           "datePublished": "${mdx.frontmatter.date}"
