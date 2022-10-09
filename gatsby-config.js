@@ -68,14 +68,15 @@ module.exports = {
       resolve: "gatsby-plugin-sitemap",
       options: {
         query: `
-          {
-            allSitePage {
-              nodes {
-                path
-              }
+        {
+          allSitePage {
+            nodes {
+              path
             }
           }
-        `,
+        }
+      `,
+        resolveSiteUrl: () => site.siteMetaData.siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           return allPages.map((page) => {
             return { ...page };
