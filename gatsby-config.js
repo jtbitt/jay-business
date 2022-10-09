@@ -1,3 +1,5 @@
+const siteUrl = process.env.URL || `https://www.jaybittner.com`;
+
 module.exports = {
   siteMetadata: {
     title: `Front-End Developer | Jay Bittner`,
@@ -68,15 +70,15 @@ module.exports = {
       resolve: "gatsby-plugin-sitemap",
       options: {
         query: `
-        {
-          allSitePage {
-            nodes {
-              path
+            {
+              allSitePage {
+                nodes {
+                  path
+                }
+              }
             }
-          }
-        }
-      `,
-        resolveSiteUrl: () => site.siteMetadata.siteUrl,
+          `,
+        resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           return allPages.map((page) => {
             return { ...page };
