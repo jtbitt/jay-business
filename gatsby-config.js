@@ -64,6 +64,32 @@ module.exports = {
         precachePages: [`/index/`, `/services/`, `/projects/*`, `/blog/*`],
       },
     },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
+          return allPages.map((page) => {
+            return { ...page, ...wpNodeMap[page.path] };
+          });
+        },
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          };
+        },
+      },
+    },
     "gatsby-plugin-netlify",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
