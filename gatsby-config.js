@@ -76,7 +76,7 @@ module.exports = {
           }
         }
       `,
-        resolveSiteUrl: () => site.siteMetaData.siteUrl,
+        resolveSiteUrl: () => site.siteMetadata.siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           return allPages.map((page) => {
             return { ...page };
