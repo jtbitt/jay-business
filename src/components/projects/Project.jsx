@@ -4,19 +4,12 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { Heading, Description, Button } from "@components";
 
-export const Project = ({
-  image,
-  alt,
-  title,
-  description,
-  tools,
-  slug,
-}) => {
+export const Project = ({ image, alt, title, description, tools, slug }) => {
   const img = getImage(image);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-      <GatsbyImage image={img} alt={alt} />
+      <GatsbyImage image={img} alt={alt} objectFit="contain" />
       <div className="space-y-6 md:space-y-8">
         <Heading type="h3" size="text-4xl md:text-5.5xl 2xl:text-6xl">
           {title}

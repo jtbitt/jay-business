@@ -9,7 +9,7 @@ export const Article = ({ date, image, alt, title, description, slug }) => {
 
   return (
     <article className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-      <GatsbyImage image={img} alt={alt} />
+      <GatsbyImage image={img} alt={alt} className="xl:h-96" />
       <div className="space-y-6 md:space-y-8">
         <Description>{date}</Description>
         <Heading type="h3">{title}</Heading>
