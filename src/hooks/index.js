@@ -1,6 +1,5 @@
 // global
-export * from "./useSiteMetadata";
-export * from "./useScroll";
+export { useSiteMetadata, useScroll } from "./shared";
 
 // home
 export { useImages } from "./home";
