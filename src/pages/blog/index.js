@@ -1,15 +1,12 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import { Seo, Layout, Heading, Article } from "@components";
+import { Seo, Layout, Article } from "@components";
 
 const BlogPage = ({ data }) => {
   return (
     <Layout>
       <div className="space-y-20">
-        {/* <Heading type="h1" size="text-4xl md:text-5.5xl 2xl:text-6xl">
-          Read up
-        </Heading> */}
         {data.allMdx.nodes.map((node, key) => (
           <Article
             date={node.frontmatter.date}
@@ -55,7 +52,7 @@ export default BlogPage;
 export const Head = () => (
   <Seo
     title="Blog | Jay Bittner"
-    description="Read about the modern Frontend world - I write guides, share insights, and explain some of my experiences"
+    description="Insights and experiences from a battle-tested Software Developer. Life has been a great adventure since I learned to code."
     pathname="/blog"
   />
 );

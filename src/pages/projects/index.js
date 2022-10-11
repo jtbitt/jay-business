@@ -53,7 +53,7 @@ export default ProjectsPage;
 export const Head = () => (
   <Seo
     title="Projects | Jay Bittner"
-    description="Check some of my favorite projects I've built with HTML, CSS, Javascript, and React"
+    description="Professional React projects built with HTML, CSS, React, Javascript, Typescript following modern best practices and a well thought out strategy."
     pathname="/projects"
   />
 );

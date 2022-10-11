@@ -55,7 +55,7 @@ export default ServicesPage;
 export const Head = () => (
   <Seo
     title="Services | Jay Bittner"
-    description="Elevate your projects with a seasoned Front-End Developer"
+    description="Stop searching endlessly for a solid contributor. Experienced Front-End Developer, long term projects, bug fixes, website migration, high-speed static website."
     pathname="/services"
   >
     <script type="application/ld+json">

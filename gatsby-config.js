@@ -3,7 +3,7 @@ const siteUrl = process.env.URL || `https://www.jaybittner.com`;
 module.exports = {
   siteMetadata: {
     title: `Front-End Developer | Jay Bittner`,
-    description: `Accelerate your projects with a seasoned Front-End Developer - React, CSS, HTML, and JS done right.`,
+    description: `I'm always interested in collaborating on ambitious projects, helping other developers, and consulting with tech companies and startups.`,
     siteUrl: `https://www.jaybittner.com`,
     twitterUsername: `@jtbitt`,
   },

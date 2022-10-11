@@ -28,7 +28,7 @@ export default ContactPage;
 export const Head = () => (
   <Seo
     title="Contact | Jay Bittner"
-    description="Get in touch with me about whatever services you are interested in"
+    description="Get in touch with me about whatever you need - coding, bug fixes, long term project, website migration, high-speed static website, or mentorship."
     pathname="/contact"
   />
 );
