@@ -54,7 +54,7 @@ export default ProjectPost;
 
 export const Head = ({ data: { mdx } }) => (
   <Seo
-    title={mdx.frontmatter.title + " | Jay Bittner"}
+    title={mdx.frontmatter.title}
     description={mdx.frontmatter.description}
     pathname={"/projects/" + mdx.frontmatter.slug}
   >

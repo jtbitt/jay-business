@@ -45,7 +45,7 @@ export default BlogPost;
 
 export const Head = ({ data: { mdx } }) => (
   <Seo
-    title={mdx.frontmatter.title + " | Jay Bittner"}
+    title={mdx.frontmatter.title}
     description={mdx.frontmatter.description}
     pathname={"/blog/" + mdx.frontmatter.slug}
   >
