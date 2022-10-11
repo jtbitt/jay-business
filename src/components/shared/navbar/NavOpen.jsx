@@ -63,7 +63,7 @@ export const NavOpen = ({ onNavClose, visible }) => {
             }`}
           >
             <Link
-              to={link.url}
+              to={`${link.url}/`}
               onClick={closeNav}
               onKeyDown={(e) => {
                 if (e.key !== "Tab") closeNav();

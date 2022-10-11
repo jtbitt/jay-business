@@ -10,7 +10,7 @@ export const ServicePreview = ({
   image,
   description,
   highlights,
-  callToAction
+  callToAction,
 }) => {
   return (
     <div className="space-y-8 md:space-y-10">
@@ -27,7 +27,7 @@ export const ServicePreview = ({
             ))}
           </div>
           <div className="text-center md:text-left">
-            <Link to={callToAction.link}>
+            <Link to={`${callToAction.link}/`}>
               <Button>{callToAction.name}</Button>
             </Link>
           </div>

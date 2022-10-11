@@ -17,7 +17,7 @@ export const Article = ({ date, image, alt, title, description, slug }) => {
           <Description>{description}</Description>
         </div>
         <div className="text-center md:text-left">
-          <Link to={`/blog/${slug}`}>
+          <Link to={`/blog/${slug}/`}>
             <Button>READ IT</Button>
           </Link>
         </div>

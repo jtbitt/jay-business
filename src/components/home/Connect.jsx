@@ -35,14 +35,14 @@ export const Connect = ({ images }) => {
               text="Meeting"
             />
             &nbsp;/&nbsp;
-            <Link className="text-amber-500" to="/contact">
+            <Link className="text-amber-500" to="/contact/">
               Email
             </Link>
           </Description>
           <Description>OR</Description>
           <Description>
             Take a look at my&nbsp;
-            <Link className="text-amber-500" to="/services">
+            <Link className="text-amber-500" to="/services/">
               Services
             </Link>
           </Description>

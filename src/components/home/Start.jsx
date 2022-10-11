@@ -33,7 +33,7 @@ export const Start = ({ images }) => {
             And I like to build <br className="hidden md:block" /> cool things
           </Heading>
           <div className="flex flex-col gap-6 md:gap-16">
-            <Link to="/services">
+            <Link to="/services/">
               <Button>HIRE ME</Button>
             </Link>
             <Link

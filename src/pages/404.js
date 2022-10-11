@@ -27,7 +27,7 @@ const NotFoundPage = () => {
           {options.map((option, key) => (
             <li key={key}>
               {option.copy}
-              <Link className="text-amber-500" to={option.url}>
+              <Link className="text-amber-500" to={`${option.url}/`}>
                 {option.urlWord}
               </Link>
             </li>

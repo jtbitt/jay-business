@@ -35,7 +35,7 @@ export const Project = ({ image, alt, title, description, tools, slug }) => {
           <Description>{tools}</Description>
         </div>
         <div className="text-center md:text-left">
-          <Link to={`/projects/${slug}`}>
+          <Link to={`/projects/${slug}/`}>
             <Button>VIEW PROJECT</Button>
           </Link>
         </div>
