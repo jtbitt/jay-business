@@ -19,7 +19,9 @@ export const Analysis = ({
   return (
     <div className="xl:px-40 space-y-8">
       <Description>{date}</Description>
-      <Heading type="h2">{title}</Heading>
+      <Heading type="h1" size="text-4xl md:text-5.5xl 2xl:text-6xl">
+        {title}
+      </Heading>
       <GatsbyImage image={img} alt={alt} className="h-40 md:h-80" />
       <Description>
         Design Credit:{" "}

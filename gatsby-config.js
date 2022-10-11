@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://www.jaybittner.com`,
     twitterUsername: `@jtbitt`,
   },
+  trailingSlash: "always",
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
