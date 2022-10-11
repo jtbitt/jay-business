@@ -33,23 +33,23 @@ export const NavOpen = ({ onNavClose, visible }) => {
         <XIcon className="h-10 w-10 md:h-12 md:w-12 2xl:h-16 2xl:w-16" />
       </button>
       <div className="flex flex-col items-center">
-        <Link
-          to="/"
+        {/* <Link
+          to={"/"}
           aria-label="Go to homepage"
           onClick={closeNav}
           onKeyDown={(e) => {
             if (e.key !== "Tab") closeNav();
           }}
-        >
-          <StaticImage
-            src="../../../images/logo.png"
-            alt="Logo of the Jay Bittner business"
-            layout="constrained"
-            quality="100"
-            width={200}
-            className="w-14 md:w-24"
-          />
-        </Link>
+        > */}
+        <StaticImage
+          src="../../../images/logo.png"
+          alt="Logo of the Jay Bittner business"
+          layout="constrained"
+          quality="100"
+          width={200}
+          className="w-14 md:w-24"
+        />
+        {/* </Link> */}
         <div className="text-md md:text-2xl 2xl:text-3xl mt-5 w-[4.5rem] md:w-56 2xl:w-72">
           Front-End Developer
         </div>
