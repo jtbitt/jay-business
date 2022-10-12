@@ -12,6 +12,10 @@
     @apply text-white bg-xs sm:bg-md xl:bg-lg bg-contain xl:bg-cover overscroll-none;
   }
 
+  a {
+    @apply text-amber-500;
+  }
+
   a,
   button {
     @apply cursor-default xl:cursor-pointer;

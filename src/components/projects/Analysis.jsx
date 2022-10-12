@@ -1,7 +1,7 @@
 import * as React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import { Heading, Description } from "@components";
+import { Heading, Description, ExternalLink } from "@components";
 
 export const Analysis = ({
   date,
@@ -25,24 +25,9 @@ export const Analysis = ({
       <GatsbyImage image={img} alt={alt} className="h-40 md:h-80" />
       <Description>
         Design Credit:{" "}
-        <a
-          href={designLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-amber-500"
-        >
-          {designCredit}
-        </a>
+        <ExternalLink url={designLink}>{designCredit}</ExternalLink>
         <br />
-        Github:{" "}
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-amber-500"
-        >
-          {shortTitle}
-        </a>
+        Github: <ExternalLink url={githubLink}>{shortTitle}</ExternalLink>
       </Description>
       <div className="text-base md:text-lg 2xl:text-xl font-light tracking-widest space-y-10">
         {children}

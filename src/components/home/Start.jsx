@@ -19,7 +19,7 @@ export const Start = ({ images }) => {
           Developer
         </Heading>
         <Link to="#start2" className="mt-5" aria-label="Go to next section">
-          <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16" />
+          <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16 text-white" />
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 h-screen" id="start2">
@@ -41,7 +41,7 @@ export const Start = ({ images }) => {
               className="mt-5"
               aria-label="Go to next section"
             >
-              <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16" />
+              <ArrowDownIcon className="h-8 md:h-12 2xl:h-16 w-8 md:w-12 2xl:w-16 text-white" />
             </Link>
           </div>
         </div>

@@ -52,7 +52,7 @@ module.exports = {
       options: {
         name: `Jay Bittner | Front-End Developer`,
         short_name: `Jay Bittner`,
-        description: `Accelerate your projects with a seasoned Front-End Developer - React, CSS, HTML, and JS done right.`,
+        description: `I'm always interested in collaborating on ambitious projects, helping other developers, and consulting with tech companies and startups.`,
         lang: `en`,
         start_url: `/`,
         background_color: `#000000`,

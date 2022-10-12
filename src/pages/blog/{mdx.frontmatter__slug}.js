@@ -33,7 +33,12 @@ export const query = graphql`
         hero_image_credit_text
         hero_image {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              formats: [AUTO, WEBP]
+              width: 1000
+              quality: 100
+            )
           }
         }
       }

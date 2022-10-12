@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+import { ExternalLink } from "@components";
 import { XIcon, GoogleIcon, GithubIcon, LinkedinIcon } from "@icons";
 import links from "@content/links.json";
 import socials from "@content/socials.json";
@@ -68,6 +69,7 @@ export const NavOpen = ({ onNavClose, visible }) => {
               onKeyDown={(e) => {
                 if (e.key !== "Tab") closeNav();
               }}
+              className="text-white"
             >
               {link.name}
             </Link>
@@ -76,15 +78,14 @@ export const NavOpen = ({ onNavClose, visible }) => {
       </ul>
       <div className="flex flex-row justify-center items-center gap-8 h-16">
         {socials.map((social, key) => (
-          <a
-            href={social.url}
-            target="_blank"
-            rel="noopener noreferrer"
+          <ExternalLink
+            url={social.url}
             key={key}
-            aria-label={social.name}
+            label={social.name}
+            className="text-white"
           >
             {socialIcons[social.name]}
-          </a>
+          </ExternalLink>
         ))}
       </div>
     </div>

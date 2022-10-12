@@ -38,7 +38,12 @@ export const query = graphql`
           hero_image_alt
           hero_image {
             childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
+              gatsbyImageData(
+                layout: FULL_WIDTH
+                formats: [AUTO, WEBP]
+                width: 610
+                quality: 100
+              )
             }
           }
         }

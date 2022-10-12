@@ -3,7 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { PopupButton } from "react-calendly";
 
-import { Heading, Description } from "@components";
+import { Heading, Description, ExternalLink } from "@components";
 import { GithubIcon, LinkedinIcon } from "@icons";
 
 export const Connect = ({ images }) => {
@@ -35,34 +35,23 @@ export const Connect = ({ images }) => {
               text="Meeting"
             />
             &nbsp;/&nbsp;
-            <Link className="text-amber-500" to="/contact/">
-              Email
-            </Link>
+            <Link to="/contact/">Email</Link>
           </Description>
           <Description>OR</Description>
           <Description>
             Take a look at my&nbsp;
-            <Link className="text-amber-500" to="/services/">
-              Services
-            </Link>
+            <Link to="/services/">Services</Link>
           </Description>
           <div className="flex flex-row gap-8 h-16">
-            <a
-              href="https://github.com/jtbitt"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Github"
+            <ExternalLink url="https://github.com/jtbitt" label="Github">
+              <GithubIcon className="h-8 w-8 2xl:h-12 2xl:w-12 text-white" />
+            </ExternalLink>
+            <ExternalLink
+              url="https://www.linkedin.com/in/jay-bittner-b3257a20/"
+              label="Linkedin"
             >
-              <GithubIcon className="h-8 w-8 2xl:h-12 2xl:w-12" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/jay-bittner-b3257a20/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Linkedin"
-            >
-              <LinkedinIcon className="h-8 w-8 2xl:h-12 2xl:w-12" />
-            </a>
+              <LinkedinIcon className="h-8 w-8 2xl:h-12 2xl:w-12 text-white" />
+            </ExternalLink>
           </div>
         </div>
       </div>

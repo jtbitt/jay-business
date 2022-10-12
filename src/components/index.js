@@ -9,6 +9,7 @@ export {
   Description,
   Skill,
   MobileVideo,
+  ExternalLink,
 } from "./shared";
 
 // home
