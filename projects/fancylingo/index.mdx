@@ -39,23 +39,25 @@ done with her magic, it was my turn to step in.
 <figure>![Fancylingo prototype in Invision](./prototype.png)</figure>
 
 When I was deciding how to build, I wanted to leverage skills I already had
-(Javascript, React) and also to use one codebase for both Android and iPhone.
-Since I had no experience with <ExternalLink url="https://reactnative.dev/">
-React Native</ExternalLink>, I decided to
-use<ExternalLink url="https://expo.dev/"> Expo</ExternalLink> to get started as
-fast as possible. The goal was to make a working demo of the prospective product
-that was more built out than an MVP, which meant having a database of lessons
-and authentication to control access to the content.
+(Javascript, React) and also to use <ExternalLink 
+url="https://reactnative.dev/">one codebase for both Android and
+iPhone</ExternalLink>. Since I had no experience with React Native, I decided to
+use Expo, to <ExternalLink url="https://expo.dev/">build a mobile app as fast as
+possible</ExternalLink>. The goal was to make a working demo of the prospective
+product that was more built out than an MVP, which meant having a database of
+lessons and authentication to control access to the content.
 
 Since I'm a Front-End developer, I try to optimize my time as much as possible
 regarding Back-End processes. The current tools available in the cloud to
 replicate these activities are unbelievable, so I went in that direction. I
-utilized <ExternalLink url="https://firebase.google.com/">
-Firebase</ExternalLink> first to authenticate users through Facebook, Google,
-and email. I found it somewhat tedious to implement for the first time on
-mobile, but once I figured it out, it was pretty straightforward. I could
-utilize <ExternalLink url="https://reactjs.org/docs/hooks-intro.html">React
-hooks</ExternalLink> to take care of the different authentication API calls.
+utilized Firebase first <ExternalLink 
+url="https://firebase.google.com/products/auth">to authenticate
+users</ExternalLink> through Facebook, Google, and email. I found it somewhat
+tedious to implement for the first time on mobile, but once I figured it out, it
+was pretty straightforward. I could utilize <ExternalLink 
+url="https://reactjs.org/docs/hooks-intro.html">React hooks</ExternalLink>
+to<ExternalLink url="https://github.com/jtbitt/fancylingo/blob/main/src/hooks/useFirebase.ts">
+take care of the different authentication API calls</ExternalLink>.
 
 <figure>![Firebase authentication console](./authentication.png)</figure>
 
@@ -72,10 +74,10 @@ of the lesson data.
 Following that up, I thought pretty hard about the database. I wanted to use the
 NoSQL Firebase database, but it didn't seem to make sense to have organized
 lessons and cards. Really felt like a PostgresSQL relational database made much
-more sense. I didn't want to build a server just to make a database, so I
-used&nbsp;<ExternalLink url="https://hasura.io/">Hasura</ExternalLink>, a cloud
-PostgreSQL database. It gives you all the features of a relational database and
-generates RestAPIs and GraphQL so you can pull the data into your project.
+more sense. I didn't want to build a server just to make a database, so I used
+Hasura, <ExternalLink url="https://hasura.io/">a cloud PostgreSQL
+database</ExternalLink>. It gives you all the features of a relational database
+and generates RestAPIs and GraphQL so you can pull the data into your project.
 
 <figure>![Hasura Dashboard](./hasura-dashboard.png)</figure>
 
@@ -144,13 +146,15 @@ and returned them back to the Lesson List screen for rendering.
 As you can see, I like hooks and tried to break down all the logic into as many
 smaller pieces as possible with specific jobs. This is one snapshot of doing it,
 but I used a similar process several times in the application to get different
-flashcard data. You can see my full implementation in the <ExternalLink 
-url="https://github.com/jtbitt/fancylingo">code</ExternalLink>.
+flashcard data. You can <ExternalLink 
+url="https://github.com/jtbitt/fancylingo"> see my full
+implementation</ExternalLink> in the code.
 
-Finally, I worked hard to make the UI look great, using <ExternalLink 
-url="https://cssinjs.org/?v=v10.9.2">CSS-in-JS</ExternalLink> and <ExternalLink 
-url="https://web.dev/learn/css/flexbox/">Flexbox</ExternalLink> for everything.
-I got it looking good on all mobile screens and matching the design.
+Finally, I worked hard to make the UI look great, using CSS-in-JS
+to&nbsp;<ExternalLink url="https://cssinjs.org">style the
+application</ExternalLink> and Flexbox to <ExternalLink 
+url="https://web.dev/learn/css/flexbox/">organize the layout</ExternalLink>. I
+got it looking good on all mobile screens and matching the design.
 
 <div className="flex flex-row justify-center">
   <figure>![Fancylingo lesson options](./lessons.png)</figure>
