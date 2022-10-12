@@ -15,3 +15,22 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   });
 };
+
+exports.createPages = async ({ actions }) => {
+  const { createRedirect } = actions;
+
+  createRedirect({
+    fromPath: `https://jay-business.netlify.app/*`,
+    toPath: `https://www.jaybittner.com/*`,
+  });
+
+  createRedirect({
+    fromPath: `http://www.jaybittner.com/* `,
+    toPath: `https://www.jaybittner.com/*`,
+  });
+
+  createRedirect({
+    fromPath: `http://jaybittner.com/*`,
+    toPath: `https://www.jaybittner.com/*`,
+  });
+};
