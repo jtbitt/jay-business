@@ -1,3 +1,4 @@
-https://jay-business.netlify.app/_ https://www.jaybittner.com/:splat 301!
-http://www.jaybittner.com/_ https://www.jaybittner.com/:splat 301!
+https://jay-business.netlify.app/* https://www.jaybittner.com/:splat 301!
+http://www.jaybittner.com/* https://www.jaybittner.com/:splat 301!
 http://jaybittner.com/* https://www.jaybittner.com/:splat 301!
+http://jaybittner.com/ https://www.jaybittner.com 301
