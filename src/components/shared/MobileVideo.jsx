@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const MobileVideo = ({ url }) => {
+export const MobileVideo = ({ url, loading = "lazy" }) => {
   return (
     <div className="flex flex-row justify-center">
       <video
@@ -9,6 +9,7 @@ export const MobileVideo = ({ url }) => {
         controls
         preload="metadata"
         src={url}
+        loading={loading}
       ></video>
     </div>
   );
