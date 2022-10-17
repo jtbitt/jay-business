@@ -1,10 +1,10 @@
-const siteUrl = process.env.URL || `https://www.jaybittner.com`;
+const siteUrl = process.env.URL || `https://jaybittner.com`;
 
 module.exports = {
   siteMetadata: {
     title: `Front-End Developer | Jay Bittner`,
     description: `I'm always interested in collaborating on ambitious projects, helping other developers, and consulting with tech companies and startups.`,
-    siteUrl: `https://www.jaybittner.com`,
+    siteUrl: `https://jaybittner.com`,
     twitterUsername: `@jtbitt`,
   },
   trailingSlash: "always",
