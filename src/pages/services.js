@@ -64,7 +64,7 @@ export const Head = () => (
           "@context": "https://schema.org/",
           "@type": "Product",
           "name": "Static website for $1k",
-          "image": "https://www.jaybittner.com/logo.png",
+          "image": "https://jaybittner.com/logo.png",
           "description": "Build a fast static website with GatsbyJS and TailwindCSS using best practices for easy maintenance and high performance",
           "brand": {
             "@type": "Brand",
@@ -72,7 +72,7 @@ export const Head = () => (
           },
           "offers": {
             "@type": "Offer",
-            "url": "https://www.jaybittner.com/services",
+            "url": "https://jaybittner.com/services",
             "priceCurrency": "USD",
             "price": "1000",
             "priceValidUntil": "2023-07-01",

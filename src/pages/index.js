@@ -40,8 +40,8 @@ export const Head = () => (
           "@type": "Corporation",
           "name": "Jay Bittner LLC",
           "alternateName": "Jay Bittner",
-          "url": "https://www.jaybittner.com",
-          "logo": "https://www.jaybittner.com/logo.png",
+          "url": "https://jaybittner.com",
+          "logo": "https://jaybittner.com/logo.png",
           "sameAs": "https://github.com/jtbitt"
         }
       `}

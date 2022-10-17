@@ -82,25 +82,25 @@ export const Head = ({ data: { mdx } }) => (
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.jaybittner.com/${mdx.frontmatter.type}/${
+            "@id": "https://jaybittner.com/${mdx.frontmatter.type}/${
         mdx.frontmatter.slug
       }"
           },
           "headline": "${mdx.frontmatter.title}",
-          "image": "https://www.jaybittner.com${
+          "image": "https://jaybittner.com${
             getImage(mdx.frontmatter.hero_image).images.fallback.src
           }",
           "author": {
             "@type": "Person",
             "name": "Jay Bittner",
-            "url": "https://www.jaybittner.com"
+            "url": "https://jaybittner.com"
           },  
           "publisher": {
             "@type": "Organization",
             "name": "Jay Bittner",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://www.jaybittner.com/logo.png"
+              "url": "https://jaybittner.com/logo.png"
             }
           },
           "datePublished": "${mdx.frontmatter.date}"
