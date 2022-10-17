@@ -2,20 +2,36 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
-import { Seo, Layout, Post } from "@components";
+import { Seo, Layout, Post, Analysis } from "@components";
 
 const BlogPost = ({ data: { mdx }, children }) => {
+  console.log(mdx);
   return (
     <Layout>
-      <Post
-        date={mdx.frontmatter.date}
-        title={mdx.frontmatter.title}
-        image={mdx.frontmatter.hero_image}
-        alt={mdx.frontmatter.hero_image_alt}
-        imageLink={mdx.frontmatter.hero_image_credit_link}
-        imageCredit={mdx.frontmatter.hero_image_credit_text}
-        children={children}
-      />
+      {mdx.frontmatter.type === "blog" && (
+        <Post
+          date={mdx.frontmatter.date}
+          title={mdx.frontmatter.title}
+          image={mdx.frontmatter.hero_image}
+          alt={mdx.frontmatter.hero_image_alt}
+          imageLink={mdx.frontmatter.hero_image_credit_link}
+          imageCredit={mdx.frontmatter.hero_image_credit_text}
+          children={children}
+        />
+      )}
+      {mdx.frontmatter.type === "projects" && (
+        <Analysis
+          date={mdx.frontmatter.date}
+          title={mdx.frontmatter.title}
+          shortTitle={mdx.frontmatter.short_title}
+          image={mdx.frontmatter.hero_image}
+          alt={mdx.frontmatter.hero_image_alt}
+          designCredit={mdx.frontmatter.design_credit_text}
+          designLink={mdx.frontmatter.design_credit_link}
+          githubLink={mdx.frontmatter.github_link}
+          children={children}
+        ></Analysis>
+      )}
     </Layout>
   );
 };
@@ -25,8 +41,10 @@ export const query = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         title
+        short_title
         description
         slug
+        type
         date(formatString: "MMMM DD, YYYY")
         hero_image_alt
         hero_image_credit_link
@@ -41,6 +59,9 @@ export const query = graphql`
             )
           }
         }
+        design_credit_text
+        design_credit_link
+        github_link
       }
     }
   }
@@ -52,7 +73,7 @@ export const Head = ({ data: { mdx } }) => (
   <Seo
     title={mdx.frontmatter.title}
     description={mdx.frontmatter.description}
-    pathname={"/blog/" + mdx.frontmatter.slug}
+    pathname={"/" + mdx.frontmatter.type + "/" + mdx.frontmatter.slug}
   >
     <script type="application/ld+json">
       {`
@@ -61,7 +82,9 @@ export const Head = ({ data: { mdx } }) => (
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.jaybittner.com/projects/${mdx.frontmatter.slug}"
+            "@id": "https://www.jaybittner.com/${mdx.frontmatter.type}/${
+        mdx.frontmatter.slug
+      }"
           },
           "headline": "${mdx.frontmatter.title}",
           "image": "https://www.jaybittner.com${
