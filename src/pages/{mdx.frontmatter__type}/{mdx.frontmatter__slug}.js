@@ -1,38 +1,50 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
+import { MDXProvider } from "@mdx-js/react";
 
-import { Seo, Layout, Post, Analysis } from "@components";
+import { Seo, Layout, Post, Analysis, ExternalLink } from "@components";
 
 const BlogPost = ({ data: { mdx }, children }) => {
-  console.log(mdx);
   return (
-    <Layout>
-      {mdx.frontmatter.type === "blog" && (
-        <Post
-          date={mdx.frontmatter.date}
-          title={mdx.frontmatter.title}
-          image={mdx.frontmatter.hero_image}
-          alt={mdx.frontmatter.hero_image_alt}
-          imageLink={mdx.frontmatter.hero_image_credit_link}
-          imageCredit={mdx.frontmatter.hero_image_credit_text}
-          children={children}
-        />
-      )}
-      {mdx.frontmatter.type === "projects" && (
-        <Analysis
-          date={mdx.frontmatter.date}
-          title={mdx.frontmatter.title}
-          shortTitle={mdx.frontmatter.short_title}
-          image={mdx.frontmatter.hero_image}
-          alt={mdx.frontmatter.hero_image_alt}
-          designCredit={mdx.frontmatter.design_credit_text}
-          designLink={mdx.frontmatter.design_credit_link}
-          githubLink={mdx.frontmatter.github_link}
-          children={children}
-        ></Analysis>
-      )}
-    </Layout>
+    <MDXProvider
+      components={{
+        a: (props) => {
+          if (props.href.includes("https://")) {
+            return <ExternalLink {...props}></ExternalLink>;
+          } else {
+            return <Link to={props.href}>{props.children}</Link>;
+          }
+        },
+      }}
+    >
+      <Layout>
+        {mdx.frontmatter.type === "blog" && (
+          <Post
+            date={mdx.frontmatter.date}
+            title={mdx.frontmatter.title}
+            image={mdx.frontmatter.hero_image}
+            alt={mdx.frontmatter.hero_image_alt}
+            imageLink={mdx.frontmatter.hero_image_credit_link}
+            imageCredit={mdx.frontmatter.hero_image_credit_text}
+            children={children}
+          />
+        )}
+        {mdx.frontmatter.type === "projects" && (
+          <Analysis
+            date={mdx.frontmatter.date}
+            title={mdx.frontmatter.title}
+            shortTitle={mdx.frontmatter.short_title}
+            image={mdx.frontmatter.hero_image}
+            alt={mdx.frontmatter.hero_image_alt}
+            designCredit={mdx.frontmatter.design_credit_text}
+            designLink={mdx.frontmatter.design_credit_link}
+            githubLink={mdx.frontmatter.github_link}
+            children={children}
+          ></Analysis>
+        )}
+      </Layout>
+    </MDXProvider>
   );
 };
 

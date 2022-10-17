@@ -22,7 +22,8 @@ export const Post = ({
       </Heading>
       <GatsbyImage image={img} alt={alt} className="h-40 md:h-80" />
       <Description>
-        Photo Credit: <ExternalLink url={imageLink}>{imageCredit}</ExternalLink>
+        Photo Credit:{" "}
+        <ExternalLink href={imageLink}>{imageCredit}</ExternalLink>
       </Description>
       <div className="text-base md:text-lg 2xl:text-xl font-light tracking-widest space-y-10">
         {children}

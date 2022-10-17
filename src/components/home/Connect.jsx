@@ -43,12 +43,12 @@ export const Connect = ({ images }) => {
             <Link to="/services/">Services</Link>
           </Description>
           <div className="flex flex-row gap-8 h-16">
-            <ExternalLink url="https://github.com/jtbitt" label="Github">
+            <ExternalLink href="https://github.com/jtbitt" aria-label="Github">
               <GithubIcon className="h-8 w-8 2xl:h-12 2xl:w-12 text-white" />
             </ExternalLink>
             <ExternalLink
-              url="https://www.linkedin.com/in/jay-bittner-b3257a20/"
-              label="Linkedin"
+              href="https://www.linkedin.com/in/jay-bittner-b3257a20/"
+              aria-label="Linkedin"
             >
               <LinkedinIcon className="h-8 w-8 2xl:h-12 2xl:w-12 text-white" />
             </ExternalLink>

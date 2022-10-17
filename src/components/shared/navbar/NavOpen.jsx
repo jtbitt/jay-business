@@ -79,9 +79,9 @@ export const NavOpen = ({ onNavClose, visible }) => {
       <div className="flex flex-row justify-center items-center gap-8 h-16">
         {socials.map((social, key) => (
           <ExternalLink
-            url={social.url}
+            href={social.url}
             key={key}
-            label={social.name}
+            aria-label={social.name}
             className="text-white"
           >
             {socialIcons[social.name]}

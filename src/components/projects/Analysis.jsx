@@ -25,9 +25,9 @@ export const Analysis = ({
       <GatsbyImage image={img} alt={alt} className="h-40 md:h-80" />
       <Description>
         Design Credit:{" "}
-        <ExternalLink url={designLink}>{designCredit}</ExternalLink>
+        <ExternalLink href={designLink}>{designCredit}</ExternalLink>
         <br />
-        Github: <ExternalLink url={githubLink}>{shortTitle}</ExternalLink>
+        Github: <ExternalLink href={githubLink}>{shortTitle}</ExternalLink>
       </Description>
       <div className="text-base md:text-lg 2xl:text-xl font-light tracking-widest space-y-10">
         {children}

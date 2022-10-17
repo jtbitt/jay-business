@@ -17,10 +17,6 @@ github_link: "https://github.com/jtbitt/jay-business"
 project_link: "https://jaybittner.com"
 ---
 
-import { Link } from "gatsby";
-
-import { ExternalLink } from "@components";
-
 My focus on coding has been relatively high for quite some time. However, I
 haven't had an active site for at least a couple of years, leaving something to
 be desired regarding my overall satisfaction with myself. I've been grinding for
@@ -42,26 +38,26 @@ critical answers, she put together an excellent design for me to build off of.
 <figure>![Website wireframe in Invision](./wireframe.png)</figure>
 
 Once the design wheels were set in motion and taken care of, I needed to get the
-code going. React and Angular are great tools, but they aren't optimal
-for&nbsp;<ExternalLink url="https://www.gatsbyjs.com/">building fast, static
-websites</ExternalLink> that render a lot of HTML content on the initial page
-load. You can optimize these tools by implementing different rendering
-strategies, but it makes a lot more sense to just use tools that are
-specifically <ExternalLink 
-url="https://nextjs.org/">built for high performance</ExternalLink>, so I looked
-heavily into Gatsby and Next.js, which still utilize React but in a very
-effective way for speed and SEO. After some deliberation, I went for Gatsby as
-I've been interested in it for quite a while and dug all the built-in tools they
-have set up. They also have an excellent build platform that is very fast and
-helpful during the build process.
+code going. React and Angular are great tools, but they aren't optimal for
+[building fast, static websites](https://www.gatsbyjs.com/) that render a lot of
+HTML content on the initial page load. You can optimize these tools by
+implementing different rendering strategies, but it makes a lot more sense to
+just use tools that are specifically
+[built for high performance](https://nextjs.org/), so I looked heavily into
+Gatsby and Next.js, which still utilize React but in a very effective way for
+speed and SEO. After some deliberation, I went for Gatsby as I've been
+interested in it for quite a while and dug all the built-in tools they have set
+up. They also have an excellent build platform that is very fast and helpful
+during the build process.
 
 <figure>![Website build in Gatsby Cloud](./gatsby-cloud.png)</figure>
 
 I also decided to use Netlify to host the actual site because they have a great
-reputation and some <ExternalLink url="https://www.netlify.com/">unique tools
-like backend analytics and great forms</ExternalLink> that aren't available on
-Gatsby hosting. They also have CDN capabilities that serve your site to the
-customer as fast as possible, no matter where they are in the world.
+reputation and some
+[unique tools like backend analytics and great forms](https://www.netlify.com/)
+that aren't available on Gatsby hosting. They also have CDN capabilities that
+serve your site to the customer as fast as possible, no matter where they are in
+the world.
 
 <figure>![Website deploy in Netlify](./netlify.png)</figure>
 
@@ -90,38 +86,38 @@ grows.
 
 I also decided to go with TailwindCSS to do all the CSS, as it eliminates a lot
 of rogue CSS classes and stylesheets that get annoying and add loading time.
-It's much <ExternalLink url="https://tailwindcss.com/">easier to use utility
-classes you can put directly in HTML</ExternalLink> with media query capability
-to put everything together. Even if someone has never seen your code, they can
-easily understand the CSS because Tailwind standardizes it.
+It's much
+[easier to use utility classes you can put directly in HTML](https://tailwindcss.com/)
+with media query capability to put everything together. Even if someone has
+never seen your code, they can easily understand the CSS because Tailwind
+standardizes it.
 
 <figure>![Custom button with TailwindCSS](./custom-button.png)</figure>
 
 I started putting things together, slowly polishing up the look, creating copy
-to support my call to action, which is to sell <Link to="/services/"> my various
-coding services</Link>. Everything in my design is based on drawing interest and
-giving customers actionable things they can do to use my services. The user is
-given several buttons on the landing page, all of which take them to the
-services page, where more specific information, prices, and frequently asked
-questions are addressed. If the user wants to become a customer, clicking on any
-service buttons opens a Calendly modal where they can <ExternalLink 
-url="https://calendly.com/jaybittner/15min?month=2022-10"> schedule a call with
-me</ExternalLink>. I have a few questions the user needs to answer to filter for
-motivated customers.
+to support my call to action, which is to sell
+[my various coding services](/services/). Everything in my design is based on
+drawing interest and giving customers actionable things they can do to use my
+services. The user is given several buttons on the landing page, all of which
+take them to the services page, where more specific information, prices, and
+frequently asked questions are addressed. If the user wants to become a
+customer, clicking on any service buttons opens a Calendly modal where they can
+[schedule a call with me](https://calendly.com/jaybittner/15min?month=2022-10).
+I have a few questions the user needs to answer to filter for motivated
+customers.
 
 <figure>![My coding services](./services.png)</figure>
 <figure>![Calendly call to action](./calendly.png)</figure>
 
 If the user gets to the bottom of the landing page without following the call to
-action, I give them the option to <ExternalLink 
-url="https://calendly.com/jaybittner/15min?month=2022-10">set up a Calendly
-meeting with me</ExternalLink>, <Link 
-to="/contact/">contact me by email</Link>, or check out <Link 
-to="/services/"> my coding services</Link>. The contact form requires the same
-questions to be answered as setting up a Calendly meeting. I'm OK with only some
-customers getting through the filter because I want serious customers. The
-contact form gives the customer another option in case they don't want to make a
-call. I have some configuration on the state to derail bots and other spam.
+action, I give them the option to
+[set up a Calendly meeting with me](https://calendly.com/jaybittner/15min?month=2022-10),
+[contact me by email](/contact/), or check out [my coding services](/services/).
+The contact form requires the same questions to be answered as setting up a
+Calendly meeting. I'm OK with only some customers getting through the filter
+because I want serious customers. The contact form gives the customer another
+option in case they don't want to make a call. I have some configuration on the
+state to derail bots and other spam.
 
 <figure>![Call to action on end of landing page](./connect.png)</figure>
 <figure>![Contact form](./contact.png)</figure>
@@ -130,21 +126,20 @@ As I was wrapping up the website, I knew I wanted to set up some 3rd party
 scripts to monitor my website activity. In my professional career, using
 monitoring tools to help track errors whenever they happen to the end user is an
 effective way to lower debug time and point out some red flags. Anything I can
-do to <ExternalLink url="https://sentry.io/welcome/">minimize the time fixing
-bugs</ExternalLink> is a considerable value. I decided to add Sentry because it
-has a free tier, and it's been beneficial for me in the past.
+do to [minimize the time fixing bugs](https://sentry.io/welcome/) is a
+considerable value. I decided to add Sentry because it has a free tier, and it's
+been beneficial for me in the past.
 
 <figure>![Website error tracking in Sentry](./sentry.png)</figure>
 
 On top of Sentry, I wanted to add some type of analytics to track my actual
 users. Since my site has a specific call to action that needs to happen, I
 thought being able to see how my users interact with the site was necessary. I
-decided to create a Hotjar account, so I could <ExternalLink 
-url="https://www.hotjar.com/">watch videos to see where my users are going and
-check heatmaps</ExternalLink> to see where they click the most. Hotjar does
-lower my website performance score, so I will activate/deactivate it at
-different points depending on when I want information. For now, I have it
-deactivated.
+decided to create a Hotjar account, so I could
+[watch videos to see where my users are going and check heatmaps](https://www.hotjar.com/)
+to see where they click the most. Hotjar does lower my website performance
+score, so I will activate/deactivate it at different points depending on when I
+want information. For now, I have it deactivated.
 
 <figure>![Website user tracking in Hotjar](./hotjar.png)</figure>
 
@@ -155,27 +150,26 @@ heavy script and significantly lowers performance scores. The other thing was
 that it's not GDPR compliant, so you're forced to legally show different privacy
 popups to your users, which kills the vibe.
 
-I decided to go with an independent <ExternalLink 
-url="https://plausible.io/">GDPR-compliant analytics company</ExternalLink>
-called Plausible Analytics which follows users on the client side code. I'm
-currently on the trial version, but it seems like a no-bullshit platform, which
-I like. I also have the option to use Netlify<ExternalLink 
-url="https://www.netlify.com/products/analytics/"> server-side
-analytics</ExternalLink> since I'm hosting with them, which would give me a
-different angle, but I decided to hold off on adding more analytics until I'm
-doing the more important thing, which is getting a lot of users on my website.
+I decided to go with an independent
+[GDPR-compliant analytics company](https://plausible.io/) called Plausible
+Analytics which follows users on the client side code. I'm currently on the
+trial version, but it seems like a no-bullshit platform, which I like. I also
+have the option to use Netlify
+[server-side analytics](https://www.netlify.com/products/analytics/) since I'm
+hosting with them, which would give me a different angle, but I decided to hold
+off on adding more analytics until I'm doing the more important thing, which is
+getting a lot of users on my website.
 
 <figure>![Website dashboard in Plausible Analytics](./plausible.png)</figure>
 
 I did my best to follow Gatsby's best practices and implement unique SEO for all
 pages of my website. I'm admittedly not very experienced doing SEO, so this is a
-running experiment. Utilizing sites like ahrefs <ExternalLink 
-url="https://ahrefs.com/">for SEO analysis</ExternalLink> and Google Lighthouse
-to <ExternalLink url="https://developer.chrome.com/docs/lighthouse/overview/">
-make sure there aren't any leaks that would lower my site's
-performance</ExternalLink>; it's going to be something that improves
-progressively over time. Also, traffic should slowly tick up as I link my
-content to various sites, talk on social media, and develop my blog.
+running experiment. Utilizing sites like ahrefs
+[for SEO analysis](https://ahrefs.com/) and Google Lighthouse to
+[make sure there aren't any leaks that would lower my site's performance](https://developer.chrome.com/docs/lighthouse/overview/);
+it's going to be something that improves progressively over time. Also, traffic
+should slowly tick up as I link my content to various sites, talk on social
+media, and develop my blog.
 
 And with all the configuration set up, that led me to the last thing I needed:
 speed optimization. Typically the biggest speed killer is images. Most From what
@@ -184,12 +178,12 @@ images and converting them into modern formats like WebP can cut a ridiculous
 amount of loading time. Along with those things, adding lazy loading, not
 loading an image until your scroll is near to it on the page, minimizes the
 number of images that even need to be loaded initially. Gatsby has a killer
-plugin that <ExternalLink 
-url="https://www.gatsbyjs.com/plugins/gatsby-plugin-image/">optimizes your
-images</ExternalLink>, converts them into modern formats like WebP, and
-implements lazy loading. It also creates backups in jpg or png if the user's
-browser can't use WebP. Anyone who spends time trying to minimize loading times
-knows how essential these types of processors are.
+plugin that
+[optimizes your images](https://www.gatsbyjs.com/plugins/gatsby-plugin-image/),
+converts them into modern formats like WebP, and implements lazy loading. It
+also creates backups in jpg or png if the user's browser can't use WebP. Anyone
+who spends time trying to minimize loading times knows how essential these types
+of processors are.
 
 <figure>![Image Optimization with Gatsby](./image-optimization.png)</figure>
 
@@ -215,14 +209,13 @@ itself.
 
 Gatsby recently set up a Script API that allows you to load your 3rd party
 scripts differently. The options are after-page hydration, whenever the main
-thread is idle, or by using a new cutting-edge library called Partytown
-that&nbsp;<ExternalLink url="https://partytown.builder.io/">runs the script
-separately from your application in a service worker</ExternalLink>, so it
-doesn't load in the same place as the rest of the code. The default option of
-post-hydration worked for Sentry and Plausible, but unfortunately, with Hotjar,
-neither of the first 2 options worked. It was still messing up the performance
-score, even with those optimizations. I decided to play around with Partytown to
-see if I could make some magic happen.
+thread is idle, or by using a new cutting-edge library called Partytown that
+[runs the script separately from your application in a service worker](https://partytown.builder.io/),
+so it doesn't load in the same place as the rest of the code. The default option
+of post-hydration worked for Sentry and Plausible, but unfortunately, with
+Hotjar, neither of the first 2 options worked. It was still messing up the
+performance score, even with those optimizations. I decided to play around with
+Partytown to see if I could make some magic happen.
 
 <figure>![Partytown website and explanation](./partytown.png)</figure>
 
@@ -240,15 +233,14 @@ excellent, screen-reader-wise.
 
 <figure>![Lighthouse score for jaybittner.com](./lighthouse.png)</figure>
 
-<Link to="/">My website</Link> is very new and still in the beginning stages. However,
-now that it's built out, my work on it going forward will primarily be
-<Link to="/projects/fancylingo/">developing project analysis like this</Link>,
-creating <Link to="/blog/construction-to-developer/">
-  exciting blog content
-</Link>, and further developing my SEO. Outside of the site, I need to get customers
-to my website, and as I get more and more happy customers, I'll add more testimonials
-and examples of the work I've done for them. Nothing is more important to me than
-a satisfied customer so I'll keep going hard in the paint on that angle.
+[My website](/) is very new and still in the beginning stages. However, now that
+it's built out, my work on it going forward will primarily be
+[developing project analysis like this](/projects/fancylingo/), creating
+[exciting blog content](/blog/construction-to-developer/), and further
+developing my SEO. Outside of the site, I need to get customers to my website,
+and as I get more and more happy customers, I'll add more testimonials and
+examples of the work I've done for them. Nothing is more important to me than a
+satisfied customer so I'll keep going hard in the paint on that angle.
 
 <figure className="flex flex-row justify-center">
   <iframe
