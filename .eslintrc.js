@@ -1,3 +1,6 @@
+const { getGlobals } = require("eslint-plugin-mdx/lib/helpers");
+const path = require("path");
+
 module.exports = {
   globals: {
     __PATH_PREFIX__: true,
@@ -6,4 +9,13 @@ module.exports = {
   settings: {
     "mdx/code-blocks": true,
   },
+  overrides: [
+    {
+      files: "*.mdx",
+      globals: getGlobals(
+        require(path.resolve(__dirname, "src/components")),
+        {}
+      ),
+    },
+  ],
 };

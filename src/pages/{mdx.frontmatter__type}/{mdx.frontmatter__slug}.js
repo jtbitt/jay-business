@@ -2,8 +2,16 @@ import * as React from "react";
 import { graphql, Link } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import { MDXProvider } from "@mdx-js/react";
+import { Gist } from "mdx-embed";
 
-import { Seo, Layout, Post, Analysis, ExternalLink } from "@components";
+import {
+  Seo,
+  Layout,
+  Post,
+  Analysis,
+  ExternalLink,
+  MobileVideo,
+} from "@components";
 
 const BlogPost = ({ data: { mdx }, children }) => {
   return (
@@ -16,6 +24,8 @@ const BlogPost = ({ data: { mdx }, children }) => {
             return <Link to={props.href}>{props.children}</Link>;
           }
         },
+        MobileVideo,
+        Gist,
       }}
     >
       <Layout>
