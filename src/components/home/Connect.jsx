@@ -47,7 +47,7 @@ export const Connect = ({ images }) => {
               <GithubIcon className="h-8 w-8 2xl:h-12 2xl:w-12 text-white" />
             </ExternalLink>
             <ExternalLink
-              href="https://www.linkedin.com/in/jay-bittner-b3257a20/"
+              href="https://www.linkedin.com/in/jay-bittner/"
               aria-label="Linkedin"
             >
               <LinkedinIcon className="h-8 w-8 2xl:h-12 2xl:w-12 text-white" />
