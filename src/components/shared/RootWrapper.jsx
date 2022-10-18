@@ -4,10 +4,6 @@ import { Script } from "gatsby";
 export const RootWrapper = ({ children }) => {
   return (
     <>
-      <script
-        type="text/javascript"
-        src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=c50cc7ad5065e4e1ee219e08e0ed9ce54ac63a7b"
-      ></script>
       <Script
         id="sentry"
         src="https://js.sentry-cdn.com/37a0156551a747eaa3ba96a5060c886e.min.js"
